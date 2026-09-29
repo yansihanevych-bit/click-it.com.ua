@@ -5,6 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
@@ -14,8 +15,20 @@ const HREFLANG = { ua: 'uk-UA', pl: 'pl-PL', en: 'en' };
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
 const { render, getPaths, languages } = await import(pathToFileURL(path.join(root, 'dist-ssr/entry-server.js')).href);
 
+/**
+ * Per-page CSP: React's prerender emits small inline <script>s (Suspense boundary completion).
+ * We hash every executable inline script of the page and allow exactly those.
+ * vercel.json keeps the other directives; both policies are enforced (intersection).
+ */
+function withCsp(page) {
+  const hashes = [...page.matchAll(/<script(?![^>]*\bsrc=)(?![^>]*application\/ld\+json)[^>]*>([\s\S]*?)<\/script>/g)]
+    .map((m) => `'sha256-${createHash('sha256').update(m[1]).digest('base64')}'`);
+  const csp = `script-src 'self' ${[...new Set(hashes)].join(' ')}; object-src 'none'; base-uri 'self'`;
+  return page.replace('<meta charset="UTF-8" />', `<meta charset="UTF-8" />\n    <meta http-equiv="Content-Security-Policy" content="${csp}" />`);
+}
+
 const fill = ({ html, head, htmlLang }) =>
-  template.replace('<!--app-lang-->', htmlLang).replace('<!--app-head-->', head).replace('<!--app-html-->', html);
+  withCsp(template.replace('<!--app-lang-->', htmlLang).replace('<!--app-head-->', head).replace('<!--app-html-->', html));
 
 const paths = getPaths();
 let count = 0;

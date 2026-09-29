@@ -59,10 +59,13 @@ p { text-wrap: pretty; }
   opacity: 0; transform: translate3d(0, 28px, 0);
   transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
   transition-delay: calc(var(--reveal-i, 0) * 80ms);
+  /* Safety net: if JS fails to run, content still appears. */
+  animation: reveal-fallback 600ms var(--ease-out) 3.5s forwards;
 }
+@keyframes reveal-fallback { to { opacity: 1; transform: none; } }
 .js [data-reveal='fade'] { transform: none; }
 .js [data-reveal='scale'] { transform: scale(0.96); }
-.js [data-reveal].is-in { opacity: 1; transform: none; }
+.js [data-reveal].is-in { opacity: 1; transform: none; animation: none; }
 
 /* --- Page transition --- */
 .page-enter { animation: page-in 600ms var(--ease-out) both; }
