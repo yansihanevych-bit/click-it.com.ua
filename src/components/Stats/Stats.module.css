@@ -1,0 +1,15 @@
+.stats { background: var(--color-accent); }
+.head { display: grid; gap: var(--space-4); margin-bottom: clamp(3rem, 2rem + 4vw, 6rem); }
+.eyebrow { display: inline-flex; gap: 10px; align-items: center; color: var(--color-dark-2); }
+.eyebrow::before { content: ''; width: 10px; height: 10px; background: #000; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.item { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: var(--space-3); padding: var(--space-5) var(--space-5) 0 0; border-top: 2px solid #000; }
+.item + .item { padding-left: var(--space-5); border-left: 1px solid rgba(0, 0, 0, 0.14); }
+.value { font-size: clamp(3.5rem, 2rem + 6vw, 8rem); font-weight: var(--fw-black); letter-spacing: -0.06em; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.suffix { color: var(--color-secondary); }
+.label { font-weight: var(--fw-medium); color: var(--color-dark-2); max-width: 14rem; }
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); row-gap: var(--space-7); }
+  .item:nth-child(3) { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 420px) { .value { font-size: 3rem; } }

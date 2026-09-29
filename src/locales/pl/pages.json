@@ -1,0 +1,97 @@
+{
+  "about": {
+    "metaTitle": "O studiu Click IT — zespół web developmentu i marketingu",
+    "metaDescription": "Click IT to studio webowe z Charkowa: ponad 6 lat tworzenia stron, design, SEO i reklama. Pomagamy firmom zdobywać lojalnych klientów.",
+    "h1": "O Click IT",
+    "lead": "Naszą misją jest pomóc Twojej firmie zdobyć więcej lojalnych klientów dzięki stronom internetowym, przemyślanej promocji i dobrze zaplanowanej strategii.",
+    "storyTitle": "Narzędzie do rozwiązywania zadań biznesowych",
+    "story": [
+      "Od ponad 6 lat tworzymy strony internetowe w Charkowie i Kijowie. Główny zespół deweloperów pozostał praktycznie niezmieniony — a doświadczenie naszych specjalistów to nasza największa przewaga.",
+      "Dziesiątki stworzonych przez nas zasobów online pomogły przedsiębiorcom zbudować biznes od zera. Wiemy, że strona to Twoja inwestycja, i robimy wszystko, by zwróciła się jak najszybciej."
+    ],
+    "valuesTitle": "Dlaczego z nami pracują",
+    "values": [
+      {
+        "title": "Doświadczony zespół",
+        "text": "Dogłębnie poznajemy wymagania i specyfikę Twojego biznesu przed realizacją."
+      },
+      {
+        "title": "Dotrzymywanie terminów",
+        "text": "Planujemy pracę etapami i akceptujemy wynik na każdym kroku."
+      },
+      {
+        "title": "Indywidualne podejście",
+        "text": "Zawsze wnikamy w zadanie klienta i proponujemy optymalne rozwiązanie."
+      },
+      {
+        "title": "Profesjonalizm",
+        "text": "Stabilne strony z bogatą funkcjonalnością: strony się ładują, formularze działają."
+      }
+    ],
+    "fullCycleTitle": "Agencja pełnego cyklu",
+    "fullCycle": "Dbamy nie tylko o kod i funkcje, ale też o UI/UX, branding i marketing strony. Możesz na nas polegać we wszystkim — od designu po wsparcie i promocję."
+  },
+  "blog": {
+    "metaTitle": "Blog Click IT — artykuły o tworzeniu stron, designie i marketingu",
+    "metaDescription": "Przydatne artykuły Click IT o projektowaniu stron, e-commerce, konwersji i marketingu internetowym.",
+    "h1": "Blog",
+    "lead": "Dzielimy się doświadczeniem w developmencie, designie i marketingu internetowym.",
+    "soon": "Artykuły są przenoszone na nową stronę",
+    "category": "Artykuły",
+    "posts": {
+      "customer-lifetime-value": "Jak zwiększyć wartość życiową klienta",
+      "prototypes": "10 sposobów, by Twoje prototypy były bardziej użyteczne",
+      "captcha-alternatives": "Alternatywy dla CAPTCHA: czym ją zastąpić",
+      "whitespace": "Dlaczego design strony musi „oddychać”",
+      "online-trust": "Zaufanie do zakupów online: na jakie produkty wzrośnie popyt",
+      "website-planning": "Projektowanie strony: czym jest i dlaczego jest potrzebne",
+      "ecommerce-cms": "Najlepszy silnik sklepu internetowego: CMS i skrypty",
+      "online-business": "Pomysły na biznes online: e-commerce w Ukrainie",
+      "cs-cart-mobile": "Tworzenie wersji mobilnej strony w CS-Cart",
+      "mobile-version": "Mobilna wersja strony dla Google"
+    }
+  },
+  "contacts": {
+    "metaTitle": "Kontakt ze studiem Click IT — Charków, telefon, email",
+    "metaDescription": "Skontaktuj się z Click IT: +38 (068) 208-08-35, contact@click-it.com.ua, Charków, ul. Netechynska 25. Omówmy Twój projekt.",
+    "h1": "Kontakt",
+    "lead": "Omówmy Twój projekt. Zadzwoń, napisz lub zostaw zapytanie — odpowiemy wkrótce.",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adres",
+    "map": "Otwórz na mapie"
+  },
+  "privacy": {
+    "metaTitle": "Polityka prywatności — Click IT",
+    "metaDescription": "Jak studio Click IT przetwarza i chroni dane osobowe przesłane przez formularze na stronie.",
+    "h1": "Polityka prywatności",
+    "updated": "Wersja z 29.09.2026",
+    "sections": [
+      {
+        "title": "Jakie dane zbieramy",
+        "text": "Za pomocą formularzy na stronie otrzymujemy dane, które podajesz dobrowolnie: imię, numer telefonu, email i opis projektu."
+      },
+      {
+        "title": "W jakim celu",
+        "text": "Dane są wykorzystywane wyłącznie do kontaktu z Tobą, odpowiedzi na zapytanie i przygotowania oferty współpracy."
+      },
+      {
+        "title": "Przekazywanie osobom trzecim",
+        "text": "Nie sprzedajemy ani nie przekazujemy Twoich danych osobom trzecim, z wyjątkiem usług niezbędnych do dostarczenia zapytania (serwis pocztowy lub komunikator) oraz przypadków przewidzianych prawem."
+      },
+      {
+        "title": "Przechowywanie i ochrona",
+        "text": "Stosujemy rozsądne środki techniczne i organizacyjne w celu ochrony danych i przechowujemy je nie dłużej, niż jest to konieczne."
+      },
+      {
+        "title": "Twoje prawa",
+        "text": "Możesz poprosić o dostęp do swoich danych, ich poprawienie lub usunięcie, pisząc na contact@click-it.com.ua."
+      }
+    ]
+  },
+  "notFound": {
+    "metaTitle": "Nie znaleziono strony — Click IT",
+    "h1": "Nie znaleziono strony",
+    "text": "Mogła zostać przeniesiona podczas aktualizacji serwisu. Zacznij od strony głównej lub zobacz nasze usługi."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "index": {
+    "metaTitle": "Portfolio Click IT — realizacje i projekty",
+    "metaDescription": "Projekty Click IT: strony dla studiów remontowych, hoteli, marek kosmetycznych, firm budowlanych, dostaw i e-commerce.",
+    "h1": "Projekty",
+    "lead": "Strony, które stworzyliśmy i promujemy dla firm z różnych branż — od hoteli i marek kosmetycznych po firmy budowlane."
+  },
+  "labels": {
+    "industry": "Branża",
+    "services": "Co zrobiliśmy",
+    "client": "Klient",
+    "about": "O projekcie",
+    "gallery": "Fragmenty projektu",
+    "next": "Następny projekt",
+    "all": "Wszystkie",
+    "filter": "Filtruj według branży",
+    "metaSuffix": "Realizacja studia Click IT: tworzenie strony, design i promocja dla biznesu."
+  },
+  "work": {
+    "development": "Stworzenie strony",
+    "promotion": "Promocja",
+    "booking": "Rezerwacje online",
+    "website": "Strona"
+  },
+  "industries": {
+    "renovation": "Remonty i aranżacja wnętrz",
+    "hospitality": "Hotelarstwo",
+    "beauty": "Kosmetyki",
+    "construction": "Budownictwo i nieruchomości",
+    "realestate": "Nieruchomości",
+    "food": "Żywność i dostawy",
+    "security": "Systemy bezpieczeństwa",
+    "adtech": "Reklama w social media"
+  },
+  "items": {
+    "avangard": {
+      "name": "AVANGARD",
+      "summary": "Strona studia remontów i projektowania wnętrz.",
+      "description": "Stworzenie i promocja strony dla studia remontów i designu AVANGARD: prezentacja usług remontowych, projektowania wnętrz, budowy i projektowania."
+    },
+    "family-apartments": {
+      "name": "Family Apartments",
+      "summary": "Strona hotelu z rezerwacją online.",
+      "description": "Stworzenie i promocja strony dla hotelu Family Apartments. Strona działa z technologią rezerwacji online."
+    },
+    "oseque": {
+      "name": "Oseque",
+      "summary": "Strona marki kosmetycznej.",
+      "description": "Stworzenie i promocja strony dla marki kosmetycznej Oseque."
+    },
+    "mcorp": {
+      "name": "MCORP",
+      "summary": "Strona firmy projektowo-budowlanej.",
+      "description": "MCORP to firma projektowo-budowlana oferująca pełen zakres usług na rynku nieruchomości — od wyboru działki po przekazanie kluczy do domu, mieszkania lub biura. Szczegółowe opracowanie projektu na każdym etapie, nowoczesne podejście i przejrzyste relacje wyróżniają firmę."
+    },
+    "whitewood": {
+      "name": "Whitewood",
+      "summary": "Strona osiedla nowoczesnych domów.",
+      "description": "Whitewood to osiedle nowoczesnych domów w malowniczym miejscu, na zboczu porośniętym brzozowym gajem, zaprojektowane na 18 domów z w pełni indywidualnymi układami."
+    },
+    "crazybox": {
+      "name": "Crazybox",
+      "summary": "Strona serwisu dostawy owoców.",
+      "description": "Crazybox to starannie wyselekcjonowane, soczyste owoce z całego świata z codzienną dostawą do domu lub biura."
+    },
+    "kratos": {
+      "name": "KRATOS",
+      "summary": "Strona firmy z branży systemów bezpieczeństwa.",
+      "description": "KRATOS — kompleksowe systemy bezpieczeństwa pomieszczeń."
+    },
+    "qoopiqoopi": {
+      "name": "Qoopiqoopi",
+      "summary": "Platforma miejsc reklamowych w social media.",
+      "description": "Qoopiqoopi to globalna baza miejsc reklamowych w mediach społecznościowych."
+    },
+    "piknik-menu": {
+      "name": "Piknik Menu",
+      "summary": "Strona producenta przekąsek.",
+      "description": "Piknik Menu — pasty kanapkowe i julienne."
+    }
+  }
+}

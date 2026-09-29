@@ -1,0 +1,97 @@
+{
+  "about": {
+    "metaTitle": "About Click IT — Web Development & Digital Marketing Team",
+    "metaDescription": "Click IT is a web studio from Kharkiv, Ukraine: 6+ years in website development, design, SEO and advertising. We help businesses win more loyal customers.",
+    "h1": "About Click IT",
+    "lead": "Our mission is to help your business win more loyal customers through websites, smart promotion and a well-thought-out strategy.",
+    "storyTitle": "A tool for solving business challenges",
+    "story": [
+      "For more than 6 years we have been building websites in Kharkiv and Kyiv. Our core development team has remained practically unchanged — and our specialists’ experience is our main advantage.",
+      "Dozens of online resources we created have already helped entrepreneurs build businesses from scratch. We know a website is your investment, and we do everything to make it pay off as quickly as possible."
+    ],
+    "valuesTitle": "Why clients work with us",
+    "values": [
+      {
+        "title": "Experienced team",
+        "text": "We study your requirements and business specifics in depth before implementation."
+      },
+      {
+        "title": "On-time delivery",
+        "text": "We plan work in stages and agree on the result at every step."
+      },
+      {
+        "title": "Tailored approach",
+        "text": "We always dig into the client’s challenge and offer the best-fit solution."
+      },
+      {
+        "title": "Professionalism",
+        "text": "Stable websites with rich functionality: pages load, forms work."
+      }
+    ],
+    "fullCycleTitle": "A full-cycle agency",
+    "fullCycle": "We care not only about code and features but also about UI/UX design, branding and marketing. You can rely on us for everything — from design to support and promotion."
+  },
+  "blog": {
+    "metaTitle": "Click IT Blog — Articles on Web Development, Design and Marketing",
+    "metaDescription": "Useful articles by Click IT on website planning and design, e-commerce, conversion and online marketing.",
+    "h1": "Blog",
+    "lead": "We share our experience in development, design and digital marketing.",
+    "soon": "Articles are being moved to the new website",
+    "category": "Articles",
+    "posts": {
+      "customer-lifetime-value": "How to increase customer lifetime value",
+      "prototypes": "10 ways to make your prototypes more useful",
+      "captcha-alternatives": "CAPTCHA alternatives: what to use instead",
+      "whitespace": "Why website design needs room to breathe",
+      "online-trust": "Trust in online shopping: which products will see higher demand",
+      "website-planning": "Website planning: what it is and why you need it",
+      "ecommerce-cms": "The best engine for an online store: CMS and scripts",
+      "online-business": "Online business ideas: e-commerce in Ukraine",
+      "cs-cart-mobile": "Building a mobile version of a CS-Cart website",
+      "mobile-version": "Mobile website version for Google"
+    }
+  },
+  "contacts": {
+    "metaTitle": "Contact Click IT — Kharkiv, Phone, Email",
+    "metaDescription": "Contact Click IT: +38 (068) 208-08-35, contact@click-it.com.ua, 25 Netechynska St., Kharkiv. Let’s discuss your project.",
+    "h1": "Contacts",
+    "lead": "Let’s discuss your project. Call, write or leave a request — we’ll get back to you shortly.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "map": "Open in maps"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — Click IT",
+    "metaDescription": "How Click IT web studio processes and protects personal data submitted through website forms.",
+    "h1": "Privacy policy",
+    "updated": "Version of 29 September 2026",
+    "sections": [
+      {
+        "title": "What data we collect",
+        "text": "Through the forms on this site we receive data you provide voluntarily: name, phone number, email and project description."
+      },
+      {
+        "title": "How we use it",
+        "text": "The data is used solely to contact you, respond to your request and prepare a cooperation proposal."
+      },
+      {
+        "title": "Sharing with third parties",
+        "text": "We do not sell or share your data with third parties, except for services needed to deliver your request (email service or messenger) and cases required by law."
+      },
+      {
+        "title": "Storage and protection",
+        "text": "We take reasonable technical and organisational measures to protect data and keep it no longer than necessary for the stated purposes."
+      },
+      {
+        "title": "Your rights",
+        "text": "You may request access to, correction or deletion of your data by writing to contact@click-it.com.ua."
+      }
+    ]
+  },
+  "notFound": {
+    "metaTitle": "Page not found — Click IT",
+    "h1": "Page not found",
+    "text": "It may have moved during our website update. Start from the home page or browse our services."
+  }
+}

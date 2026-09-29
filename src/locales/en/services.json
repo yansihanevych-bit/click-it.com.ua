@@ -1,0 +1,230 @@
+{
+  "index": {
+    "metaTitle": "Click IT Services — Web Development, Design, Marketing",
+    "metaDescription": "Websites, online stores and landing pages, UI/UX design, branding, SEO, Google Ads, SMM and email marketing by Click IT web studio.",
+    "h1": "Services",
+    "lead": "We cover the full digital cycle — from idea and design to development and promotion. Pick a direction or order the whole package."
+  },
+  "labels": {
+    "features": "What’s included", "audience": "Who it’s for", "faq": "FAQ", "related": "More services in this area",
+    "process": "How we work", "processText": "Analysis → strategy → UX/UI → development → testing → launch → growth. You see and approve the result at every stage."
+  },
+  "items": {
+    "web-development": {
+      "name": "Web Development", "short": "Turnkey websites — from business card sites to web platforms",
+      "metaTitle": "Turnkey Website Development in Ukraine — Click IT",
+      "metaDescription": "Turnkey website development: business card sites, corporate websites and web platforms. Niche research, UX/UI, responsive build, SEO foundations and support.",
+      "h1": "Turnkey website development",
+      "lead": "We have built many websites — from simple landing pages and WordPress sites to complex web platforms. We build websites that work for your business.",
+      "features": [
+        { "title": "Niche research", "text": "We study the market, competitors and audience so the site sells and earns trust." },
+        { "title": "UX/UI design", "text": "Structure and interface that every visitor understands." },
+        { "title": "Development & CMS", "text": "Responsive build, easy content management and extra modules as needed." },
+        { "title": "Launch & support", "text": "Testing, hosting, analytics and technical support after launch." }
+      ],
+      "audience": "For businesses that need a business card site, a corporate website or an online service — from scratch or to replace an outdated site.",
+      "faq": [
+        { "q": "Can I order a simple business card site?", "a": "Yes. We build business card sites and landing pages as well as multi-page projects — scope is defined in the preparation stage." },
+        { "q": "Will I be able to edit the site myself?", "a": "Yes, we use content management systems that let you update page content quickly." }
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce", "short": "Online stores that sell 24/7",
+      "metaTitle": "Online Store Development — Click IT",
+      "metaDescription": "E-commerce development: catalogue, cart, payment and delivery, integrations, SEO-ready structure and easy product management.",
+      "h1": "Online store development",
+      "lead": "We design and build online stores where products are easy to find and checkout is effortless — and managing the catalogue and orders is simple for you.",
+      "features": [
+        { "title": "Catalogue & filters", "text": "Logical category structure and search that help people find products fast." },
+        { "title": "Cart & checkout", "text": "A short path to purchase with payment and delivery options." },
+        { "title": "Product management", "text": "A CMS admin panel to update catalogue, prices and orders." },
+        { "title": "SEO structure", "text": "Technical foundations to rank categories and product pages." }
+      ],
+      "audience": "For retail brands, manufacturers and distributors launching online sales or moving their store to a new platform.",
+      "faq": [
+        { "q": "Which CMS do you use for stores?", "a": "We choose the platform to fit the project’s goals and budget — we agree on it in the specification stage." },
+        { "q": "Do you help update the catalogue?", "a": "Yes, catalogue updates are part of our technical support services." }
+      ]
+    },
+    "landing-page": {
+      "name": "Landing Pages", "short": "Single-page sites for ads and sales",
+      "metaTitle": "High-Converting Landing Page Development — Click IT",
+      "metaDescription": "Landing pages for ad campaigns and product or service launches: sales structure, design, responsiveness and fast loading.",
+      "h1": "Landing page development",
+      "lead": "A landing page is the fastest way to test an offer and get leads from ads. We build the page around a single target action.",
+      "features": [
+        { "title": "Sales structure", "text": "Block logic from the customer’s problem to the call to action." },
+        { "title": "Design & copy", "text": "Visuals and copy that explain the value in seconds." },
+        { "title": "Lead forms", "text": "Convenient forms connected to email or messengers." },
+        { "title": "Ad-ready", "text": "Speed, analytics and pixels for Google Ads and social media." }
+      ],
+      "audience": "For product launches, promotions, services and ad campaigns on Google and social media.",
+      "faq": [
+        { "q": "How is a landing page different from a website?", "a": "A landing page focuses on one offer and one target action, so it’s faster to build and easier to test in ads." },
+        { "q": "Can you run ads to the landing page?", "a": "Yes, we set up paid search and social media promotion." }
+      ]
+    },
+    "corporate-websites": {
+      "name": "Corporate Websites", "short": "Company websites with strong brand presentation",
+      "metaTitle": "Corporate Website Development — Click IT",
+      "metaDescription": "Corporate websites: service structure, case studies, brand presentation, multilingual versions and SEO optimisation.",
+      "h1": "Corporate website development",
+      "lead": "A corporate website is your company’s online representative working 24/7. We present your business, services and experience so clients want to contact you.",
+      "features": [
+        { "title": "Structure & content", "text": "Services, cases, team and advantages in a clear hierarchy." },
+        { "title": "Brand presentation", "text": "Design that reflects the company’s character and values." },
+        { "title": "Multilingual", "text": "Language versions for different markets." },
+        { "title": "SEO foundations", "text": "Semantic markup, meta tags and speed for search engines." }
+      ],
+      "audience": "For companies that need a representative website for clients, partners and investors.",
+      "faq": [
+        { "q": "Do you help with copy and photos?", "a": "Yes, we produce turnkey content: copy, photo, video and site filling." },
+        { "q": "Can you build several language versions?", "a": "Yes, multilingual support is planned at the structure design stage." }
+      ]
+    },
+    "tilda": {
+      "name": "Tilda Websites", "short": "Fast launch on a website builder",
+      "metaTitle": "Tilda Website Development — Click IT",
+      "metaDescription": "Websites and landing pages on Tilda: custom Zero Block design, responsiveness, forms, integrations and basic SEO setup.",
+      "h1": "Tilda website development",
+      "lead": "Tilda lets you launch a beautiful site quickly and edit it without a developer. We create a custom design, not a template.",
+      "features": [
+        { "title": "Custom design", "text": "Unique Zero Block sections instead of stock templates." },
+        { "title": "Responsive", "text": "Correct rendering on phones, tablets and desktops." },
+        { "title": "Forms & integrations", "text": "Leads to email, CRM or messengers." },
+        { "title": "Basic SEO", "text": "Meta tags, headings and indexing settings." }
+      ],
+      "audience": "For landing pages, small websites and projects where a fast launch and self-editing matter.",
+      "faq": [
+        { "q": "Will I be able to edit the site myself?", "a": "Yes, Tilda has a convenient visual editor — we’ll hand over access and show you how to use it." },
+        { "q": "When is Tilda not the best choice?", "a": "Large online stores and complex platforms are better served by custom development — we’ll advise during the consultation." }
+      ]
+    },
+    "seo": {
+      "name": "SEO", "short": "Organic traffic from Google",
+      "metaTitle": "SEO Services — Website Promotion in Google — Click IT",
+      "metaDescription": "Search engine optimisation: technical audit, keyword research, on-page optimisation, content and link strategy. Free SEO check.",
+      "h1": "SEO website promotion",
+      "lead": "Based on deep niche research, we promote your site to your target audience and turn visitors into customers.",
+      "features": [
+        { "title": "Technical audit", "text": "Speed, indexing, errors and the mobile version." },
+        { "title": "Keyword research", "text": "Collecting search queries and mapping them to pages." },
+        { "title": "On-page optimisation", "text": "Meta tags, headings, structure and internal linking." },
+        { "title": "Content & reporting", "text": "Copy for search queries, ranking and traffic monitoring." }
+      ],
+      "audience": "For businesses that want a steady flow of customers from search without paying for every click.",
+      "faq": [
+        { "q": "Do you offer a free SEO check?", "a": "Yes — leave a request and we’ll run a free SEO check of your website." },
+        { "q": "When will I see results?", "a": "SEO is a long-term strategy; progress depends on the niche, competition and the site’s condition. We forecast after the audit." }
+      ]
+    },
+    "google-ads": {
+      "name": "Google Ads / PPC", "short": "Paid search with a controlled budget",
+      "metaTitle": "Google Ads (PPC) Management — Click IT",
+      "metaDescription": "Google Ads setup and management: search, display and shopping campaigns, analytics and cost-per-lead optimisation. Free ads audit.",
+      "h1": "Google Ads management",
+      "lead": "Paid search brings customers from day one. We set up campaigns with an open budget and transparent reporting.",
+      "features": [
+        { "title": "Strategy & keywords", "text": "Keyword selection and campaign structure for your goals." },
+        { "title": "Ads", "text": "Copy and creatives that stand out from competitors." },
+        { "title": "Analytics", "text": "Conversion tracking to see the real cost per lead." },
+        { "title": "Optimisation", "text": "Ongoing work with bids, queries and audiences." }
+      ],
+      "audience": "For businesses that need leads fast, and for new product launches and promotions.",
+      "faq": [
+        { "q": "Can you review my current ads?", "a": "Yes, we run a free Google/Facebook ads audit — just leave a request." },
+        { "q": "What does an open budget mean?", "a": "The ad budget and results are transparent: you see where the money goes and what it brings." }
+      ]
+    },
+    "smm": {
+      "name": "SMM", "short": "Social media and Instagram promotion",
+      "metaTitle": "Social Media Marketing & Instagram Promotion — Click IT",
+      "metaDescription": "Brand promotion on social media: strategy, content, targeted ads and Instagram growth. We make your brand recognisable.",
+      "h1": "Social media marketing",
+      "lead": "We help your brand gain character and recognition: strategy, content and advertising on social media, including Instagram.",
+      "features": [
+        { "title": "Strategy", "text": "Positioning, audience and the brand’s communication strategy." },
+        { "title": "Content", "text": "Photo, video and copy that tell your brand’s story." },
+        { "title": "Targeted ads", "text": "Ads aimed at the right audience segments." },
+        { "title": "Instagram", "text": "Profile growth and attracting relevant followers." }
+      ],
+      "audience": "For brands that value recognition, a loyal community and sales through social media.",
+      "faq": [
+        { "q": "Do you create the content yourselves?", "a": "Yes, we produce video, photo and copy specifically for your needs." },
+        { "q": "Do you work on Instagram separately?", "a": "Yes, Instagram promotion is a separate area of our work." }
+      ]
+    },
+    "email-marketing": {
+      "name": "Email Marketing", "short": "Campaigns that bring customers back",
+      "metaTitle": "Email Marketing for Business — Click IT",
+      "metaDescription": "Email marketing: campaign strategy, automated flows, email design and analytics to increase repeat sales and customer lifetime value.",
+      "h1": "Email marketing",
+      "lead": "Email campaigns bring customers back and increase their lifetime value. We build an email system that works automatically.",
+      "features": [
+        { "title": "Strategy", "text": "Audience segmentation and a communication plan." },
+        { "title": "Automation", "text": "Welcome, trigger and repeat-purchase flows." },
+        { "title": "Email design", "text": "Responsive templates in your brand style." },
+        { "title": "Analytics", "text": "Opens, clicks, sales and continuous testing." }
+      ],
+      "audience": "For online stores and services with a customer base who want more repeat purchases.",
+      "faq": [
+        { "q": "Do I need a large contact list?", "a": "No — you can start with your existing base and grow it through the website." },
+        { "q": "Can campaigns be automated?", "a": "Yes, we set up automated flows triggered by user actions." }
+      ]
+    },
+    "design": {
+      "name": "Web Design / UI/UX", "short": "Website and interface design",
+      "metaTitle": "Website Design & UI/UX Design — Click IT",
+      "metaDescription": "Website design: UX research, prototypes, UI design and responsive layouts. Design that reflects your brand and is easy for everyone.",
+      "h1": "Website design & UI/UX",
+      "lead": "We don’t just create design — we create a reflection of your brand. At the same time we focus on UX so the site is intuitive for anyone.",
+      "features": [
+        { "title": "UX research", "text": "Audience, scenario and competitor analysis." },
+        { "title": "Prototypes", "text": "Page structure and interaction logic before visuals." },
+        { "title": "UI design", "text": "Several concept options with approval at each stage." },
+        { "title": "Responsive layouts", "text": "Design for desktop, tablet and phone." }
+      ],
+      "audience": "For new projects and redesigns of sites that don’t convert or look outdated.",
+      "faq": [
+        { "q": "How many design options do you offer?", "a": "We prepare several concept options, agree on one and refine every page template." },
+        { "q": "Can I order design only?", "a": "Yes, website design is a separate service." }
+      ]
+    },
+    "branding": {
+      "name": "Branding & Identity", "short": "An identity people remember",
+      "metaTitle": "Branding & Corporate Identity Design — Click IT",
+      "metaDescription": "Brand creation from scratch and corporate identity: logo, colours, typography, brand applications and guidelines for consistent communication.",
+      "h1": "Branding & corporate identity",
+      "lead": "We can create a brand from scratch: from idea and identity to communication strategy. That’s how people get to know you and remember you.",
+      "features": [
+        { "title": "Positioning", "text": "Brand character, values and key messages." },
+        { "title": "Logo", "text": "A mark that works at every size and on every medium." },
+        { "title": "Identity", "text": "Colours, typefaces, graphics and imagery style." },
+        { "title": "Guidelines", "text": "Usage rules for your team and contractors." }
+      ],
+      "audience": "For new companies and brands that need a coherent, recognisable visual language.",
+      "faq": [
+        { "q": "Do you do rebranding?", "a": "Yes, we refresh identities while keeping recognition when it matters for the business." },
+        { "q": "What will I get?", "a": "A logo, corporate identity, application mock-ups and guidelines." }
+      ]
+    },
+    "usability-audit": {
+      "name": "Usability Audit", "short": "Finding what blocks your sales",
+      "metaTitle": "Website Usability Audit — Click IT",
+      "metaDescription": "Website usability audit: user flows, navigation, forms and mobile version analysed, with concrete recommendations to raise conversion.",
+      "h1": "Website usability audit",
+      "lead": "Broken pages and inconvenient forms push users to competitors. An audit shows exactly what hurts conversion and how to fix it.",
+      "features": [
+        { "title": "User flows", "text": "We walk key user paths from entry to request." },
+        { "title": "Navigation & content", "text": "We check how clear the structure and copy are." },
+        { "title": "Forms & CTAs", "text": "We look for barriers on the way to the target action." },
+        { "title": "Recommendations", "text": "A prioritised list of improvements with explanations." }
+      ],
+      "audience": "For sites that get traffic but few leads or sales.",
+      "faq": [
+        { "q": "What will I get after the audit?", "a": "A report with the issues found and prioritised recommendations for fixing them." },
+        { "q": "Can you implement the fixes?", "a": "Yes, we can implement the recommendations in design and development." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "click-it-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Click IT — web development & digital agency website (React + TypeScript + Vite, SSG, UA/PL/EN)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:client && npm run build:server && npm run prerender",
+    "build:client": "vite build --outDir dist",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
+    "prerender": "node scripts/prerender.mjs",
+    "preview": "vite preview --outDir dist",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "assets:og": "node scripts/generate-og.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "i18next": "^26.4.2",
+    "motion": "^13.4.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.15",
+    "react-router": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}

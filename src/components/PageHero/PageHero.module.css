@@ -1,0 +1,7 @@
+.hero { position: relative; padding-top: clamp(2rem, 1rem + 4vw, 5rem); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); overflow: hidden; }
+.bg { position: absolute; inset: 0; z-index: -1; background-image: linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px); background-size: 72px 72px; mask-image: radial-gradient(ellipse 60% 80% at 85% 0%, #000, transparent 70%); -webkit-mask-image: radial-gradient(ellipse 60% 80% at 85% 0%, #000, transparent 70%); }
+.eyebrow { display: inline-flex; gap: 10px; align-items: center; color: var(--color-text-secondary); margin-bottom: var(--space-4); }
+.eyebrow::before { content: ''; width: 10px; height: 10px; background: var(--color-primary); }
+.title { max-width: 16ch; animation: up 900ms var(--ease-out) both; }
+.lead { max-width: 44rem; margin-top: var(--space-5); animation: up 900ms var(--ease-out) 120ms both; }
+@keyframes up { from { opacity: 0; transform: translateY(20px); } }

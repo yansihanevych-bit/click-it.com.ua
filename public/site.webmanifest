@@ -1,0 +1,1 @@
+{ "name": "Click IT", "short_name": "Click IT", "icons": [{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }], "theme_color": "#59ADFF", "background_color": "#ffffff", "display": "browser" }

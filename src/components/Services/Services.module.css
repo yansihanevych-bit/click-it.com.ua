@@ -1,0 +1,62 @@
+.panels { display: flex; gap: var(--space-4); min-height: 640px; }
+.panel {
+  position: relative; flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: var(--space-5);
+  padding: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); border-radius: var(--radius-l);
+  background: var(--color-surface); border: 1px solid var(--color-border); overflow: hidden;
+  transition: flex-grow var(--dur-slow) var(--ease-out), background-color var(--dur-base), color var(--dur-base), border-color var(--dur-base);
+}
+.active { flex-grow: 1.7; background: #000; color: #fff; border-color: #000; }
+.panelTop { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); }
+.num { font-weight: var(--fw-bold); font-size: var(--fs-small); color: var(--color-primary-ink); order: 2; }
+.active .num { color: var(--color-primary); }
+.panelTitle { font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.75rem); letter-spacing: -0.035em; }
+.art { flex: 1; min-height: 180px; display: grid; place-items: center; }
+.visual { width: min(100%, 360px); height: auto; overflow: visible; }
+.body { display: grid; gap: var(--space-5); }
+.text { color: var(--color-text-secondary); max-width: 34rem; transition: color var(--dur-base); }
+.active .text { color: var(--color-on-dark-secondary); }
+.list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.list a {
+  display: inline-flex; align-items: center; gap: 8px; padding: 0.5rem 0.875rem; border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-strong); font-size: 0.875rem; font-weight: var(--fw-medium);
+  transition: background var(--dur-fast), color var(--dur-fast), border-color var(--dur-fast);
+}
+.list a svg { opacity: 0.5; transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-fast); }
+.active .list a { border-color: var(--color-border-dark); }
+.list a:hover { background: var(--color-primary); border-color: var(--color-primary); color: #000; }
+.list a:hover svg { opacity: 1; transform: translate(2px, -2px); }
+.explore { display: inline-flex; align-items: center; gap: 12px; font-weight: var(--fw-bold); width: fit-content; }
+.exploreIcon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--color-primary); color: #000; transition: transform var(--dur-base) var(--ease-out); }
+.explore:hover .exploreIcon { transform: rotate(45deg); }
+
+/* Collapsed panels on desktop: hide the details to keep the layout calm */
+@media (min-width: 1025px) {
+  .panel:not(.active) .text, .panel:not(.active) .list { opacity: 0; transform: translateY(12px); pointer-events: none; max-height: 0; overflow: hidden; }
+  .panel .text, .panel .list { transition: opacity var(--dur-base) var(--ease-out) 120ms, transform var(--dur-base) var(--ease-out) 120ms; max-height: 400px; }
+  .panel:not(.active) .body { gap: 0; }
+}
+
+/* Visual micro-interactions */
+.visual g, .visual rect, .visual path { transition: transform var(--dur-slow) var(--ease-out); transform-box: fill-box; transform-origin: center; }
+.active .vDev .l1 { transform: translate(-10px, 10px); }
+.active .vDev .l3 { transform: translate(12px, -10px); }
+.bar { transform-origin: bottom; transform: scaleY(0.55); transition-delay: calc(var(--i) * 50ms); }
+.active .bar { transform: scaleY(1); }
+.trend { stroke-dasharray: 320; stroke-dashoffset: 320; transition: stroke-dashoffset 1.2s var(--ease-out) 200ms; }
+.active .trend { stroke-dashoffset: 0; }
+.arrowHead { opacity: 0; transition: opacity var(--dur-base) 1s; }
+.active .arrowHead { opacity: 1; }
+.active .vMkt line { stroke: #fff; }
+.active .vMkt .trend { stroke: #fff; }
+.active .vMkt .arrowHead path { fill: #fff; }
+.active .vDes .sq { transform: rotate(90deg); }
+.active .vDes .circle { transform: translate(18px, -6px) scale(1.05); }
+.active .vDes .tri { transform: translate(-8px, -12px) rotate(-12deg); }
+.active .vDes .tri path { fill: #fff; }
+
+@media (max-width: 1024px) {
+  .panels { flex-direction: column; min-height: 0; }
+  .panel, .active { flex: none; }
+  .art { min-height: 0; max-height: 220px; }
+  .visual { width: min(100%, 300px); }
+}

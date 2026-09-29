@@ -1,0 +1,26 @@
+.footer { background: var(--color-surface); padding-top: clamp(4rem, 2rem + 6vw, 8rem); border-top: 1px solid var(--color-border); }
+.big { display: grid; gap: var(--space-3); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); border-bottom: 1px solid var(--color-border-strong); }
+.big > span:first-child { font-size: var(--fs-lead); color: var(--color-text-secondary); }
+.bigLine { display: inline-flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); font-size: var(--fs-display); font-weight: var(--fw-black); letter-spacing: -0.05em; line-height: 1; transition: color var(--dur-base); }
+.bigIcon { display: grid; place-items: center; flex: none; width: clamp(3.5rem, 2rem + 5vw, 7rem); aspect-ratio: 1; background: var(--color-primary); color: #fff; transition: transform var(--dur-slow) var(--ease-out), background var(--dur-base); }
+.big:hover .bigLine { color: var(--color-primary-ink); }
+.big:hover .bigIcon { transform: rotate(90deg); background: #000; color: var(--color-primary); }
+
+.grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr 1.3fr; gap: var(--space-7); padding-block: clamp(3rem, 2rem + 3vw, 5rem); }
+.brand { display: grid; align-content: start; gap: var(--space-5); max-width: 22rem; color: var(--color-text-secondary); }
+.logo { width: 150px; height: auto; }
+.title { color: var(--color-text-secondary); margin-bottom: var(--space-4); }
+.list { list-style: none; padding: 0; display: grid; gap: 0.5rem; font-style: normal; font-weight: var(--fw-medium); }
+.list a { width: fit-content; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size var(--dur-base) var(--ease-out), color var(--dur-fast); }
+.list a:hover { background-size: 100% 1px; color: var(--color-primary-ink); }
+.muted { color: var(--color-text-secondary); font-weight: var(--fw-regular); }
+.socials { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-4); font-weight: var(--fw-bold); }
+.bottom { display: flex; flex-wrap: wrap; gap: var(--space-5); justify-content: space-between; padding-block: var(--space-6); border-top: 1px solid var(--color-border-strong); font-size: var(--fs-small); color: var(--color-text-secondary); }
+.bottom a:hover { color: #000; }
+.top { margin-left: auto; }
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .bottom { flex-direction: column; gap: var(--space-3); }
+  .top { margin-left: 0; }
+}

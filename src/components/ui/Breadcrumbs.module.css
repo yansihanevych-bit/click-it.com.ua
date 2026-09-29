@@ -1,0 +1,6 @@
+.nav { margin-bottom: var(--space-6); }
+.list { display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: var(--fs-small); color: var(--color-text-secondary); }
+.list li { display: inline-flex; align-items: center; gap: 0.5rem; }
+.list li + li::before { content: '/'; color: var(--color-border-strong); }
+.list a:hover { color: var(--color-primary-ink); }
+.list [aria-current] { color: var(--color-text); font-weight: var(--fw-medium); }

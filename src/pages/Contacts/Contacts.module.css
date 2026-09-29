@@ -1,0 +1,12 @@
+.page { padding-block: clamp(2rem, 1rem + 4vw, 5rem) var(--section-y); }
+.inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 1rem + 5vw, 7rem); align-items: start; }
+.info { display: grid; gap: var(--space-5); }
+.list { display: grid; gap: var(--space-6); margin-top: var(--space-5); }
+.list dt { color: var(--color-text-secondary); margin-bottom: var(--space-2); }
+.list dd { display: grid; gap: 4px; font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); font-weight: var(--fw-bold); letter-spacing: -0.02em; }
+.list dd a:hover { color: var(--color-primary-ink); }
+.list address { font-style: normal; }
+.map { display: inline-flex; align-items: center; gap: 8px; font-size: 1rem; color: var(--color-primary-ink); }
+.card { background: var(--color-surface); border-radius: var(--radius-l); padding: clamp(1.5rem, 1rem + 2vw, 3rem); display: grid; gap: var(--space-3); border: 1px solid var(--color-border); }
+.cardLead { color: var(--color-text-secondary); margin-bottom: var(--space-3); }
+@media (max-width: 900px) { .inner { grid-template-columns: 1fr; } }

@@ -1,0 +1,82 @@
+{
+  "index": {
+    "metaTitle": "Click IT Portfolio — Case Studies and Projects",
+    "metaDescription": "Click IT projects: websites for renovation studios, hotels, cosmetics brands, construction companies, delivery services and e-commerce.",
+    "h1": "Projects",
+    "lead": "Websites we have built and promoted for businesses in different industries — from hotels and cosmetics brands to construction companies."
+  },
+  "labels": {
+    "industry": "Industry",
+    "services": "What we did",
+    "client": "Client",
+    "about": "About the project",
+    "gallery": "Project highlights",
+    "next": "Next project",
+    "all": "All",
+    "filter": "Filter by industry",
+    "metaSuffix": "A Click IT case study: website development, design and promotion for business."
+  },
+  "work": {
+    "development": "Website development",
+    "promotion": "Promotion",
+    "booking": "Online booking",
+    "website": "Website"
+  },
+  "industries": {
+    "renovation": "Renovation & interior design",
+    "hospitality": "Hospitality",
+    "beauty": "Cosmetics",
+    "construction": "Construction & real estate",
+    "realestate": "Real estate",
+    "food": "Food & delivery",
+    "security": "Security systems",
+    "adtech": "Social media advertising"
+  },
+  "items": {
+    "avangard": {
+      "name": "AVANGARD",
+      "summary": "Website for a renovation and interior design studio.",
+      "description": "Development and promotion of the website for AVANGARD, a renovation and design studio: presenting renovation, interior design, construction and architectural design services."
+    },
+    "family-apartments": {
+      "name": "Family Apartments",
+      "summary": "Hotel website with online booking.",
+      "description": "Development and promotion of the website for the Family Apartments hotel. The site is built with online booking technology."
+    },
+    "oseque": {
+      "name": "Oseque",
+      "summary": "Website for a cosmetics brand.",
+      "description": "Development and promotion of the website for the Oseque cosmetics brand."
+    },
+    "mcorp": {
+      "name": "MCORP",
+      "summary": "Website for a design & construction company.",
+      "description": "MCORP is a design and construction company offering a full range of real estate services — from choosing a plot to handing over the keys to a house, apartment or office. Detailed work at every stage, a modern approach and transparent relationships set the company apart."
+    },
+    "whitewood": {
+      "name": "Whitewood",
+      "summary": "Website for a modern residential community.",
+      "description": "Whitewood is a community of modern homes in a picturesque spot on a slope covered with a birch grove, designed for 18 homes with fully individual layouts."
+    },
+    "crazybox": {
+      "name": "Crazybox",
+      "summary": "Website for a fruit delivery service.",
+      "description": "Crazybox delivers hand-picked, juicy fruit from around the world daily to your home or office."
+    },
+    "kratos": {
+      "name": "KRATOS",
+      "summary": "Website for a security systems company.",
+      "description": "KRATOS provides integrated security systems for premises."
+    },
+    "qoopiqoopi": {
+      "name": "Qoopiqoopi",
+      "summary": "Platform of social media ad placements.",
+      "description": "Qoopiqoopi is a global database of social media advertising placements."
+    },
+    "piknik-menu": {
+      "name": "Piknik Menu",
+      "summary": "Website for a snack producer.",
+      "description": "Piknik Menu makes sandwich spreads and julienne dishes."
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.approach { background: var(--color-surface); }
+.inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 1rem + 5vw, 8rem); align-items: start; }
+.sticky { position: sticky; top: calc(var(--header-h-compact) + 3rem); display: grid; gap: var(--space-5); }
+.eyebrow { display: inline-flex; gap: 10px; align-items: center; color: var(--color-text-secondary); }
+.eyebrow::before { content: ''; width: 10px; height: 10px; background: var(--color-primary); }
+.progress { display: flex; gap: 6px; margin-top: var(--space-4); }
+.progress span { width: 28px; height: 4px; background: var(--color-border-strong); transition: background var(--dur-base), width var(--dur-base) var(--ease-out); }
+.progress .on { background: var(--color-primary); }
+.steps { list-style: none; padding: 0; display: grid; }
+.step {
+  display: grid; grid-template-columns: auto 1fr; gap: clamp(1rem, 3vw, 3rem); align-items: start;
+  padding-block: clamp(2rem, 1.5rem + 3vw, 4.5rem); border-top: 1px solid var(--color-border-strong);
+  position: relative;
+}
+.step:last-child { border-bottom: 1px solid var(--color-border-strong); }
+.step::before { content: ''; position: absolute; left: 0; top: -1px; height: 2px; width: 0; background: var(--color-primary); transition: width var(--dur-slow) var(--ease-out); }
+.current::before { width: 100%; }
+.stepTitle { color: var(--color-text-secondary); transition: color var(--dur-base); }
+.current .stepTitle { color: var(--color-text); }
+.n { font-size: clamp(2.5rem, 1.5rem + 4vw, 5.5rem); font-weight: var(--fw-black); line-height: 0.9; letter-spacing: -0.05em; color: transparent; -webkit-text-stroke: 1.5px #000; transition: color var(--dur-base), -webkit-text-stroke-color var(--dur-base); min-width: 2ch; }
+.current .n { color: var(--color-primary-ink); -webkit-text-stroke-color: var(--color-primary-ink); }
+.stepTitle { font-weight: var(--fw-bold); font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem); letter-spacing: -0.04em; margin-bottom: var(--space-3); }
+.stepText { font-size: var(--fs-lead); color: var(--color-text-secondary); max-width: 32rem; line-height: 1.5; }
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; }
+  .sticky { position: static; }
+  .progress { display: none; }
+  .step::before { display: none; }
+  .stepTitle { color: var(--color-text); }
+  .n { color: var(--color-primary-ink); -webkit-text-stroke-color: var(--color-primary-ink); }
+}

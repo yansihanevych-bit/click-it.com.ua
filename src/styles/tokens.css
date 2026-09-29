@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Click IT design tokens
+   Brand colours are taken 1:1 from the current click-it.com.ua
+   (logo square #59ADFF, blocks #4E7296 / #C7D2E9, text #000 / #404040, borders #E8E8E8).
+   Every other value below is a derivative of that palette.
+   ========================================================================== */
+:root {
+  /* --- Brand palette (do not change) --- */
+  --color-primary: #59adff;          /* logo square, main accent */
+  --color-secondary: #4e7296;        /* steel blue blocks */
+  --color-accent: #c7d2e9;           /* light blue tint */
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-text-secondary: #404040;
+  --color-border: #e8e8e8;
+
+  /* --- Derived shades --- */
+  --color-primary-hover: #3f9df7;    /* primary −6% L */
+  --color-primary-ink: #1d6dbd;      /* primary for text on white (AA 5.3:1) */
+  --color-primary-soft: #e6f2ff;     /* primary 14% on white */
+  --color-surface: #f4f7fc;          /* accent 30% on white */
+  --color-surface-2: #eaf0f8;        /* accent 55% on white */
+  --color-dark: #000000;
+  --color-dark-2: #0e1520;           /* secondary mixed into black */
+  --color-on-dark: #ffffff;
+  --color-on-dark-secondary: rgba(255, 255, 255, 0.64);
+  --color-border-dark: rgba(255, 255, 255, 0.14);
+  --color-border-strong: #c9cfd8;
+  --color-success: #4e7296;
+  --color-error: #c62828;
+
+  --gradient-brand: linear-gradient(135deg, #59adff 0%, #4e7296 100%);
+  --shadow-s: 0 1px 2px rgba(14, 21, 32, 0.06), 0 2px 8px rgba(78, 114, 150, 0.08);
+  --shadow-m: 0 8px 24px rgba(78, 114, 150, 0.14), 0 2px 6px rgba(14, 21, 32, 0.06);
+  --shadow-l: 0 24px 64px rgba(78, 114, 150, 0.22), 0 4px 16px rgba(14, 21, 32, 0.08);
+  --focus-ring: 0 0 0 3px #ffffff, 0 0 0 5px var(--color-primary-ink);
+
+  /* --- Typography --- */
+  --font-sans: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --fs-display: clamp(2.6rem, 1.1rem + 6.4vw, 7.25rem);
+  --fs-h1: clamp(2.4rem, 1.5rem + 3.9vw, 5.25rem);
+  --fs-h2: clamp(2rem, 1.25rem + 3vw, 4.25rem);
+  --fs-h3: clamp(1.25rem, 1.05rem + 0.8vw, 1.75rem);
+  --fs-lead: clamp(1.125rem, 1rem + 0.45vw, 1.375rem);
+  --fs-body: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --fs-small: 0.875rem;
+  --fs-caption: 0.75rem;
+  --fs-button: 1rem;
+  --lh-tight: 1.02;
+  --lh-heading: 1.1;
+  --lh-body: 1.65;
+  --tracking-tight: -0.035em;
+  --tracking-caps: 0.14em;
+  --fw-regular: 450;
+  --fw-medium: 560;
+  --fw-bold: 750;
+  --fw-black: 800;
+
+  /* --- Spacing (4px base) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --section-y: clamp(5rem, 3rem + 8vw, 11rem);
+  --gutter: clamp(1rem, 0.5rem + 2.6vw, 3rem);
+  --container: 1440px;
+  --header-h: 84px;
+  --header-h-compact: 64px;
+
+  /* --- Shape --- */
+  --radius-xs: 4px;
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 24px;
+  --radius-pill: 999px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-base: 420ms;
+  --dur-slow: 900ms;
+  --z-header: 50;
+  --z-menu: 60;
+  --z-cursor: 100;
+}
+
+@media (max-width: 767px) {
+  :root { --header-h: 68px; --header-h-compact: 60px; }
+}

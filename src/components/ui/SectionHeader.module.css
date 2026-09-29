@@ -1,0 +1,8 @@
+.wrap { display: grid; gap: var(--space-5); margin-bottom: clamp(2.5rem, 1.5rem + 4vw, 5rem); }
+.split { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; column-gap: var(--space-8); }
+.eyebrow { display: inline-flex; align-items: center; gap: 0.625rem; color: var(--color-text-secondary); }
+.eyebrow::before { content: ''; width: 10px; height: 10px; background: var(--color-primary); flex: none; }
+.lead { max-width: 36rem; }
+.dark .eyebrow { color: var(--color-on-dark-secondary); }
+.dark .lead { color: var(--color-on-dark-secondary); }
+@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
