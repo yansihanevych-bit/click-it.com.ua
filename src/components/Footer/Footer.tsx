@@ -13,7 +13,7 @@ export function Footer() {
   const socials = SITE.socials.filter((x) => x.url);
   const year = new Date().getFullYear();
   return (
-    <footer className={s.footer}>
+    <footer className={`sheet ${s.footer}`}>
       <div className="container">
         <a href="#contact" className={s.big} data-cursor="cta">
           <span>{t('footer.cta')}</span>
@@ -25,9 +25,6 @@ export function Footer() {
 
         <div className={s.grid}>
           <div className={s.brand}>
-            <Link to={href(lang)} aria-label={`${SITE.name} — ${t('nav.home')}`}>
-              <img src={logoUrl} alt="Click IT" width={1093} height={260} className={s.logo} loading="lazy" />
-            </Link>
             <p>{t('footer.tagline')}</p>
           </div>
 
@@ -64,6 +61,10 @@ export function Footer() {
             )}
           </div>
         </div>
+
+        <Link to={href(lang)} className={s.giant} aria-label={`${SITE.name} — ${t('nav.home')}`} data-cursor="cta">
+          <img src={logoUrl} alt="" width={1093} height={260} loading="lazy" />
+        </Link>
 
         <div className={s.bottom}>
           <span>© {year} Click IT. {t('footer.rights')}</span>

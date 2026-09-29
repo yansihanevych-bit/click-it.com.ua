@@ -33,7 +33,7 @@ export default function ServicesPage() {
               <span className={s.gNum}>0{gi + 1}</span>
               <h2 id={`g-${g}`} className="t-h2" data-reveal>{t(`home:services.groups.${g}.title`)}</h2>
               <p className={s.gText} data-reveal>{t(`home:services.groups.${g}.text`)}</p>
-              <div className={s.gVisual} data-reveal="fade"><GroupVisual group={g} /></div>
+              <div className={s.gVisual}><GroupVisual group={g} /></div>
             </div>
             <ul className={s.rows}>
               {servicesByGroup(g).map((svc, i) => (

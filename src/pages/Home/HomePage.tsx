@@ -8,6 +8,7 @@ import { ServicesShowcase } from '@/components/Services/ServicesShowcase';
 import { Approach } from '@/components/About/Approach';
 import { ProjectsShowcase } from '@/components/Projects/ProjectsShowcase';
 import { BusinessValue } from '@/components/Value/BusinessValue';
+import { ScrollBand } from '@/components/Band/ScrollBand';
 import { Process } from '@/components/Process/Process';
 import { Stats } from '@/components/Stats/Stats';
 import { Faq } from '@/components/Faq/Faq';
@@ -31,9 +32,10 @@ export default function HomePage() {
       <ServicesShowcase />
       <Approach />
       <ProjectsShowcase />
+      <ScrollBand />
       <BusinessValue />
-      <Process />
       <Stats />
+      <Process />
       <Faq items={faq} eyebrow={t('faq.eyebrow')} title={t('faq.title')} />
       <CtaSection />
     </>

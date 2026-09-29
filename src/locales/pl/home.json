@@ -10,41 +10,107 @@
     "titleC": "na Twój biznes",
     "lead": "Click IT to studio webowe pełnego cyklu. Analizujemy niszę, projektujemy UX, tworzymy i promujemy strony, które przyciągają klientów i zwracają inwestycję.",
     "scroll": "Przewiń",
-    "visual": { "browser": "click-it.com.ua", "metric": "Ruch docelowy", "metricNote": "SEO • PPC • SMM", "badge": "UX/UI", "code": "Development" }
+    "visual": {
+      "browser": "click-it.com.ua",
+      "metric": "Ruch docelowy",
+      "metricNote": "SEO • PPC • SMM",
+      "badge": "UX/UI",
+      "code": "Development"
+    }
   },
-  "trust": { "title": "Zaufali nam" },
+  "trust": {
+    "title": "Zaufali nam"
+  },
   "services": {
     "eyebrow": "Usługi",
     "title": "Nasze usługi",
     "lead": "Obsługujemy pełny cykl digital — od pomysłu i projektu po wdrożenie i promocję.",
     "groups": {
-      "development": { "title": "Development", "text": "Od landing page i wizytówki po sklep internetowy i złożone platformy. Pod klucz — Ty prowadzisz biznes, my zajmujemy się stroną." },
-      "marketing": { "title": "Marketing", "text": "Przyciągamy ruch docelowy przez SEO, reklamę w wyszukiwarce i social media, zamieniając odwiedzających w stałych klientów." },
-      "design": { "title": "Design", "text": "Design jako odzwierciedlenie marki: identyfikacja wizualna, UI/UX i interfejsy zrozumiałe dla każdego." }
-    }
+      "development": {
+        "title": "Development",
+        "text": "Od landing page i wizytówki po sklep internetowy i złożone platformy. Pod klucz — Ty prowadzisz biznes, my zajmujemy się stroną."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "text": "Przyciągamy ruch docelowy przez SEO, reklamę w wyszukiwarce i social media, zamieniając odwiedzających w stałych klientów."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Design jako odzwierciedlenie marki: identyfikacja wizualna, UI/UX i interfejsy zrozumiałe dla każdego."
+      }
+    },
+    "titleLines": [
+      "Nasze",
+      "usługi"
+    ],
+    "hoverHint": "Najedź na usługę, aby zobaczyć przykład"
   },
   "approach": {
     "eyebrow": "Podejście",
     "title": "Tworzymy coś więcej niż strony",
     "lead": "Strona to dla nas nie tylko kod, ale i biznes. Każdy etap służy jednemu celowi: strona ma pracować dla Ciebie.",
     "items": [
-      { "title": "Understand", "text": "Zanim zaczniemy, poznajemy specyfikę Twojego biznesu i wymagania." },
-      { "title": "Strategy", "text": "Analizujemy niszę i konkurencję, określamy cel strony i docelowe działanie użytkownika." },
-      { "title": "UX/UI", "text": "Projektujemy intuicyjną nawigację i design, który zachwyci Twoich odbiorców od pierwszego wejrzenia." },
-      { "title": "Development", "text": "Tworzymy szybką, responsywną i stabilną stronę — od prostego landing page po platformę." },
-      { "title": "Launch", "text": "Testujemy, konfigurujemy analitykę i uruchamiamy projekt w terminie." },
-      { "title": "Growth", "text": "Rozwijamy projekt przez SEO, PPC i SMM oraz zapewniamy wsparcie techniczne." }
-    ]
+      {
+        "title": "Understand",
+        "text": "Zanim zaczniemy, poznajemy specyfikę Twojego biznesu i wymagania."
+      },
+      {
+        "title": "Strategy",
+        "text": "Analizujemy niszę i konkurencję, określamy cel strony i docelowe działanie użytkownika."
+      },
+      {
+        "title": "UX/UI",
+        "text": "Projektujemy intuicyjną nawigację i design, który zachwyci Twoich odbiorców od pierwszego wejrzenia."
+      },
+      {
+        "title": "Development",
+        "text": "Tworzymy szybką, responsywną i stabilną stronę — od prostego landing page po platformę."
+      },
+      {
+        "title": "Launch",
+        "text": "Testujemy, konfigurujemy analitykę i uruchamiamy projekt w terminie."
+      },
+      {
+        "title": "Growth",
+        "text": "Rozwijamy projekt przez SEO, PPC i SMM oraz zapewniamy wsparcie techniczne."
+      }
+    ],
+    "titleLines": [
+      "Tworzymy coś",
+      "więcej niż strony"
+    ],
+    "step": "Etap"
   },
-  "projects": { "eyebrow": "Portfolio", "title": "Wybrane projekty", "lead": "Strony, które stworzyliśmy i promujemy dla firm z różnych branż." },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Wybrane projekty",
+    "lead": "Strony, które stworzyliśmy i promujemy dla firm z różnych branż.",
+    "titleLines": [
+      "Wybrane",
+      "projekty"
+    ],
+    "count": "projektów w portfolio"
+  },
   "value": {
     "titleA": "Nie tylko strona.",
     "titleB": "Narzędzie dla biznesu.",
     "items": [
-      { "title": "Strona, która sprzedaje", "text": "Strony, które naprawdę sprzedają, zaczynają się od analizy niszy. Zagłębiamy się w jej specyfikę, by strona budziła zaufanie odbiorców." },
-      { "title": "Ruch docelowy", "text": "Promujemy stronę wśród Twoich odbiorców przez SEO, SMM i PPC oraz budujemy strategię marketingową i komunikacyjną." },
-      { "title": "Konwersja", "text": "Projektujemy wokół docelowego działania — zakupu, zamówienia lub zapytania — i usuwamy wszystko, co mu przeszkadza." },
-      { "title": "System digital", "text": "Strona to Twój przedstawiciel online działający 24/7. Łączymy development, treści, marketing i wsparcie w jeden system." }
+      {
+        "title": "Strona, która sprzedaje",
+        "text": "Strony, które naprawdę sprzedają, zaczynają się od analizy niszy. Zagłębiamy się w jej specyfikę, by strona budziła zaufanie odbiorców."
+      },
+      {
+        "title": "Ruch docelowy",
+        "text": "Promujemy stronę wśród Twoich odbiorców przez SEO, SMM i PPC oraz budujemy strategię marketingową i komunikacyjną."
+      },
+      {
+        "title": "Konwersja",
+        "text": "Projektujemy wokół docelowego działania — zakupu, zamówienia lub zapytania — i usuwamy wszystko, co mu przeszkadza."
+      },
+      {
+        "title": "System digital",
+        "text": "Strona to Twój przedstawiciel online działający 24/7. Łączymy development, treści, marketing i wsparcie w jeden system."
+      }
     ]
   },
   "process": {
@@ -52,26 +118,86 @@
     "title": "Jak pracujemy",
     "lead": "Przejrzysty proces: na każdym etapie widzisz wynik i możesz zgłosić poprawki.",
     "items": [
-      { "title": "Analiza", "text": "Kształtujemy pomysł: cel strony, grupa docelowa, treści, nawigacja i wymagania techniczne." },
-      { "title": "Strategia", "text": "Przygotowujemy specyfikację: struktura, moduły, technologie i opis wyglądu." },
-      { "title": "UX/UI", "text": "Koncepcja, kilka wariantów designu, makiety strony głównej i podstron — z akceptacją na każdym kroku." },
-      { "title": "Development", "text": "Kodowanie i programowanie, wygodne zarządzanie treścią, wszystkie ekrany i przeglądarki." },
-      { "title": "Testing", "text": "Osobny specjalista sprawdza szybkość ładowania, wyświetlanie, linki i działanie modułów." },
-      { "title": "Launch", "text": "Publikujemy na hostingu, podłączamy domenę, konfigurujemy analitykę i narzędzia webmastera." },
-      { "title": "Growth", "text": "Wsparcie 24/7, bezpieczeństwo, aktualizacja treści i promocja dla stabilnego wzrostu." }
+      {
+        "title": "Analiza",
+        "text": "Kształtujemy pomysł: cel strony, grupa docelowa, treści, nawigacja i wymagania techniczne."
+      },
+      {
+        "title": "Strategia",
+        "text": "Przygotowujemy specyfikację: struktura, moduły, technologie i opis wyglądu."
+      },
+      {
+        "title": "UX/UI",
+        "text": "Koncepcja, kilka wariantów designu, makiety strony głównej i podstron — z akceptacją na każdym kroku."
+      },
+      {
+        "title": "Development",
+        "text": "Kodowanie i programowanie, wygodne zarządzanie treścią, wszystkie ekrany i przeglądarki."
+      },
+      {
+        "title": "Testing",
+        "text": "Osobny specjalista sprawdza szybkość ładowania, wyświetlanie, linki i działanie modułów."
+      },
+      {
+        "title": "Launch",
+        "text": "Publikujemy na hostingu, podłączamy domenę, konfigurujemy analitykę i narzędzia webmastera."
+      },
+      {
+        "title": "Growth",
+        "text": "Wsparcie 24/7, bezpieczeństwo, aktualizacja treści i promocja dla stabilnego wzrostu."
+      }
+    ],
+    "titleLines": [
+      "Jak",
+      "pracujemy"
     ]
   },
-  "stats": { "eyebrow": "Click IT w liczbach", "title": "Doświadczenie, któremu można zaufać" },
+  "stats": {
+    "eyebrow": "Click IT w liczbach",
+    "title": "Doświadczenie, któremu można zaufać"
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Pytania o tworzenie stron",
     "items": [
-      { "q": "Ile kosztuje stworzenie strony?", "a": "Cena jest indywidualna i zależy od złożoności designu i części technicznej, liczby podstron i modułów (formularze, czat, kalkulatory, galerie), konfiguracji CMS oraz potrzeby wsparcia. Dokładną wycenę przedstawiamy po konsultacji." },
-      { "q": "Ile trwa stworzenie strony?", "a": "Średnio gotowy produkt dostarczamy w około miesiąc, ale termin może być dłuższy lub krótszy — zależy od złożoności projektu. Dokładne terminy ustalamy po konsultacji." },
-      { "q": "Czy wspieracie stronę po uruchomieniu?", "a": "Tak. Dbamy o działanie strony 24/7, ochronę przed wirusami i włamaniami, sprawność wszystkich funkcji, aktualizację informacji, katalogów sklepów oraz publikację zdjęć, audio i wideo." },
-      { "q": "Dlaczego zlecić wsparcie zamiast zatrudniać osobę na etat?", "a": "To oszczędność pieniędzy i czasu, obsługa całodobowa oraz znajomość wszystkich niuansów projektu — bo to my go stworzyliśmy. Bez wsparcia reklama może przepalać budżet na niedostępną stronę, a wirusy lub awarie zniszczyć wyniki SEO." },
-      { "q": "Czym Click IT różni się od innych studiów?", "a": "Jesteśmy agencją pełnego cyklu: dbamy nie tylko o kod i funkcje, ale też o UI/UX, branding i marketing. Wynik odpowiada wymaganiom, rozwiązania są indywidualne, ceny przystępne, a po starcie zostajemy z Tobą." }
+      {
+        "q": "Ile kosztuje stworzenie strony?",
+        "a": "Cena jest indywidualna i zależy od złożoności designu i części technicznej, liczby podstron i modułów (formularze, czat, kalkulatory, galerie), konfiguracji CMS oraz potrzeby wsparcia. Dokładną wycenę przedstawiamy po konsultacji."
+      },
+      {
+        "q": "Ile trwa stworzenie strony?",
+        "a": "Średnio gotowy produkt dostarczamy w około miesiąc, ale termin może być dłuższy lub krótszy — zależy od złożoności projektu. Dokładne terminy ustalamy po konsultacji."
+      },
+      {
+        "q": "Czy wspieracie stronę po uruchomieniu?",
+        "a": "Tak. Dbamy o działanie strony 24/7, ochronę przed wirusami i włamaniami, sprawność wszystkich funkcji, aktualizację informacji, katalogów sklepów oraz publikację zdjęć, audio i wideo."
+      },
+      {
+        "q": "Dlaczego zlecić wsparcie zamiast zatrudniać osobę na etat?",
+        "a": "To oszczędność pieniędzy i czasu, obsługa całodobowa oraz znajomość wszystkich niuansów projektu — bo to my go stworzyliśmy. Bez wsparcia reklama może przepalać budżet na niedostępną stronę, a wirusy lub awarie zniszczyć wyniki SEO."
+      },
+      {
+        "q": "Czym Click IT różni się od innych studiów?",
+        "a": "Jesteśmy agencją pełnego cyklu: dbamy nie tylko o kod i funkcje, ale też o UI/UX, branding i marketing. Wynik odpowiada wymaganiom, rozwiązania są indywidualne, ceny przystępne, a po starcie zostajemy z Tobą."
+      }
     ]
   },
-  "cta": { "titleA": "Masz pomysł na projekt?", "titleB": "Porozmawiajmy o nim.", "lead": "Odkryjmy pełen potencjał Twojego biznesu — razem." }
+  "cta": {
+    "titleA": "Masz pomysł na projekt?",
+    "titleB": "Porozmawiajmy o nim.",
+    "lead": "Odkryjmy pełen potencjał Twojego biznesu — razem.",
+    "statement": [
+      "Zbudujmy",
+      "coś",
+      "wielkiego."
+    ]
+  },
+  "band": [
+    "Tworzenie stron",
+    "Projekt UX/UI",
+    "SEO",
+    "Google Ads",
+    "SMM",
+    "Branding"
+  ]
 }

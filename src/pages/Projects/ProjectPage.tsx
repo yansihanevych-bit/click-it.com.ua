@@ -60,7 +60,7 @@ export default function ProjectPage() {
               <dt>{t('labels.industry')}</dt><dd>{t(`industries.${p.industry}`)}</dd>
             </dl>
           </div>
-          <div className={s.cover} style={{ marginTop: 'clamp(2rem, 1rem + 3vw, 4rem)' }}>
+          <div className={s.cover} style={{ marginTop: 'clamp(2rem, 1rem + 3vw, 4rem)', viewTransitionName: `project-${p.slug}` }}>
             <Picture name={p.image} alt={`${name} — ${summary}`} ratio={p.ratio} sizes="(max-width: 1440px) 100vw, 1344px" priority />
           </div>
           <div className={s.body}>
@@ -80,7 +80,7 @@ export default function ProjectPage() {
               ))}
             </div>
           )}
-          <Link to={href(lang, 'projects', next.slug)} className={`${s.next} ${s.nextLink}`} data-cursor="view">
+          <Link to={href(lang, 'projects', next.slug)} viewTransition className={`${s.next} ${s.nextLink}`} data-cursor="view">
             <div>
               <p className="t-caption">{t('labels.next')}</p>
               <span className={s.nextName}>{t(`items.${next.slug}.name`)} <ArrowIcon /></span>

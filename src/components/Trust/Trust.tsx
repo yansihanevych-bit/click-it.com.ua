@@ -16,9 +16,9 @@ export function Trust() {
   return (
     <section id="trust" className={s.trust} aria-labelledby="trust-title">
       <div className={`container ${s.head}`}>
-        <h2 id="trust-title" className={`t-caption ${s.title}`} data-reveal="fade">{t('trust.title')}</h2>
+        <h2 id="trust-title" className={`t-caption ${s.title}`}>{t('trust.title')}</h2>
       </div>
-      <div className={s.marquee} data-reveal="fade">
+      <div className={s.marquee}>
         <div className={s.track}>{row(false)}{row(true)}</div>
       </div>
     </section>

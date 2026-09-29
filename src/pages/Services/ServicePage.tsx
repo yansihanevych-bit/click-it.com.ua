@@ -9,7 +9,7 @@ import { PageHero } from '@/components/PageHero/PageHero';
 import { Accordion } from '@/components/ui/Accordion';
 import { Button } from '@/components/ui/Button';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
-import { GroupVisual } from '@/components/Services/GroupVisual';
+import { ServicePreview } from '@/components/Services/ServicePreview';
 import { CtaSection } from '@/components/CTA/CtaSection';
 import s from './ServicePage.module.css';
 
@@ -55,7 +55,7 @@ export default function ServicePage() {
         <div className={`container ${s.featuresInner}`}>
           <div className={s.featHead}>
             <h2 id="features-title" className="t-h2" data-reveal>{t('labels.features')}</h2>
-            <div className={s.visual} data-reveal="fade"><GroupVisual group={svc.group} /></div>
+            <div className={s.stage} data-reveal="scale" aria-hidden="true"><ServicePreview slug={slug} /></div>
           </div>
           <ol className={s.featGrid}>
             {features.map((f, i) => (
@@ -72,7 +72,7 @@ export default function ServicePage() {
       <section className={`section ${s.audience}`} aria-labelledby="audience-title">
         <div className={`container ${s.audInner}`}>
           <div>
-            <h2 id="audience-title" className="t-caption" data-reveal="fade">{t('labels.audience')}</h2>
+            <h2 id="audience-title" className="t-caption">{t('labels.audience')}</h2>
             <p className={s.audText} data-reveal>{t(k('audience'))}</p>
           </div>
           <div className={s.process} data-reveal>

@@ -10,7 +10,7 @@
   border: 1px solid var(--btn-bd);
   font-size: var(--fs-button); font-weight: var(--fw-bold); letter-spacing: -0.01em; line-height: 1;
   white-space: nowrap; isolation: isolate; overflow: hidden;
-  transition: transform var(--dur-base) var(--ease-out), background-color var(--dur-fast), color var(--dur-fast), border-color var(--dur-fast), box-shadow var(--dur-base) var(--ease-out);
+  transition: transform var(--dur-base) var(--ease-out), translate var(--dur-base) var(--ease-out), background-color var(--dur-fast), color var(--dur-fast), border-color var(--dur-fast), box-shadow var(--dur-base) var(--ease-out);
   will-change: transform;
 }
 .btn::before {
@@ -19,7 +19,8 @@
   transition: transform var(--dur-base) var(--ease-out);
 }
 .btn:hover::before { transform: none; }
-.btn:hover { color: var(--btn-hover-fg, #fff); box-shadow: var(--shadow-m); }
+.btn:hover { color: var(--btn-hover-fg, #fff); box-shadow: var(--shadow-m); transform: scale(1.02); }
+.btn:active { transform: scale(0.99); }
 .icon {
   display: grid; place-items: center; width: 2.5rem; height: 2.5rem; flex: none;
   border-radius: 50%; background: #000; color: var(--color-primary); overflow: hidden; position: relative;

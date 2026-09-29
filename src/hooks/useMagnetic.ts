@@ -14,11 +14,11 @@ export function useMagnetic<T extends HTMLElement>(strength = 0.25) {
       const x = (e.clientX - (r.left + r.width / 2)) * strength;
       const y = (e.clientY - (r.top + r.height / 2)) * strength;
       cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => (el.style.transform = `translate3d(${x}px, ${y}px, 0)`));
+      raf = requestAnimationFrame(() => (el.style.translate = `${x.toFixed(1)}px ${y.toFixed(1)}px`));
     };
     const leave = () => {
       cancelAnimationFrame(raf);
-      el.style.transform = '';
+      el.style.translate = '';
     };
     el.addEventListener('pointermove', move);
     el.addEventListener('pointerleave', leave);

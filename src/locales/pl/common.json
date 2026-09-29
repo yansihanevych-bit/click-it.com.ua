@@ -1,24 +1,67 @@
 {
   "brand": "Click IT",
   "skipLink": "Przejdź do treści",
-  "nav": { "home": "Strona główna", "services": "Usługi", "projects": "Projekty", "about": "O nas", "blog": "Blog", "contacts": "Kontakt" },
-  "header": { "discuss": "Omów projekt", "openMenu": "Otwórz menu", "closeMenu": "Zamknij menu", "language": "Język strony", "mainNav": "Nawigacja główna", "call": "Zadzwoń" },
-  "megaMenu": { "all": "Wszystkie usługi", "note": "Obsługujemy pełny cykl digital — od pomysłu i projektu po wdrożenie i promocję." },
-  "groups": { "development": "Development", "marketing": "Marketing", "design": "Design" },
-  "cta": { "discuss": "Omów projekt", "viewProjects": "Zobacz projekty", "viewProject": "Zobacz projekt", "explore": "Szczegóły", "allProjects": "Wszystkie projekty", "allServices": "Wszystkie usługi", "back": "Wstecz", "home": "Strona główna" },
-  "cursor": { "view": "View", "explore": "Explore" },
-  "breadcrumbs": { "label": "Ścieżka nawigacji", "home": "Strona główna" },
+  "nav": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "projects": "Projekty",
+    "about": "O nas",
+    "blog": "Blog",
+    "contacts": "Kontakt"
+  },
+  "header": {
+    "discuss": "Omów projekt",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "language": "Język strony",
+    "mainNav": "Nawigacja główna",
+    "call": "Zadzwoń"
+  },
+  "megaMenu": {
+    "all": "Wszystkie usługi",
+    "note": "Obsługujemy pełny cykl digital — od pomysłu i projektu po wdrożenie i promocję."
+  },
+  "groups": {
+    "development": "Development",
+    "marketing": "Marketing",
+    "design": "Design"
+  },
+  "cta": {
+    "discuss": "Omów projekt",
+    "viewProjects": "Zobacz projekty",
+    "viewProject": "Zobacz projekt",
+    "explore": "Szczegóły",
+    "allProjects": "Wszystkie projekty",
+    "allServices": "Wszystkie usługi",
+    "back": "Wstecz",
+    "home": "Strona główna"
+  },
+  "cursor": {
+    "view": "View",
+    "explore": "Explore",
+    "open": "Open"
+  },
+  "breadcrumbs": {
+    "label": "Ścieżka nawigacji",
+    "home": "Strona główna"
+  },
   "form": {
     "title": "Opowiedz nam o swoim projekcie",
     "lead": "Zostaw kontakt — nasz menedżer odezwie się wkrótce.",
-    "name": "Imię", "phone": "Telefon", "email": "Email", "message": "Opis projektu",
+    "name": "Imię",
+    "phone": "Telefon",
+    "email": "Email",
+    "message": "Opis projektu",
     "messagePlaceholder": "Co trzeba zrobić, terminy, budżet — wszystko, co uważasz za ważne",
     "consent": "Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z",
     "consentLink": "polityką prywatności",
-    "submit": "Wyślij zapytanie", "sending": "Wysyłamy…",
-    "successTitle": "Dziękujemy!", "successText": "Otrzymaliśmy Twoje zapytanie i wkrótce się z Tobą skontaktujemy.",
+    "submit": "Wyślij zapytanie",
+    "sending": "Wysyłamy…",
+    "successTitle": "Dziękujemy!",
+    "successText": "Otrzymaliśmy Twoje zapytanie i wkrótce się z Tobą skontaktujemy.",
     "again": "Wyślij kolejne zapytanie",
-    "errorTitle": "Nie udało się wysłać zapytania", "errorText": "Spróbuj ponownie lub zadzwoń do nas:",
+    "errorTitle": "Nie udało się wysłać zapytania",
+    "errorText": "Spróbuj ponownie lub zadzwoń do nas:",
     "required": "pole wymagane",
     "errors": {
       "name": "Podaj imię (co najmniej 2 znaki)",
@@ -32,8 +75,24 @@
   "footer": {
     "tagline": "Studio webowe pełnego cyklu: tworzenie stron, design i marketing internetowy.",
     "cta": "Masz pomysł na projekt?",
-    "navigation": "Nawigacja", "services": "Usługi", "contacts": "Kontakt", "socials": "Social media",
-    "privacy": "Polityka prywatności", "rights": "Wszelkie prawa zastrzeżone.", "toTop": "Do góry"
+    "navigation": "Nawigacja",
+    "services": "Usługi",
+    "contacts": "Kontakt",
+    "socials": "Social media",
+    "privacy": "Polityka prywatności",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "toTop": "Do góry"
   },
-  "stats": { "years": "lat tworzenia stron", "clients": "marek wśród klientów", "services": "usług pełnego cyklu", "support": "wsparcie techniczne" }
+  "stats": {
+    "years": "lat tworzenia stron",
+    "clients": "marek wśród klientów",
+    "services": "usług pełnego cyklu",
+    "support": "wsparcie techniczne"
+  },
+  "statsShort": {
+    "years": "lat",
+    "clients": "marek",
+    "services": "usług",
+    "support": "wsparcie"
+  }
 }

@@ -5,7 +5,7 @@ import { breadcrumbSchema } from '@/seo/schema';
 import { PROJECTS } from '@/data/projects';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { PageHero } from '@/components/PageHero/PageHero';
-import { ProjectCard } from '@/components/Projects/ProjectCard';
+import { ProjectFeature, LAYOUT_CYCLE } from '@/components/Projects/ProjectFeature';
 import { CtaSection } from '@/components/CTA/CtaSection';
 import s from './Projects.module.css';
 
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
             ))}
           </div>
           <div className={s.grid}>
-            {list.map((p, i) => <ProjectCard key={p.slug} project={p} index={i} headingLevel={2} />)}
+            {list.map((p, i) => <ProjectFeature key={p.slug} project={p} index={PROJECTS.indexOf(p)} layout={LAYOUT_CYCLE[i % LAYOUT_CYCLE.length]} headingLevel={2} />)}
           </div>
         </div>
       </section>

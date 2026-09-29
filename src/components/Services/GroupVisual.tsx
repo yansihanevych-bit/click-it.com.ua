@@ -1,5 +1,5 @@
 import type { ServiceGroup } from '@/data/services';
-import s from './Services.module.css';
+import s from './GroupVisual.module.css';
 
 /** Abstract, brand-coloured illustrations for each service direction (SVG, animated with CSS on hover). */
 export function GroupVisual({ group }: { group: ServiceGroup }) {

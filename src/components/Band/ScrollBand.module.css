@@ -1,0 +1,7 @@
+.band { overflow: hidden; padding-block: clamp(2rem, 1rem + 3vw, 4.5rem) clamp(4rem, 3rem + 4vw, 7rem); display: grid; gap: 0.1em; font-size: clamp(3rem, 1.5rem + 6vw, 8.5rem); font-weight: var(--fw-black); letter-spacing: -0.05em; line-height: 1; text-transform: uppercase; }
+.row { display: flex; width: max-content; white-space: nowrap; will-change: transform; margin-left: -10%; }
+.row span { display: inline-flex; align-items: center; gap: 0.35em; padding-right: 0.35em; }
+.row i { display: inline-block; width: 0.42em; height: 0.42em; background: var(--color-primary); }
+.outline { color: transparent; -webkit-text-stroke: 1.5px #000; }
+.outline i { background: transparent; border: 1.5px solid #000; }
+@media (max-width: 767px) { .row { margin-left: 0; transform: none !important; } .outline { margin-left: -40%; } }

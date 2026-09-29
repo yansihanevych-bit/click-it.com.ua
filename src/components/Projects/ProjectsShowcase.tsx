@@ -1,8 +1,8 @@
 import { PROJECTS } from '@/data/projects';
 import { href, useLang, useT } from '@/hooks/useLang';
-import { SectionHeader } from '@/components/ui/SectionHeader';
+import { SplitText } from '@/components/ui/SplitText';
 import { Button } from '@/components/ui/Button';
-import { ProjectCard } from './ProjectCard';
+import { ProjectFeature, LAYOUT_CYCLE } from './ProjectFeature';
 import s from './Projects.module.css';
 
 export function ProjectsShowcase() {
@@ -10,11 +10,20 @@ export function ProjectsShowcase() {
   const { t } = useT(['home', 'common']);
   const featured = PROJECTS.filter((p) => p.featured);
   return (
-    <section className="section" aria-labelledby="projects-title">
+    <section className={`section sheet sheet-white ${s.section}`} aria-labelledby="projects-title">
       <div className="container">
-        <SectionHeader id="projects-title" eyebrow={t('projects.eyebrow')} title={t('projects.title')} lead={t('projects.lead')} split />
-        <div className={s.showcase}>
-          {featured.map((p, i) => <ProjectCard key={p.slug} project={p} index={i} size={i === 0 || i === 3 ? 'l' : 'm'} />)}
+        <header className={s.head}>
+          <div>
+            <p className={`t-caption ${s.eyebrow}`}>{t('projects.eyebrow')}</p>
+            <SplitText id="projects-title" className="t-mega" lines={t('projects.titleLines', { returnObjects: true }) as string[]} />
+          </div>
+          <div className={s.headAside} data-reveal>
+            <span className={s.count}>({String(PROJECTS.length).padStart(2, '0')})</span>
+            <p className="t-lead">{t('projects.lead')}</p>
+          </div>
+        </header>
+        <div className={s.stack}>
+          {featured.map((p, i) => <ProjectFeature key={p.slug} project={p} index={i} layout={LAYOUT_CYCLE[i % LAYOUT_CYCLE.length]} />)}
         </div>
         <div className={s.more}><Button to={href(lang, 'projects')} variant="dark">{t('common:cta.allProjects')}</Button></div>
       </div>

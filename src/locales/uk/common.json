@@ -38,7 +38,8 @@
   },
   "cursor": {
     "view": "View",
-    "explore": "Explore"
+    "explore": "Explore",
+    "open": "Open"
   },
   "breadcrumbs": {
     "label": "Навігаційний ланцюжок",
@@ -87,5 +88,11 @@
     "clients": "брендів серед клієнтів",
     "services": "послуг повного циклу",
     "support": "технічний супровід"
+  },
+  "statsShort": {
+    "years": "років",
+    "clients": "брендів",
+    "services": "послуг",
+    "support": "підтримка"
   }
 }

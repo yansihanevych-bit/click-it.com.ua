@@ -26,7 +26,7 @@ export function Process() {
   const reached = (i: number) => progress >= 0 && progress >= i / Math.max(1, items.length - 1) - 0.02;
 
   return (
-    <section className="section" aria-labelledby="process-title">
+    <section className="section sheet sheet-white" aria-labelledby="process-title">
       <div className={`container ${s.inner}`}>
         <div className={s.head}>
           <SectionHeader id="process-title" eyebrow={t('process.eyebrow')} title={t('process.title')} lead={t('process.lead')} />
@@ -34,12 +34,15 @@ export function Process() {
         <ol className={s.timeline} ref={ref}>
           <span className={s.track} aria-hidden="true"><span ref={fill} className={s.fill} /></span>
           {items.map((it, i) => (
-            <li key={i} className={[s.step, reached(i) && s.reached].filter(Boolean).join(' ')} data-reveal>
+            <li key={i} className={[s.step, reached(i) && s.reached].filter(Boolean).join(' ')}>
               <span className={s.dot} aria-hidden="true" />
-              <span className={s.n}>{String(i + 1).padStart(2, '0')}</span>
-              <div>
-                <h3 className="t-h3">{it.title}</h3>
-                <p className={s.text}>{it.text}</p>
+              {/* data-reveal lives on a child whose className React never rewrites (keeps the observer's is-in class) */}
+              <div className={s.stepBody} data-reveal>
+                <span className={s.n}>{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h3 className="t-h3">{it.title}</h3>
+                  <p className={s.text}>{it.text}</p>
+                </div>
               </div>
             </li>
           ))}

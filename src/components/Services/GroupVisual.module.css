@@ -1,0 +1,14 @@
+.visual { width: min(100%, 360px); height: auto; overflow: visible; }
+.visual g, .visual rect, .visual path { transition: transform var(--dur-slow) var(--ease-out); transform-box: fill-box; transform-origin: center; }
+.visual:hover .l1 { transform: translate(-10px, 10px); }
+.visual:hover .l3 { transform: translate(12px, -10px); }
+.bar { transform-origin: bottom; transform: scaleY(0.55); transition-delay: calc(var(--i) * 50ms); }
+.visual:hover .bar, :global(.is-in) .bar { transform: scaleY(1); }
+.trend { stroke-dasharray: 320; stroke-dashoffset: 320; transition: stroke-dashoffset 1.2s var(--ease-out) 200ms; }
+.visual:hover .trend, :global(.is-in) .trend { stroke-dashoffset: 0; }
+.arrowHead { opacity: 0; transition: opacity var(--dur-base) 1s; }
+.visual:hover .arrowHead, :global(.is-in) .arrowHead { opacity: 1; }
+.visual:hover .sq { transform: rotate(90deg); }
+.visual:hover .circle { transform: translate(18px, -6px) scale(1.05); }
+.visual:hover .tri { transform: translate(-8px, -12px) rotate(-12deg); }
+.vDev, .vMkt, .vDes { display: block; }

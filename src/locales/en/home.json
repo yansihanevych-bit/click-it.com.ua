@@ -10,41 +10,107 @@
     "titleC": "for your business",
     "lead": "Click IT is a full-cycle web studio. We research your niche, design the UX, then build and promote websites that bring customers and pay back the investment.",
     "scroll": "Scroll",
-    "visual": { "browser": "click-it.com.ua", "metric": "Targeted traffic", "metricNote": "SEO • PPC • SMM", "badge": "UX/UI", "code": "Development" }
+    "visual": {
+      "browser": "click-it.com.ua",
+      "metric": "Targeted traffic",
+      "metricNote": "SEO • PPC • SMM",
+      "badge": "UX/UI",
+      "code": "Development"
+    }
   },
-  "trust": { "title": "Trusted by" },
+  "trust": {
+    "title": "Trusted by"
+  },
   "services": {
     "eyebrow": "Services",
     "title": "Our services",
     "lead": "We cover the full digital cycle — from idea and design to development and promotion.",
     "groups": {
-      "development": { "title": "Development", "text": "From landing pages and business card sites to online stores and complex web platforms. Turnkey — you run your business, we handle the website." },
-      "marketing": { "title": "Marketing", "text": "We drive targeted traffic through SEO, paid search and social media — and turn visitors into loyal customers." },
-      "design": { "title": "Design", "text": "Design as a reflection of your brand: corporate identity, UI/UX and interfaces that anyone understands." }
-    }
+      "development": {
+        "title": "Development",
+        "text": "From landing pages and business card sites to online stores and complex web platforms. Turnkey — you run your business, we handle the website."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "text": "We drive targeted traffic through SEO, paid search and social media — and turn visitors into loyal customers."
+      },
+      "design": {
+        "title": "Design",
+        "text": "Design as a reflection of your brand: corporate identity, UI/UX and interfaces that anyone understands."
+      }
+    },
+    "titleLines": [
+      "Our",
+      "services"
+    ],
+    "hoverHint": "Hover a service to see an example"
   },
   "approach": {
     "eyebrow": "Approach",
     "title": "We don’t just build websites",
     "lead": "For us a website is not only code — it’s business. Every stage serves one goal: the site has to work for you.",
     "items": [
-      { "title": "Understand", "text": "We dig into the specifics of your business and requirements before any work starts." },
-      { "title": "Strategy", "text": "We analyse the niche and competitors and define the site’s goal and the visitor’s target action." },
-      { "title": "UX/UI", "text": "We design intuitive navigation and a look your audience falls for at first sight." },
-      { "title": "Development", "text": "We build a fast, responsive and stable site — from a simple landing page to a web platform." },
-      { "title": "Launch", "text": "We test, set up analytics and launch the project on schedule." },
-      { "title": "Growth", "text": "We grow the project with SEO, PPC and SMM and keep it running with technical support." }
-    ]
+      {
+        "title": "Understand",
+        "text": "We dig into the specifics of your business and requirements before any work starts."
+      },
+      {
+        "title": "Strategy",
+        "text": "We analyse the niche and competitors and define the site’s goal and the visitor’s target action."
+      },
+      {
+        "title": "UX/UI",
+        "text": "We design intuitive navigation and a look your audience falls for at first sight."
+      },
+      {
+        "title": "Development",
+        "text": "We build a fast, responsive and stable site — from a simple landing page to a web platform."
+      },
+      {
+        "title": "Launch",
+        "text": "We test, set up analytics and launch the project on schedule."
+      },
+      {
+        "title": "Growth",
+        "text": "We grow the project with SEO, PPC and SMM and keep it running with technical support."
+      }
+    ],
+    "titleLines": [
+      "We don’t just",
+      "build websites"
+    ],
+    "step": "Step"
   },
-  "projects": { "eyebrow": "Portfolio", "title": "Selected projects", "lead": "Websites we have built and promoted for businesses across different industries." },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Selected projects",
+    "lead": "Websites we have built and promoted for businesses across different industries.",
+    "titleLines": [
+      "Selected",
+      "projects"
+    ],
+    "count": "projects in portfolio"
+  },
   "value": {
     "titleA": "Not just a website.",
     "titleB": "A tool for your business.",
     "items": [
-      { "title": "A website that sells", "text": "Websites that truly sell start with niche research. We dig into its specifics so the site earns your audience’s trust." },
-      { "title": "Targeted traffic", "text": "We promote the site to your audience with SEO, SMM and PPC and build the marketing and communication strategy." },
-      { "title": "Conversion", "text": "We design around the visitor’s target action — a purchase, an order or a request — and remove everything in its way." },
-      { "title": "Digital system", "text": "Your website is an online representative working 24/7. We combine development, content, marketing and support into one system." }
+      {
+        "title": "A website that sells",
+        "text": "Websites that truly sell start with niche research. We dig into its specifics so the site earns your audience’s trust."
+      },
+      {
+        "title": "Targeted traffic",
+        "text": "We promote the site to your audience with SEO, SMM and PPC and build the marketing and communication strategy."
+      },
+      {
+        "title": "Conversion",
+        "text": "We design around the visitor’s target action — a purchase, an order or a request — and remove everything in its way."
+      },
+      {
+        "title": "Digital system",
+        "text": "Your website is an online representative working 24/7. We combine development, content, marketing and support into one system."
+      }
     ]
   },
   "process": {
@@ -52,26 +118,86 @@
     "title": "How we work",
     "lead": "A transparent process: at every stage you see the result and can request changes.",
     "items": [
-      { "title": "Analysis", "text": "We shape the idea: site goal, target audience, content, navigation and technical requirements." },
-      { "title": "Strategy", "text": "We write the specification: structure, modules, technologies and a description of the look." },
-      { "title": "UX/UI", "text": "Concept, several design options, home page and inner page layouts — approved step by step." },
-      { "title": "Development", "text": "Front-end and back-end development, easy content management, all screens and browsers." },
-      { "title": "Testing", "text": "A dedicated specialist checks loading speed, rendering, links and every module." },
-      { "title": "Launch", "text": "We deploy to hosting, connect the domain, and set up analytics and webmaster tools." },
-      { "title": "Growth", "text": "24/7 support, security, content updates and promotion for steady growth." }
+      {
+        "title": "Analysis",
+        "text": "We shape the idea: site goal, target audience, content, navigation and technical requirements."
+      },
+      {
+        "title": "Strategy",
+        "text": "We write the specification: structure, modules, technologies and a description of the look."
+      },
+      {
+        "title": "UX/UI",
+        "text": "Concept, several design options, home page and inner page layouts — approved step by step."
+      },
+      {
+        "title": "Development",
+        "text": "Front-end and back-end development, easy content management, all screens and browsers."
+      },
+      {
+        "title": "Testing",
+        "text": "A dedicated specialist checks loading speed, rendering, links and every module."
+      },
+      {
+        "title": "Launch",
+        "text": "We deploy to hosting, connect the domain, and set up analytics and webmaster tools."
+      },
+      {
+        "title": "Growth",
+        "text": "24/7 support, security, content updates and promotion for steady growth."
+      }
+    ],
+    "titleLines": [
+      "How we",
+      "work"
     ]
   },
-  "stats": { "eyebrow": "Click IT in numbers", "title": "Experience you can trust" },
+  "stats": {
+    "eyebrow": "Click IT in numbers",
+    "title": "Experience you can trust"
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Questions about website development",
     "items": [
-      { "q": "How much does a website cost?", "a": "Pricing is individual and depends on design and technical complexity, the number of pages and modules (forms, live chat, calculators, galleries), CMS setup and whether you need ongoing support. We give an exact estimate after a consultation." },
-      { "q": "How long does it take to build a website?", "a": "On average we deliver a finished product in about a month, but it can be longer or shorter depending on the project’s complexity. We confirm exact timelines after a consultation." },
-      { "q": "Do you support the website after launch?", "a": "Yes. We keep the site running 24/7, protect it against viruses and hacking, keep every feature working, update information and online store catalogues, and publish photo, audio and video content." },
-      { "q": "Why outsource support instead of hiring in-house?", "a": "You save money and time, get round-the-clock service and a team that knows every detail of the project — because we built it. Without support, ads can burn budget on an unavailable site and malware or outages can wipe out SEO results." },
-      { "q": "What makes Click IT different?", "a": "We are a full-cycle agency: we care not only about code and features but also UI/UX, branding and marketing. The result meets the brief, solutions are tailored, prices are fair, and we stay with you after launch." }
+      {
+        "q": "How much does a website cost?",
+        "a": "Pricing is individual and depends on design and technical complexity, the number of pages and modules (forms, live chat, calculators, galleries), CMS setup and whether you need ongoing support. We give an exact estimate after a consultation."
+      },
+      {
+        "q": "How long does it take to build a website?",
+        "a": "On average we deliver a finished product in about a month, but it can be longer or shorter depending on the project’s complexity. We confirm exact timelines after a consultation."
+      },
+      {
+        "q": "Do you support the website after launch?",
+        "a": "Yes. We keep the site running 24/7, protect it against viruses and hacking, keep every feature working, update information and online store catalogues, and publish photo, audio and video content."
+      },
+      {
+        "q": "Why outsource support instead of hiring in-house?",
+        "a": "You save money and time, get round-the-clock service and a team that knows every detail of the project — because we built it. Without support, ads can burn budget on an unavailable site and malware or outages can wipe out SEO results."
+      },
+      {
+        "q": "What makes Click IT different?",
+        "a": "We are a full-cycle agency: we care not only about code and features but also UI/UX, branding and marketing. The result meets the brief, solutions are tailored, prices are fair, and we stay with you after launch."
+      }
     ]
   },
-  "cta": { "titleA": "Have a project idea?", "titleB": "Let’s talk it through.", "lead": "Let’s unlock your business’s full potential — together." }
+  "cta": {
+    "titleA": "Have a project idea?",
+    "titleB": "Let’s talk it through.",
+    "lead": "Let’s unlock your business’s full potential — together.",
+    "statement": [
+      "Let’s",
+      "build something",
+      "great."
+    ]
+  },
+  "band": [
+    "Web development",
+    "UX/UI design",
+    "SEO",
+    "Google Ads",
+    "SMM",
+    "Branding"
+  ]
 }

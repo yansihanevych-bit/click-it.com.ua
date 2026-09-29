@@ -3,7 +3,7 @@ import { useT } from '@/hooks/useLang';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
 import s from './Cursor.module.css';
 
-type Mode = 'default' | 'view' | 'explore' | 'cta' | 'hidden';
+type Mode = 'default' | 'view' | 'explore' | 'cta' | 'open' | 'hidden';
 
 /** Minimal desktop cursor. Disabled on touch devices and with prefers-reduced-motion. */
 export function Cursor() {
@@ -14,7 +14,7 @@ export function Cursor() {
   const ring = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const mq = window.matchMedia('(pointer: fine) and (hover: hover) and (prefers-reduced-motion: no-preference)');
+    const mq = window.matchMedia('(pointer: fine) and (hover: hover) and (min-width: 1025px) and (prefers-reduced-motion: no-preference)');
     const update = () => setEnabled(mq.matches);
     update();
     mq.addEventListener('change', update);
@@ -31,7 +31,9 @@ export function Cursor() {
       const el = (e.target as Element).closest?.('[data-cursor], a, button, summary, input, textarea, label');
       const c = el?.getAttribute('data-cursor');
       if (el && (el.matches('input, textarea'))) setMode('hidden');
-      else setMode(c === 'view' || c === 'explore' || c === 'cta' ? c : el ? 'cta' : 'default');
+      else if (c === 'view' || c === 'explore' || c === 'cta') setMode(c);
+      else if (el && el.matches('a')) setMode(el.closest('nav, footer') || el.getAttribute('href')?.startsWith('#') ? 'cta' : 'open');
+      else setMode(el ? 'cta' : 'default');
     };
     const loop = () => {
       rx += (x - rx) * 0.18; ry += (y - ry) * 0.18;
@@ -57,6 +59,7 @@ export function Cursor() {
         <span className={s.label}>
           {mode === 'view' && t('cursor.view')}
           {mode === 'explore' && t('cursor.explore')}
+          {mode === 'open' && t('cursor.open')}
           {mode === 'cta' && <ArrowIcon size={10} />}
         </span>
       </div>

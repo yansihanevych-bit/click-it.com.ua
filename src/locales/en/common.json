@@ -1,24 +1,67 @@
 {
   "brand": "Click IT",
   "skipLink": "Skip to content",
-  "nav": { "home": "Home", "services": "Services", "projects": "Projects", "about": "About", "blog": "Blog", "contacts": "Contacts" },
-  "header": { "discuss": "Discuss project", "openMenu": "Open menu", "closeMenu": "Close menu", "language": "Site language", "mainNav": "Main navigation", "call": "Call us" },
-  "megaMenu": { "all": "All services", "note": "We cover the full digital cycle — from idea and design to development and promotion." },
-  "groups": { "development": "Development", "marketing": "Marketing", "design": "Design" },
-  "cta": { "discuss": "Discuss project", "viewProjects": "View projects", "viewProject": "View project", "explore": "Explore", "allProjects": "All projects", "allServices": "All services", "back": "Back", "home": "Back to home" },
-  "cursor": { "view": "View", "explore": "Explore" },
-  "breadcrumbs": { "label": "Breadcrumb", "home": "Home" },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "blog": "Blog",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "discuss": "Discuss project",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Site language",
+    "mainNav": "Main navigation",
+    "call": "Call us"
+  },
+  "megaMenu": {
+    "all": "All services",
+    "note": "We cover the full digital cycle — from idea and design to development and promotion."
+  },
+  "groups": {
+    "development": "Development",
+    "marketing": "Marketing",
+    "design": "Design"
+  },
+  "cta": {
+    "discuss": "Discuss project",
+    "viewProjects": "View projects",
+    "viewProject": "View project",
+    "explore": "Explore",
+    "allProjects": "All projects",
+    "allServices": "All services",
+    "back": "Back",
+    "home": "Back to home"
+  },
+  "cursor": {
+    "view": "View",
+    "explore": "Explore",
+    "open": "Open"
+  },
+  "breadcrumbs": {
+    "label": "Breadcrumb",
+    "home": "Home"
+  },
   "form": {
     "title": "Tell us about your project",
     "lead": "Leave your details and our manager will get back to you shortly.",
-    "name": "Name", "phone": "Phone", "email": "Email", "message": "Project description",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Project description",
     "messagePlaceholder": "What needs to be done, timeline, budget — anything you consider important",
     "consent": "I agree to the processing of my personal data in accordance with the",
     "consentLink": "privacy policy",
-    "submit": "Send request", "sending": "Sending…",
-    "successTitle": "Thank you!", "successText": "We received your request and will contact you shortly.",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "successTitle": "Thank you!",
+    "successText": "We received your request and will contact you shortly.",
     "again": "Send another request",
-    "errorTitle": "We couldn’t send your request", "errorText": "Please try again or give us a call:",
+    "errorTitle": "We couldn’t send your request",
+    "errorText": "Please try again or give us a call:",
     "required": "required field",
     "errors": {
       "name": "Please enter your name (at least 2 characters)",
@@ -32,8 +75,24 @@
   "footer": {
     "tagline": "Full-cycle web studio: website development, design and digital marketing.",
     "cta": "Have a project in mind?",
-    "navigation": "Navigation", "services": "Services", "contacts": "Contacts", "socials": "Social media",
-    "privacy": "Privacy policy", "rights": "All rights reserved.", "toTop": "Back to top"
+    "navigation": "Navigation",
+    "services": "Services",
+    "contacts": "Contacts",
+    "socials": "Social media",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved.",
+    "toTop": "Back to top"
   },
-  "stats": { "years": "years building websites", "clients": "brands among our clients", "services": "full-cycle services", "support": "technical support" }
+  "stats": {
+    "years": "years building websites",
+    "clients": "brands among our clients",
+    "services": "full-cycle services",
+    "support": "technical support"
+  },
+  "statsShort": {
+    "years": "years",
+    "clients": "brands",
+    "services": "services",
+    "support": "support"
+  }
 }

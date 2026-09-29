@@ -3,7 +3,7 @@
 .features { background: var(--color-surface); }
 .featuresInner { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(2rem, 1rem + 5vw, 7rem); }
 .featHead { display: grid; gap: var(--space-6); align-content: start; position: sticky; top: calc(var(--header-h-compact) + 2rem); }
-.visual { max-width: 300px; }
+.stage { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius-l); background: #fff; border: 1px solid var(--color-border); overflow: hidden; }
 .featGrid { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
 .feat { display: grid; gap: var(--space-3); align-content: start; padding: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); background: #fff; border-radius: var(--radius-l); border: 1px solid var(--color-border); transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base); }
 .feat:hover { transform: translateY(-4px); box-shadow: var(--shadow-m); }
@@ -28,6 +28,6 @@
 @media (max-width: 900px) {
   .featuresInner, .audInner, .faqInner { grid-template-columns: 1fr; }
   .featHead { position: static; }
-  .visual { display: none; }
+  .stage { max-width: 520px; }
   .featGrid { grid-template-columns: 1fr; }
 }

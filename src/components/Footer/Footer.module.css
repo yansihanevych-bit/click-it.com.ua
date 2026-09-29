@@ -15,6 +15,11 @@
 .list a:hover { background-size: 100% 1px; color: var(--color-primary-ink); }
 .muted { color: var(--color-text-secondary); font-weight: var(--fw-regular); }
 .socials { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-4); font-weight: var(--fw-bold); }
+.giant { display: block; padding-block: clamp(2rem, 1rem + 3vw, 4rem) clamp(1.5rem, 1rem + 2vw, 3rem); }
+.giant img { width: 100%; height: auto; transition: transform var(--dur-slow) var(--ease-out); transform-origin: left bottom; }
+.giant:hover img { transform: scale(1.01); }
+.list a { position: relative; transition: background-size var(--dur-base) var(--ease-out), color var(--dur-fast), transform var(--dur-base) var(--ease-out); }
+.list a:hover { transform: translateX(4px); }
 .bottom { display: flex; flex-wrap: wrap; gap: var(--space-5); justify-content: space-between; padding-block: var(--space-6); border-top: 1px solid var(--color-border-strong); font-size: var(--fs-small); color: var(--color-text-secondary); }
 .bottom a:hover { color: #000; }
 .top { margin-left: auto; }

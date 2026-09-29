@@ -7,7 +7,7 @@ export function SectionHeader({ eyebrow, title, lead, id, as: H = 'h2', split, d
   return (
     <header className={[s.wrap, split && s.split, dark && s.dark].filter(Boolean).join(' ')}>
       <div>
-        {eyebrow && <p className={`t-caption ${s.eyebrow}`} data-reveal="fade">{eyebrow}</p>}
+        {eyebrow && <p className={`t-caption ${s.eyebrow}`}>{eyebrow}</p>}
         <H id={id} className={titleClass || (H === 'h1' ? 't-h1' : 't-h2')} data-reveal style={{ marginTop: eyebrow ? 'var(--space-4)' : 0 }}>
           {title}
         </H>

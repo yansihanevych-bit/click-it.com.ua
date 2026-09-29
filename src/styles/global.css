@@ -79,3 +79,54 @@ p { text-wrap: pretty; }
   *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* ==========================================================================
+   V2 motion system
+   ========================================================================== */
+
+/* --- Split text (word mask reveal) --- */
+.st-line { display: block; }
+.st-word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.st-inner { display: inline-block; }
+.st-accent { color: var(--color-primary-ink); }
+.js [data-reveal='split'] { opacity: 1; transform: none; animation: none; }
+.js [data-reveal='split'] .st-inner {
+  transform: translate3d(0, 108%, 0);
+  transition: transform 900ms var(--ease-out);
+  transition-delay: calc(var(--w, 0) * 55ms);
+  animation: st-fallback 1ms linear 3.5s forwards;
+}
+.js [data-reveal='split'].is-in .st-inner { transform: none; animation: none; }
+@keyframes st-fallback { to { transform: none; } }
+.st-load .st-inner { animation: st-up 900ms var(--ease-out) both; animation-delay: calc(var(--st-delay, 0ms) + var(--w, 0) * 60ms); }
+@keyframes st-up { from { transform: translate3d(0, 108%, 0); } to { transform: none; } }
+
+/* --- Oversized editorial headings --- */
+.t-mega { font-size: clamp(3rem, 1rem + 8.4vw, 10.5rem); line-height: 0.9; letter-spacing: -0.055em; font-weight: var(--fw-black); text-transform: uppercase; }
+.t-mega .st-word { padding-bottom: 0.04em; margin-bottom: -0.04em; }
+
+/* --- Drawn divider --- */
+.divider { position: relative; height: 1px; background: var(--color-border-strong); transform-origin: left; }
+.divider::before { content: ''; position: absolute; left: 0; top: -4px; width: 9px; height: 9px; background: var(--color-primary); }
+.divider-dark { background: var(--color-border-dark); }
+.js [data-reveal='line'] { opacity: 1; transform: scaleX(0); transition: transform 1400ms var(--ease-out); }
+.js [data-reveal='line'].is-in { transform: none; }
+
+/* --- Image reveal (portfolio) --- */
+.js [data-reveal='image'] { opacity: 0.8; transform: scale(1.04) translate3d(0, 24px, 0); transition: opacity 900ms var(--ease-out), transform 1000ms var(--ease-out); }
+.js [data-reveal='image'].is-in { opacity: 1; transform: none; }
+
+/* --- View transitions (project card → project page) --- */
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 420ms; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+::view-transition-group(*) { animation-duration: 700ms; animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal='split'] .st-inner, .st-load .st-inner { transform: none; animation: none; }
+  .js [data-reveal='line'], .js [data-reveal='image'] { transform: none; opacity: 1; }
+  ::view-transition-group(*), ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* --- Section "sheets": each section slides over the previous one (flowing scroll story) --- */
+:root { --sheet-r: clamp(24px, 1rem + 2.5vw, 56px); }
+.sheet { position: relative; margin-top: calc(var(--sheet-r) * -1); border-radius: var(--sheet-r) var(--sheet-r) 0 0; }
+.sheet-white { background: var(--color-background); }

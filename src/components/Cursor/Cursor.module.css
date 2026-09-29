@@ -10,5 +10,7 @@
 }
 [data-mode='cta'] .label { width: 44px; height: 44px; background: var(--color-primary); border-color: var(--color-primary); }
 [data-mode='view'] .label, [data-mode='explore'] .label { width: 92px; height: 92px; background: var(--color-primary); border-color: var(--color-primary); }
+[data-mode='open'] .label { width: 64px; height: 64px; background: #000; border-color: #000; color: #fff; }
+[data-mode='open'] .dot,
 [data-mode='view'] .dot, [data-mode='explore'] .dot, [data-mode='cta'] .dot { opacity: 0; }
 [data-mode='hidden'] .label, [data-mode='hidden'] .dot { opacity: 0; }
