@@ -8,7 +8,7 @@ export function BusinessValue() {
   return (
     <section className={`section sheet ${s.value}`} aria-labelledby="value-title">
       <div className="container">
-        <SplitText id="value-title" className={`t-h1 ${s.title}`} lines={[t('value.titleA'), t('value.titleB')]} accentLine={1} />
+        <SplitText squareEnd id="value-title" className={`t-h1 ${s.title}`} lines={[t('value.titleA'), t('value.titleB')]} accentLine={1} />
         <span className={s.deco} data-parallax="0.18" aria-hidden="true" />
         <ol className={s.grid}>
           {items.map((it, i) => (

@@ -47,8 +47,8 @@ export function ServicesShowcase() {
       <div className="container">
         <header className={s.head}>
           <div>
-            <p className={`t-caption ${s.eyebrow}`}>{t('services.eyebrow')}</p>
-            <SplitText id="services-title" className="t-mega" lines={t('services.titleLines', { returnObjects: true }) as string[]} />
+            <p className={`t-caption ${s.eyebrow}`}><span className="chapter" aria-hidden="true" />{t('services.eyebrow')}</p>
+            <SplitText id="services-title" className="t-mega" squareEnd lines={t('services.titleLines', { returnObjects: true }) as string[]} />
           </div>
           <p className={`t-lead ${s.lead}`} data-reveal>{t('services.lead')}</p>
         </header>

@@ -11,9 +11,9 @@ export function CtaSection() {
   return (
     <section id="contact" className={`sheet ${s.cta}`} aria-labelledby="cta-title">
       <div className="container">
-        <p className={`t-caption ${s.eyebrow}`}>{t('cta.titleA')}</p>
+        <p className={`t-caption ${s.eyebrow}`}><span className="chapter" aria-hidden="true" />{t('cta.titleA')}</p>
         <div className={s.statementWrap}>
-          <SplitText id="cta-title" className={s.statement} lines={t('cta.statement', { returnObjects: true }) as string[]} />
+          <SplitText squareEnd id="cta-title" className={s.statement} lines={t('cta.statement', { returnObjects: true }) as string[]} />
           <span className={s.mark} data-parallax="0.1" aria-hidden="true"><BrandMark size={220} /></span>
         </div>
         <div className={s.inner}>

@@ -2,7 +2,7 @@ import { PROJECTS } from '@/data/projects';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { SplitText } from '@/components/ui/SplitText';
 import { Button } from '@/components/ui/Button';
-import { ProjectFeature, LAYOUT_CYCLE } from './ProjectFeature';
+import { ProjectFeature } from './ProjectFeature';
 import s from './Projects.module.css';
 
 export function ProjectsShowcase() {
@@ -14,8 +14,8 @@ export function ProjectsShowcase() {
       <div className="container">
         <header className={s.head}>
           <div>
-            <p className={`t-caption ${s.eyebrow}`}>{t('projects.eyebrow')}</p>
-            <SplitText id="projects-title" className="t-mega" lines={t('projects.titleLines', { returnObjects: true }) as string[]} />
+            <p className={`t-caption ${s.eyebrow}`}><span className="chapter" aria-hidden="true" />{t('projects.eyebrow')}</p>
+            <SplitText id="projects-title" className="t-mega" squareEnd lines={t('projects.titleLines', { returnObjects: true }) as string[]} />
           </div>
           <div className={s.headAside} data-reveal>
             <span className={s.count}>({String(PROJECTS.length).padStart(2, '0')})</span>
@@ -23,7 +23,7 @@ export function ProjectsShowcase() {
           </div>
         </header>
         <div className={s.stack}>
-          {featured.map((p, i) => <ProjectFeature key={p.slug} project={p} index={i} layout={LAYOUT_CYCLE[i % LAYOUT_CYCLE.length]} />)}
+          {featured.map((p, i) => <ProjectFeature key={p.slug} project={p} index={i} />)}
         </div>
         <div className={s.more}><Button to={href(lang, 'projects')} variant="dark">{t('common:cta.allProjects')}</Button></div>
       </div>

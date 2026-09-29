@@ -127,6 +127,33 @@ p { text-wrap: pretty; }
 }
 
 /* --- Section "sheets": each section slides over the previous one (flowing scroll story) --- */
-:root { --sheet-r: clamp(24px, 1rem + 2.5vw, 56px); }
-.sheet { position: relative; margin-top: calc(var(--sheet-r) * -1); border-radius: var(--sheet-r) var(--sheet-r) 0 0; }
+.sheet { position: relative; }
+/* Chapter notch: a small logo-square sits on every section boundary, like a bookmark in one continuous story */
+.sheet::before {
+  content: ''; position: absolute; z-index: 3; top: 0; left: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+  width: 14px; height: 14px; background: var(--color-primary); transform-origin: top left;
+  transition: transform 700ms var(--ease-out);
+}
+.js .sheet:not(:has(.is-in))::before { transform: scale(0); }
+.sheet[class*='_cta_']::before { background: #000; }
 .sheet-white { background: var(--color-background); }
+
+/* --- Brand full stop: big headings end with the Click IT square instead of a dot --- */
+.sq-end .st-line:last-child::after, h1.sq-end-h::after {
+  content: ''; display: inline-block; width: 0.16em; height: 0.16em; margin-left: 0.06em; background: var(--color-primary);
+  vertical-align: baseline; transform-origin: bottom left; transition: transform 600ms var(--ease-out) 500ms;
+}
+.js [data-reveal].sq-end:not(.is-in) .st-line:last-child::after { transform: scale(0); }
+.st-load.sq-end .st-line:last-child::after { animation: sq-pop 500ms var(--ease-out) 1000ms both; }
+@keyframes sq-pop { from { transform: scale(0); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .sq-end .st-line:last-child::after { transform: none; transition: none; animation: none; } }
+
+/* --- Signature: "Click" square --- */
+.click-sq { position: fixed; z-index: 120; width: 14px; height: 14px; margin: -7px 0 0 -7px; border: 2px solid var(--color-primary); pointer-events: none; animation: click-sq 520ms var(--ease-out) forwards; }
+.click-sq-dark { border-color: #000; }
+@keyframes click-sq { from { opacity: 1; transform: scale(0.4) rotate(0deg); } to { opacity: 0; transform: scale(4.2) rotate(90deg); } }
+
+/* --- Chapters: sections read as one numbered story --- */
+main { counter-reset: chapter; }
+.chapter { counter-increment: chapter; font-variant-numeric: tabular-nums; }
+.chapter::before { content: counter(chapter, decimal-leading-zero) ' —'; margin-right: 0.35em; color: var(--color-text); font-weight: var(--fw-bold); }

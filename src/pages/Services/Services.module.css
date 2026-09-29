@@ -10,7 +10,7 @@
 .row { display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'name arrow' 'short arrow'; column-gap: var(--space-5); row-gap: 4px; align-items: center; padding: clamp(1.25rem, 1rem + 1vw, 2rem) 0; transition: padding var(--dur-base) var(--ease-out); }
 .rowName { grid-area: name; font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2.5rem); font-weight: var(--fw-bold); letter-spacing: -0.035em; line-height: 1.1; transition: color var(--dur-fast); }
 .rowShort { grid-area: short; color: var(--color-text-secondary); }
-.rowArrow { grid-area: arrow; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 1px solid #000; transition: background var(--dur-base), border-color var(--dur-base), transform var(--dur-base) var(--ease-out); }
+.rowArrow { grid-area: arrow; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 0; border: 1px solid #000; transition: background var(--dur-base), border-color var(--dur-base), transform var(--dur-base) var(--ease-out); }
 .row:hover { padding-left: var(--space-4); }
 .row:hover .rowName { color: var(--color-primary-ink); }
 .row:hover .rowArrow { background: var(--color-primary); border-color: var(--color-primary); transform: rotate(45deg); }

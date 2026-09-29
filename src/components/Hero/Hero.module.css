@@ -1,15 +1,5 @@
 .hero { position: relative; margin-top: calc(var(--header-h) * -1); padding-top: calc(var(--header-h) + clamp(2rem, 1rem + 4vw, 5rem)); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); min-height: min(100svh, 1000px); display: flex; flex-direction: column; overflow: hidden; isolation: isolate; }
 
-/* Background layer */
-.bg { position: absolute; inset: -12px; z-index: -1; pointer-events: none; animation: fade 900ms var(--ease-out) both; }
-.grid {
-  position: absolute; inset: 0;
-  background-image: linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
-  background-size: 80px 80px; background-position: center top;
-  mask-image: radial-gradient(ellipse 75% 70% at 72% 55%, #000 20%, transparent 78%);
-  -webkit-mask-image: radial-gradient(ellipse 75% 70% at 72% 55%, #000 20%, transparent 78%);
-}
-.glow { position: absolute; right: 4%; bottom: 8%; width: 44vw; aspect-ratio: 1; background: radial-gradient(circle, rgba(89, 173, 255, 0.16), transparent 62%); }
 
 .inner { position: relative; flex: 1; display: flex; flex-direction: column; }
 .eyebrow { display: inline-flex; align-items: center; gap: 12px; color: var(--color-text-secondary); animation: up 700ms var(--ease-out) 180ms both; }
@@ -28,41 +18,43 @@
 .lead { max-width: 30rem; animation: up 800ms var(--ease-out) 620ms both; }
 .ctas { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); animation: up 800ms var(--ease-out) 720ms both; }
 
-/* Visual composition */
-.visual { position: relative; z-index: 1; height: clamp(320px, 30vw, 460px); margin-top: calc(clamp(0.5rem, 2.5vw, 2.5rem) * -1); }
+/* Visual composition — the Click IT square is the stage */
+.visual { position: relative; z-index: 1; height: clamp(320px, 31vw, 480px); margin-top: calc(clamp(0.5rem, 2.5vw, 2.5rem) * -1); }
 .layer { position: absolute; inset: 0; will-change: translate; }
-.frameOutline { position: absolute; right: 2%; top: 4%; width: 58%; height: 86%; border: 1px solid var(--color-accent); animation: fade 1000ms var(--ease-out) 760ms both; }
+.field { position: absolute; right: 2%; top: -4%; height: 92%; aspect-ratio: 1; background: var(--color-primary); animation: field-in 800ms var(--ease-out) 600ms both, press 360ms var(--ease-in-out) 1500ms; }
+.fieldArrow { position: absolute; right: 12%; top: 12%; width: 30%; height: auto; animation: arrow-out 700ms var(--ease-out) 1560ms both; }
+.ripple { position: absolute; left: 34%; top: 58%; width: 40px; height: 40px; translate: -50% -50%; border: 2px solid #fff; opacity: 0; animation: ripple 900ms var(--ease-out) 1560ms; }
+.pointer { position: absolute; left: 34%; top: 58%; margin: -3px 0 0 -3px; opacity: 0; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25)); animation: pointer 1600ms var(--ease-in-out) 850ms both; }
 .win { position: absolute; margin: 0; background: #fff; border-radius: var(--radius-m); overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-l); }
 .win img { width: 100%; height: auto; display: block; }
 .bar { display: flex; align-items: center; gap: 5px; height: 26px; padding: 0 12px; background: var(--color-surface); border-bottom: 1px solid var(--color-border); font-size: 0.625rem; color: var(--color-text-secondary); }
 .bar i { width: 7px; height: 7px; border-radius: 50%; background: var(--color-border-strong); }
-.bar span { margin: 0 auto; padding: 2px 12px; background: #fff; border-radius: var(--radius-pill); font-weight: var(--fw-medium); }
-.winBack { right: 6%; top: 0; width: 50%; transform: rotate(3deg); opacity: 0.95; animation: win-in 1000ms var(--ease-out) 820ms both; }
-.winFront { left: 16%; top: 16%; width: 60%; animation: win-in 1000ms var(--ease-out) 900ms both; }
-.mark { position: absolute; right: -1%; top: -16%; width: 15%; filter: drop-shadow(0 18px 30px rgba(89, 173, 255, 0.4)); animation: pop 900ms var(--ease-out) 1000ms both; }
-.mark svg { width: 100%; height: auto; animation: float 7s var(--ease-in-out) 2s infinite; }
-.metric { position: absolute; right: 4%; bottom: 0; width: 38%; padding: 14px 16px; background: #fff; border-radius: var(--radius-m); box-shadow: var(--shadow-l); border: 1px solid var(--color-border); animation: up 900ms var(--ease-out) 1050ms both; }
+.bar span { margin: 0 auto; padding: 2px 12px; background: #fff; font-weight: var(--fw-medium); }
+.winBack { right: 0; top: 30%; width: 44%; animation: win-in 900ms var(--ease-out) 1720ms both; }
+.winFront { left: 8%; top: 16%; width: 56%; animation: win-in 900ms var(--ease-out) 1640ms both; }
+.metric { position: absolute; left: 0; bottom: -2%; width: 34%; padding: 14px 16px; background: #fff; border-radius: var(--radius-m); box-shadow: var(--shadow-l); border: 1px solid var(--color-border); animation: up 800ms var(--ease-out) 1900ms both; }
 .metricTitle { font-size: 0.8125rem; font-weight: var(--fw-bold); }
 .metricNote { font-size: 0.6875rem; color: var(--color-text-secondary); letter-spacing: 0.08em; font-weight: var(--fw-medium); }
 .chart { width: 100%; height: auto; margin: 6px 0 2px; overflow: visible; }
-.chartLine { stroke-dasharray: 300; stroke-dashoffset: 300; animation: draw 1.6s var(--ease-out) 1.3s forwards; }
-.chip { position: absolute; left: 10%; bottom: 8%; display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; background: var(--color-primary); border-radius: var(--radius-pill); font-weight: var(--fw-bold); font-size: 0.8125rem; box-shadow: var(--shadow-m); animation: pop 800ms var(--ease-out) 1150ms both; }
-.code { position: absolute; left: 6%; top: 8%; padding: 8px 14px; background: #000; color: #fff; border-radius: var(--radius-s); font: 600 0.75rem/1 ui-monospace, 'SFMono-Regular', Menlo, monospace; box-shadow: var(--shadow-m); animation: pop 800ms var(--ease-out) 1100ms both; }
-.code span { color: var(--color-primary); }
-
+.chartLine { stroke-dasharray: 300; stroke-dashoffset: 300; animation: draw 1.4s var(--ease-out) 2.1s forwards; }
 
 @keyframes up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes win-in { from { opacity: 0; clip-path: inset(0 0 100% 0 round 14px); } to { clip-path: inset(0 0 0 0 round 14px); } }
-@keyframes pop { from { opacity: 0; transform: scale(0.85) translateY(10px); } to { opacity: 1; transform: none; } }
-@keyframes float { 50% { transform: translateY(-10px) rotate(-3deg); } }
+@keyframes win-in { from { opacity: 0; transform: translate(12%, 10%) scale(0.6); } to { opacity: 1; transform: none; } }
+@keyframes field-in { from { opacity: 0; transform: scale(0.82); } to { opacity: 1; transform: none; } }
+@keyframes press { 50% { transform: scale(0.965); } }
+@keyframes arrow-out { 0% { transform: none; } 40% { transform: translate(14%, -14%); } 100% { transform: none; } }
+@keyframes ripple { from { opacity: 1; width: 30px; height: 30px; } to { opacity: 0; width: 70%; height: 70%; } }
+@keyframes pointer { 0% { opacity: 0; transform: translate(-160px, 120px); } 30% { opacity: 1; } 55% { transform: none; } 62% { transform: scale(0.85); } 70% { transform: none; opacity: 1; } 100% { opacity: 0; transform: translate(10px, 10px); } }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 @keyframes blink { 50% { opacity: 0.2; } }
 
 @media (max-width: 1024px) {
   .hero { min-height: 0; }
   /* Mobile/tablet: visual is shown immediately (no delayed reveal → fast LCP) */
-  .winBack, .winFront, .frameOutline, .mark, .metric, .chip, .code { animation: none; }
+  .field, .fieldArrow, .winBack, .winFront, .metric, .chartLine { animation: none; }
+  .chartLine { stroke-dashoffset: 0; }
+  .pointer, .ripple { display: none; }
   /* Faster load sequence on mobile: content first */
   .title :global(.st-inner) { animation-duration: 600ms; animation-delay: calc(var(--w, 0) * 35ms); }
   .eyebrow { animation-delay: 0ms; }
@@ -74,10 +66,10 @@
 @media (max-width: 560px) {
   .ctas { flex-direction: column; align-items: stretch; }
   .ctas > * { justify-content: space-between; }
-  .code, .frameOutline { display: none; }
-  .winFront { left: 0; width: 78%; }
-  .winBack { width: 62%; }
-  .metric { width: 52%; }
-  .mark { left: auto; right: 4%; top: auto; bottom: 34%; width: 20%; }
-  .chip { display: none; }
+  .field { right: 0; height: 80%; }
+  .winFront { left: 0; width: 70%; }
+  .winBack { width: 52%; }
+  .metric { width: 50%; }
 }
+
+@media (prefers-reduced-motion: reduce) { .pointer, .ripple { display: none; } }

@@ -1,10 +1,10 @@
 .root { position: fixed; inset: 0; pointer-events: none; z-index: var(--z-cursor); }
 .dot, .ring { position: fixed; left: 0; top: 0; will-change: transform; }
-.dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; background: #000; border-radius: 50%; mix-blend-mode: difference; filter: invert(1); }
+.dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; background: #000; border-radius: 0; mix-blend-mode: difference; filter: invert(1); }
 .ring { width: 0; height: 0; }
 .label {
   position: absolute; left: 0; top: 0; width: 36px; height: 36px; translate: -50% -50%;
-  display: grid; place-items: center; border-radius: 50%; border: 1px solid rgba(0, 0, 0, 0.35);
+  display: grid; place-items: center; border-radius: 0; border: 1px solid rgba(0, 0, 0, 0.35);
   font-size: 0.75rem; font-weight: var(--fw-bold); letter-spacing: 0.08em; text-transform: uppercase; color: #000;
   transition: width var(--dur-base) var(--ease-out), height var(--dur-base) var(--ease-out), background var(--dur-base), border-color var(--dur-base), opacity var(--dur-fast);
 }

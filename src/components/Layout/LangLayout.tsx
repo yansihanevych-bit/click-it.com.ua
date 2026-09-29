@@ -6,6 +6,7 @@ import { LangContext } from '@/hooks/useLang';
 import { isLocaleLoaded, loadLocale } from '@/i18n';
 import { useRevealObserver } from '@/hooks/useRevealObserver';
 import { useParallax } from '@/hooks/useParallax';
+import { useClickSquare } from '@/hooks/useClickSquare';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { Cursor } from '@/components/Cursor/Cursor';
@@ -25,6 +26,7 @@ export function LangLayout() {
   const { pathname, hash } = useLocation();
   useRevealObserver();
   useParallax(pathname);
+  useClickSquare();
 
   useIsoLayoutEffect(() => {
     if (hash) {

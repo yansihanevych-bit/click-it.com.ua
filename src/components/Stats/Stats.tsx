@@ -10,7 +10,7 @@ export function Stats() {
     <section className={`section sheet ${s.stats}`} aria-labelledby="stats-title">
       <div className="container">
         <div className={s.head}>
-          <p className={`t-caption ${s.eyebrow}`}>{t('stats.eyebrow')}</p>
+          <p className={`t-caption ${s.eyebrow}`}><span className="chapter" aria-hidden="true" />{t('stats.eyebrow')}</p>
           <SplitText id="stats-title" className="t-h2" lines={t('stats.title')} />
         </div>
         <dl className={s.grid}>

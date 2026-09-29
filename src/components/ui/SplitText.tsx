@@ -12,19 +12,21 @@ interface Props {
   delay?: number;
   /** index of the line to accent in brand blue */
   accentLine?: number;
+  /** end the heading with the Click IT square (brand full stop) */
+  squareEnd?: boolean;
 }
 
 /**
  * Word-by-word masked reveal. Real text stays in the DOM (SEO, screen readers, copy/paste);
  * only presentation is split. Without JS the text is fully visible.
  */
-export function SplitText({ lines, as: Tag = 'h2', id, className, trigger = 'scroll', delay = 0, accentLine }: Props) {
+export function SplitText({ lines, as: Tag = 'h2', id, className, trigger = 'scroll', delay = 0, accentLine, squareEnd }: Props) {
   const list = Array.isArray(lines) ? lines : [lines];
   let w = 0;
   return (
     <Tag
       id={id}
-      className={['st', trigger === 'load' ? 'st-load' : '', className].filter(Boolean).join(' ')}
+      className={['st', trigger === 'load' ? 'st-load' : '', squareEnd ? 'sq-end' : '', className].filter(Boolean).join(' ')}
       data-reveal={trigger === 'scroll' ? 'split' : undefined}
       style={{ ['--st-delay' as string]: `${delay}ms` }}
     >

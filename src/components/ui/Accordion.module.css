@@ -13,7 +13,7 @@
 .summary:hover .q, .open .q { color: var(--color-primary-ink); }
 .summary:hover .n, .open .n { color: var(--color-primary-ink); transform: translateX(4px); }
 .q { transition: color var(--dur-base); }
-.plus { position: relative; width: 2.75rem; height: 2.75rem; flex: none; border-radius: 50%; border: 1px solid var(--color-border-strong); transition: background var(--dur-base), border-color var(--dur-base), transform var(--dur-base) var(--ease-out); }
+.plus { position: relative; width: 2.75rem; height: 2.75rem; flex: none; border-radius: 0; border: 1px solid var(--color-border-strong); transition: background var(--dur-base), border-color var(--dur-base), transform var(--dur-base) var(--ease-out); }
 .plus::before, .plus::after { content: ''; position: absolute; left: 50%; top: 50%; width: 14px; height: 2px; background: currentColor; translate: -50% -50%; transition: transform var(--dur-base) var(--ease-out); }
 .plus::after { transform: rotate(90deg); }
 .summary:hover .plus { border-color: #000; }

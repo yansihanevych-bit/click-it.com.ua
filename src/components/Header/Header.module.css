@@ -68,7 +68,7 @@
 .backdropOn { opacity: 1; visibility: visible; transition-delay: 0s; }
 
 /* Burger */
-.burger { display: none; position: relative; width: 44px; height: 44px; border-radius: 50%; background: #000; }
+.burger { display: none; position: relative; width: 44px; height: 44px; border-radius: 0; background: #000; }
 .burger span { position: absolute; left: 13px; right: 13px; height: 2px; background: #fff; transition: transform var(--dur-base) var(--ease-out), top var(--dur-base) var(--ease-out); }
 .burger span:first-child { top: 18px; }
 .burger span:last-child { top: 24px; }

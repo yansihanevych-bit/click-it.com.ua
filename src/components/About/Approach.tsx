@@ -31,7 +31,7 @@ export function Approach() {
     <section className={`section sheet ${s.approach}`} aria-labelledby="approach-title">
       <div className={`container ${s.inner}`}>
         <div className={s.sticky}>
-          <p className={`t-caption ${s.eyebrow}`}>{t('approach.eyebrow')}</p>
+          <p className={`t-caption ${s.eyebrow}`}><span className="chapter" aria-hidden="true" />{t('approach.eyebrow')}</p>
           <SplitText id="approach-title" className={`t-h2 ${s.title}`} lines={t('approach.titleLines', { returnObjects: true }) as string[]} accentLine={1} />
           <p className={`t-lead ${s.lead}`} data-reveal>{t('approach.lead')}</p>
 

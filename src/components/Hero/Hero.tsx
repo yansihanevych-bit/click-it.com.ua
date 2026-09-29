@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { Button } from '@/components/ui/Button';
-import { BrandMark } from '@/components/ui/ArrowIcon';
 import { SplitText } from '@/components/ui/SplitText';
 import s from './Hero.module.css';
 
@@ -39,10 +38,6 @@ export function Hero() {
 
   return (
     <section className={s.hero} ref={root} aria-labelledby="hero-title">
-      <div className={s.bg} data-depth="2" aria-hidden="true">
-        <div className={s.grid} />
-        <div className={s.glow} />
-      </div>
 
       <div className={`container ${s.inner}`}>
         <p className={`t-caption ${s.eyebrow}`}>
@@ -58,6 +53,7 @@ export function Hero() {
           className={s.title}
           lines={[t('hero.titleA'), t('hero.titleB'), t('hero.titleC')]}
           accentLine={2}
+          squareEnd
         />
 
         <div className={s.bottom}>
@@ -70,9 +66,15 @@ export function Hero() {
           </div>
 
           <div className={s.visual} aria-hidden="true">
+            {/* Background layer (2px): the logo square as a colour field */}
             <div className={s.layer} data-depth="2">
-              <div className={s.frameOutline} />
+              <div className={s.field}>
+                <svg className={s.fieldArrow} viewBox="0 0 120 120"><path d="M4.8 0V26.5H73.8L0 100.3L18.7 119.1L92.5 45.3V114.2H119.2V0H4.8Z" fill="#fff" /></svg>
+                <span className={s.ripple} />
+                <svg className={s.pointer} width="30" height="30" viewBox="0 0 16 16"><path d="M2 1l11 6-5 1.5L5.5 14z" fill="#000" stroke="#fff" strokeWidth="1" /></svg>
+              </div>
             </div>
+            {/* Middle layer (5px): real case screenshots "open" out of the square */}
             <div className={s.layer} data-depth="5">
               <figure className={`${s.win} ${s.winBack}`}>
                 <div className={s.bar}><i /><i /><i /></div>
@@ -83,8 +85,8 @@ export function Hero() {
                 <img src="/images/projects/avangard-640.webp" alt="" width={640} height={455} loading="eager" decoding="async" fetchPriority="low" />
               </figure>
             </div>
+            {/* Foreground layer (10px): result + the pointer that "clicks it" */}
             <div className={s.layer} data-depth="10">
-              <div className={s.mark}><BrandMark size={112} /></div>
               <div className={s.metric}>
                 <p className={s.metricTitle}>{t('hero.visual.metric')}</p>
                 <svg viewBox="0 0 220 80" className={s.chart}>
@@ -96,11 +98,6 @@ export function Hero() {
                 </svg>
                 <p className={s.metricNote}>{t('hero.visual.metricNote')}</p>
               </div>
-              <div className={s.chip}>
-                <svg width="14" height="14" viewBox="0 0 16 16"><path d="M2 1l11 6-5 1.5L5.5 14z" fill="#000" /></svg>
-                {t('hero.visual.badge')}
-              </div>
-              <div className={s.code}><span>&lt;</span>{t('hero.visual.code')}<span> /&gt;</span></div>
             </div>
           </div>
         </div>

@@ -74,11 +74,12 @@
   --header-h-compact: 64px;
 
   /* --- Shape --- */
-  --radius-xs: 4px;
-  --radius-s: 8px;
-  --radius-m: 14px;
-  --radius-l: 24px;
-  --radius-pill: 999px;
+  /* Shape language: derived from the Click IT logo — a sharp square. */
+  --radius-xs: 0;
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+  --radius-pill: 0;
 
   /* --- Motion --- */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

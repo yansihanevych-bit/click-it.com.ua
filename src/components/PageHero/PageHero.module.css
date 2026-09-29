@@ -1,5 +1,8 @@
 .hero { position: relative; padding-top: clamp(2rem, 1rem + 4vw, 5rem); padding-bottom: clamp(3rem, 2rem + 4vw, 6rem); overflow: hidden; }
-.bg { position: absolute; inset: 0; z-index: -1; background-image: linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px); background-size: 72px 72px; mask-image: radial-gradient(ellipse 60% 80% at 85% 0%, #000, transparent 70%); -webkit-mask-image: radial-gradient(ellipse 60% 80% at 85% 0%, #000, transparent 70%); }
+.stamp { position: absolute; z-index: -1; right: var(--gutter); top: clamp(1.5rem, 1rem + 3vw, 4rem); width: clamp(4.5rem, 2rem + 8vw, 11rem); aspect-ratio: 1; background: var(--color-primary); display: grid; place-items: center; animation: stamp 900ms var(--ease-out) 150ms both; }
+.stamp svg { width: 40%; height: auto; }
+@keyframes stamp { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: none; } }
+@media (max-width: 700px) { .stamp { width: 3.5rem; top: 1rem; } }
 .eyebrow { display: inline-flex; gap: 10px; align-items: center; color: var(--color-text-secondary); margin-bottom: var(--space-4); }
 .eyebrow::before { content: ''; width: 10px; height: 10px; background: var(--color-primary); }
 .title { max-width: 16ch; animation: up 900ms var(--ease-out) both; }

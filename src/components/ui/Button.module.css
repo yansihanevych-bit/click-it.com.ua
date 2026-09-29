@@ -23,13 +23,13 @@
 .btn:active { transform: scale(0.99); }
 .icon {
   display: grid; place-items: center; width: 2.5rem; height: 2.5rem; flex: none;
-  border-radius: 50%; background: #000; color: var(--color-primary); overflow: hidden; position: relative;
+  border-radius: 0; background: #000; color: var(--color-primary); overflow: hidden; position: relative;
   transition: background-color var(--dur-fast);
 }
 .icon svg { transition: transform var(--dur-base) var(--ease-out); }
-.icon svg + svg { position: absolute; transform: translate(-150%, 150%); }
+.icon svg + svg { position: absolute; transform: translate(-260%, 260%); }
 .btn:hover .icon { background: var(--color-primary); color: #000; }
-.btn:hover .icon svg:first-child { transform: translate(150%, -150%); }
+.btn:hover .icon svg:first-child { transform: translate(260%, -260%); }
 .btn:hover .icon svg + svg { transform: none; }
 
 .secondary { --btn-bg: transparent; --btn-fg: #000; --btn-bd: #000; }
