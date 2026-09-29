@@ -7,53 +7,223 @@
   "trailingSlash": true,
   "cleanUrls": false,
   "redirects": [
-    { "source": "/", "destination": "/ua/", "permanent": false },
-    { "source": "/uslugi", "destination": "/ua/services/", "permanent": true },
-    { "source": "/case", "destination": "/ua/projects/", "permanent": true },
-    { "source": "/about-us", "destination": "/ua/about/", "permanent": true },
-    { "source": "/blog", "destination": "/ua/blog/", "permanent": true },
-    { "source": "/contacts", "destination": "/ua/contacts/", "permanent": true },
-    { "source": "/privacy", "destination": "/ua/privacy/", "permanent": true },
-    { "source": "/zakazat-internet-magazin", "destination": "/ua/services/ecommerce/", "permanent": true },
-    { "source": "/sozdanie-landing-page", "destination": "/ua/services/landing-page/", "permanent": true },
-    { "source": "/zakazat-korporativnyj-sajt", "destination": "/ua/services/corporate-websites/", "permanent": true },
-    { "source": "/zakazat-sajt-vizitku", "destination": "/ua/services/web-development/", "permanent": true },
-    { "source": "/prodvizhenie-sajta-seo", "destination": "/ua/services/seo/", "permanent": true },
-    { "source": "/kontekstnaya-reklama-ppc", "destination": "/ua/services/google-ads/", "permanent": true },
-    { "source": "/smm-prodvizhenie-v-socialnyh-setyah", "destination": "/ua/services/smm/", "permanent": true },
-    { "source": "/raskrutka-instagram", "destination": "/ua/services/smm/", "permanent": true },
-    { "source": "/usability-audit-sajta", "destination": "/ua/services/usability-audit/", "permanent": true },
-    { "source": "/email-marketing", "destination": "/ua/services/email-marketing/", "permanent": true },
-    { "source": "/razrabotka-dizajna-sajta", "destination": "/ua/services/design/", "permanent": true },
-    { "source": "/razrabotka-firmennogo-stilya", "destination": "/ua/services/branding/", "permanent": true },
-    { "source": "/razrabotka-sajta-na-tilde", "destination": "/ua/services/tilda/", "permanent": true },
-    { "source": "/marketing-i-prodvizhenie-ico", "destination": "/ua/services/", "permanent": true },
-    { "source": "/kak-uvelichit-sovokupnuyu-cennost-klienta", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/10-sposobov-sdelat-vashi-prototipi-bolee-poleznymi", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/captcha-alternativyi-dlya-uluchsheniya-konversii", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/pochemu-dizajn-sajta-dolzhen-dyshat", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/na-kakuyu-gruppu-tovarov-ozhidaetsya-povyishennyij-spros-v-blizhajshem-budushhem", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/chto-takoe-proektirovanie-sajta-i-pochemu-ego-nuzhno-delat", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/dvizhok-internet-magazina", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/biznes-v-internete", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/sozdanie-mobilnoj-versii-sajta-na-cs-cart", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/mobilnaya-versiya-sajta-dlya-google-i-yandex", "destination": "/ua/blog/", "permanent": false },
-    { "source": "/uk/:path*", "destination": "/ua/:path*", "permanent": true }
+    {
+      "source": "/",
+      "destination": "/ua/",
+      "permanent": false
+    },
+    {
+      "source": "/uslugi",
+      "destination": "/ua/services/",
+      "permanent": true
+    },
+    {
+      "source": "/case",
+      "destination": "/ua/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/ua/about/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/ua/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/contacts",
+      "destination": "/ua/contacts/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/ua/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/zakazat-internet-magazin",
+      "destination": "/ua/services/ecommerce/",
+      "permanent": true
+    },
+    {
+      "source": "/sozdanie-landing-page",
+      "destination": "/ua/services/landing-page/",
+      "permanent": true
+    },
+    {
+      "source": "/zakazat-korporativnyj-sajt",
+      "destination": "/ua/services/corporate-websites/",
+      "permanent": true
+    },
+    {
+      "source": "/zakazat-sajt-vizitku",
+      "destination": "/ua/services/web-development/",
+      "permanent": true
+    },
+    {
+      "source": "/prodvizhenie-sajta-seo",
+      "destination": "/ua/services/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/kontekstnaya-reklama-ppc",
+      "destination": "/ua/services/google-ads/",
+      "permanent": true
+    },
+    {
+      "source": "/smm-prodvizhenie-v-socialnyh-setyah",
+      "destination": "/ua/services/smm/",
+      "permanent": true
+    },
+    {
+      "source": "/raskrutka-instagram",
+      "destination": "/ua/services/smm/",
+      "permanent": true
+    },
+    {
+      "source": "/usability-audit-sajta",
+      "destination": "/ua/services/usability-audit/",
+      "permanent": true
+    },
+    {
+      "source": "/email-marketing",
+      "destination": "/ua/services/email-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/razrabotka-dizajna-sajta",
+      "destination": "/ua/services/design/",
+      "permanent": true
+    },
+    {
+      "source": "/razrabotka-firmennogo-stilya",
+      "destination": "/ua/services/branding/",
+      "permanent": true
+    },
+    {
+      "source": "/razrabotka-sajta-na-tilde",
+      "destination": "/ua/services/tilda/",
+      "permanent": true
+    },
+    {
+      "source": "/marketing-i-prodvizhenie-ico",
+      "destination": "/ua/services/",
+      "permanent": true
+    },
+    {
+      "source": "/kak-uvelichit-sovokupnuyu-cennost-klienta",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/10-sposobov-sdelat-vashi-prototipi-bolee-poleznymi",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/captcha-alternativyi-dlya-uluchsheniya-konversii",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/pochemu-dizajn-sajta-dolzhen-dyshat",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/na-kakuyu-gruppu-tovarov-ozhidaetsya-povyishennyij-spros-v-blizhajshem-budushhem",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/chto-takoe-proektirovanie-sajta-i-pochemu-ego-nuzhno-delat",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/dvizhok-internet-magazina",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/biznes-v-internete",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/sozdanie-mobilnoj-versii-sajta-na-cs-cart",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/mobilnaya-versiya-sajta-dlya-google-i-yandex",
+      "destination": "/ua/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/uk/:path*",
+      "destination": "/ua/:path*",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://*.google.com https://www.googleadservices.com https://*.facebook.com https://connect.facebook.net; frame-src https://www.googletagmanager.com https://td.doubleclick.net https://*.doubleclick.net https://www.facebook.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+        }
       ]
     },
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }] },
-    { "source": "/og/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/og/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    }
   ]
 }

@@ -22,12 +22,13 @@ for (const file of pages) {
   const hreflangs = [...html.matchAll(/rel="alternate" hreflang="([^"]+)"/g)].map((m) => m[1]);
   const h1 = [...html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/g)].map((m) => m[1].replace(/<[^>]+>/g, '').trim());
   const lang = html.match(/<html lang="([^"]+)"/)?.[1];
+  const noindex = /name="robots" content="noindex/.test(html);
   if (!title) problems.push(`${url}: no title`);
   if (!desc) problems.push(`${url}: no description`);
   if (desc && (desc.length < 70 || desc.length > 170)) problems.push(`${url}: description length ${desc.length}`);
   if (title && title.length > 75) problems.push(`${url}: title length ${title.length}`);
-  if (!canonical || !canonical.endsWith(url)) problems.push(`${url}: canonical ${canonical}`);
-  if (hreflangs.length !== 4) problems.push(`${url}: hreflang count ${hreflangs.length}`);
+  if (!noindex && (!canonical || !canonical.endsWith(url))) problems.push(`${url}: canonical ${canonical}`);
+  if (!noindex && hreflangs.length !== 4) problems.push(`${url}: hreflang count ${hreflangs.length}`);
   if (h1.length !== 1) problems.push(`${url}: h1 count ${h1.length}`);
   if (!lang || lang.includes('<!--')) problems.push(`${url}: html lang ${lang}`);
   if (/\b(items|labels|index|hero|form)\.[a-z-]+\.[a-zA-Z]+\b/.test(html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ')))

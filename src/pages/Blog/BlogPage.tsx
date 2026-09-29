@@ -1,45 +1,35 @@
 import { Seo } from '@/seo/Seo';
-import { absUrl } from '@/seo/head';
-import { breadcrumbSchema } from '@/seo/schema';
-import { POSTS } from '@/data/blog';
-import { getLanguage } from '@/config/languages';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { PageHero } from '@/components/PageHero/PageHero';
+import { Button } from '@/components/ui/Button';
 import { CtaSection } from '@/components/CTA/CtaSection';
 import s from './Blog.module.css';
 
+/**
+ * Temporary blog page until articles are migrated (see src/data/blog.ts for the legacy list).
+ * noindex + excluded from sitemap, so a thin page never reaches the search index.
+ */
 export default function BlogPage() {
   const lang = useLang();
   const { t } = useT(['pages', 'common']);
-  const fmt = new Intl.DateTimeFormat(getLanguage(lang).htmlLang, { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const topics = t('blog.topics', { returnObjects: true }) as string[];
   return (
     <>
-      <Seo
-        lang={lang}
-        path="blog"
-        title={t('blog.metaTitle')}
-        description={t('blog.metaDescription')}
-        jsonLd={[breadcrumbSchema([
-          { name: t('common:breadcrumbs.home'), url: absUrl(lang, '') },
-          { name: t('blog.h1'), url: absUrl(lang, 'blog') },
-        ])]}
-      />
+      <Seo lang={lang} path="blog" title={t('blog.metaTitle')} description={t('blog.metaDescription')} noindex />
       <PageHero crumbs={[{ name: t('common:breadcrumbs.home'), to: href(lang) }, { name: t('blog.h1') }]} title={t('blog.h1')} lead={t('blog.lead')} />
-      <section className={s.wrap} aria-label={t('blog.h1')}>
+      <section className={s.wrap}>
         <div className="container">
-          <p className={s.notice} role="note">{t('blog.soon')}</p>
-          <ul className={s.grid}>
-            {POSTS.map((p, i) => (
-              <li key={p.slug} className={s.card} data-reveal style={{ ['--reveal-i' as string]: i % 3 }}>
-                <div className={s.meta}>
-                  <span>{t('blog.category')}</span>
-                  <time dateTime={p.date}>{fmt.format(new Date(p.date))}</time>
-                </div>
-                <h2 className={s.title}>{t(`blog.posts.${p.slug}`)}</h2>
-                <span className={s.n} aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-              </li>
-            ))}
-          </ul>
+          <div className={s.panel} data-reveal>
+            <div className={s.copy}>
+              <h2 className="t-h2">{t('blog.placeholderTitle')}</h2>
+              <p className="t-lead">{t('blog.placeholderText')}</p>
+              <Button href="#contact">{t('common:cta.discuss')}</Button>
+            </div>
+            <div className={s.topics}>
+              <p className={`t-caption ${s.label}`}>{t('blog.topicsLabel')}</p>
+              <ul>{topics.map((x, i) => <li key={x}><span>{String(i + 1).padStart(2, '0')}</span>{x}</li>)}</ul>
+            </div>
+          </div>
         </div>
       </section>
       <CtaSection />

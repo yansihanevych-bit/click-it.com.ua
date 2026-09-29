@@ -5,7 +5,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { createHash } from 'node:crypto';
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
@@ -15,20 +14,8 @@ const HREFLANG = { ua: 'uk-UA', pl: 'pl-PL', en: 'en' };
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
 const { render, getPaths, languages } = await import(pathToFileURL(path.join(root, 'dist-ssr/entry-server.js')).href);
 
-/**
- * Per-page CSP: React's prerender emits small inline <script>s (Suspense boundary completion).
- * We hash every executable inline script of the page and allow exactly those.
- * vercel.json keeps the other directives; both policies are enforced (intersection).
- */
-function withCsp(page) {
-  const hashes = [...page.matchAll(/<script(?![^>]*\bsrc=)(?![^>]*application\/ld\+json)[^>]*>([\s\S]*?)<\/script>/g)]
-    .map((m) => `'sha256-${createHash('sha256').update(m[1]).digest('base64')}'`);
-  const csp = `script-src 'self' ${[...new Set(hashes)].join(' ')}; object-src 'none'; base-uri 'self'`;
-  return page.replace('<meta charset="UTF-8" />', `<meta charset="UTF-8" />\n    <meta http-equiv="Content-Security-Policy" content="${csp}" />`);
-}
-
 const fill = ({ html, head, htmlLang }) =>
-  withCsp(template.replace('<!--app-lang-->', htmlLang).replace('<!--app-head-->', head).replace('<!--app-html-->', html));
+  template.replace('<!--app-lang-->', htmlLang).replace('<!--app-head-->', head).replace('<!--app-html-->', html);
 
 const paths = getPaths();
 // Warm-up pass: resolves every React.lazy() chunk once, so the real pass renders synchronously
@@ -55,8 +42,10 @@ fs.writeFileSync(path.join(dist, '404.html'), fill(await render('/ua/__not-found
 // sitemap.xml
 const today = new Date().toISOString().slice(0, 10);
 const loc = (lang, p) => `${SITE_URL}/${lang}/${p ? p + '/' : ''}`;
+// Temporarily noindex pages stay out of the sitemap (e.g. blog until articles are migrated)
+const NOINDEX = new Set(['blog']);
 const urls = languages.flatMap((lang) =>
-  paths.map((p) => {
+  paths.filter((p) => !NOINDEX.has(p)).map((p) => {
     const alternates = languages.map((l) => `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${loc(l, p)}"/>`).join('\n');
     return `  <url>\n    <loc>${loc(lang, p)}</loc>\n    <lastmod>${today}</lastmod>\n${alternates}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${loc('ua', p)}"/>\n  </url>`;
   }),

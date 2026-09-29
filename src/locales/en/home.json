@@ -144,7 +144,7 @@
       },
       {
         "title": "Growth",
-        "text": "24/7 support, security, content updates and promotion for steady growth."
+        "text": "Technical support, security, content updates and promotion for steady growth."
       }
     ],
     "titleLines": [
@@ -158,27 +158,27 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Questions about website development",
+    "title": "Frequently asked questions",
     "items": [
       {
         "q": "How much does a website cost?",
-        "a": "Pricing is individual and depends on design and technical complexity, the number of pages and modules (forms, live chat, calculators, galleries), CMS setup and whether you need ongoing support. We give an exact estimate after a consultation."
+        "a": "Pricing is individual: it depends on the type of site, design and technical complexity, the number of pages and modules (forms, catalogues, calculators, integrations) and whether you need ongoing support. We give an exact estimate after a short consultation and task analysis."
       },
       {
-        "q": "How long does it take to build a website?",
-        "a": "On average we deliver a finished product in about a month, but it can be longer or shorter depending on the project’s complexity. We confirm exact timelines after a consultation."
+        "q": "Do you handle promotion after launch?",
+        "a": "Yes. We are a full-cycle agency: after launch we can run SEO, Google Ads, SMM and email marketing, and provide technical support for the site. To start, we offer a free SEO check and a Google/Facebook ads audit."
       },
       {
-        "q": "Do you support the website after launch?",
-        "a": "Yes. We keep the site running 24/7, protect it against viruses and hacking, keep every feature working, update information and online store catalogues, and publish photo, audio and video content."
+        "q": "How long does development take?",
+        "a": "On average we deliver a finished product in about a month, but it can be longer or shorter depending on the project’s complexity. A landing page is faster; an online store or platform takes longer. We confirm exact timelines after a consultation."
       },
       {
-        "q": "Why outsource support instead of hiring in-house?",
-        "a": "You save money and time, get round-the-clock service and a team that knows every detail of the project — because we built it. Without support, ads can burn budget on an unavailable site and malware or outages can wipe out SEO results."
+        "q": "Can you work with an existing website?",
+        "a": "Yes. We can run a usability audit and SEO check, refresh the design, extend functionality, set up advertising and take the site on for technical support. We start by analysing the current state and propose what will have the biggest impact."
       },
       {
-        "q": "What makes Click IT different?",
-        "a": "We are a full-cycle agency: we care not only about code and features but also UI/UX, branding and marketing. The result meets the brief, solutions are tailored, prices are fair, and we stay with you after launch."
+        "q": "What makes Click IT different from other agencies?",
+        "a": "We cover the whole cycle — from niche research and design to development, advertising and promotion — so you don’t have to coordinate several contractors. We care not only about code but also UI/UX, branding and marketing, work in a tailored way and stay with you after launch."
       }
     ]
   },

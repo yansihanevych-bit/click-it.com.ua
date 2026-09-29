@@ -35,9 +35,7 @@
     "metaTitle": "Blog Click IT — artykuły o tworzeniu stron, designie i marketingu",
     "metaDescription": "Przydatne artykuły Click IT o projektowaniu stron, e-commerce, konwersji i marketingu internetowym.",
     "h1": "Blog",
-    "lead": "Dzielimy się doświadczeniem w developmencie, designie i marketingu internetowym.",
-    "soon": "Artykuły są przenoszone na nową stronę",
-    "category": "Artykuły",
+    "lead": "Przygotowujemy nowe materiały o tworzeniu stron, designie i marketingu internetowym — praktyczne wskazówki z naszego doświadczenia.",
     "posts": {
       "customer-lifetime-value": "Jak zwiększyć wartość życiową klienta",
       "prototypes": "10 sposobów, by Twoje prototypy były bardziej użyteczne",
@@ -49,7 +47,18 @@
       "online-business": "Pomysły na biznes online: e-commerce w Ukrainie",
       "cs-cart-mobile": "Tworzenie wersji mobilnej strony w CS-Cart",
       "mobile-version": "Mobilna wersja strony dla Google"
-    }
+    },
+    "placeholderTitle": "Pierwsze artykuły są w przygotowaniu",
+    "placeholderText": "Zanim blog się zapełni, chętnie odpowiemy na Twoje pytania osobiście — od kosztu strony po strategię promocji.",
+    "topics": [
+      "Tworzenie stron",
+      "Projekt UX/UI",
+      "SEO",
+      "Google Ads",
+      "SMM",
+      "E-commerce"
+    ],
+    "topicsLabel": "O czym będziemy pisać"
   },
   "contacts": {
     "metaTitle": "Kontakt ze studiem Click IT — Charków, telefon, email",
@@ -78,6 +87,10 @@
       {
         "title": "Przekazywanie osobom trzecim",
         "text": "Nie sprzedajemy ani nie przekazujemy Twoich danych osobom trzecim, z wyjątkiem usług niezbędnych do dostarczenia zapytania (serwis pocztowy lub komunikator) oraz przypadków przewidzianych prawem."
+      },
+      {
+        "title": "Cookies i analityka",
+        "text": "Za Twoją zgodą strona korzysta z Google Tag Manager, Google Analytics i narzędzi Google Ads do analizy ruchu i mierzenia skuteczności reklam. Przed wyrażeniem zgody narzędzia te działają bez zapisywania plików cookies. Wybór możesz zmienić w każdej chwili za pomocą linku „Ustawienia cookies” na dole strony."
       },
       {
         "title": "Przechowywanie i ochrona",

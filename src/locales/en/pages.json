@@ -35,9 +35,7 @@
     "metaTitle": "Click IT Blog — Articles on Web Development, Design and Marketing",
     "metaDescription": "Useful articles by Click IT on website planning and design, e-commerce, conversion and online marketing.",
     "h1": "Blog",
-    "lead": "We share our experience in development, design and digital marketing.",
-    "soon": "Articles are being moved to the new website",
-    "category": "Articles",
+    "lead": "We’re preparing new articles on web development, design and digital marketing — practical advice from our experience.",
     "posts": {
       "customer-lifetime-value": "How to increase customer lifetime value",
       "prototypes": "10 ways to make your prototypes more useful",
@@ -49,7 +47,18 @@
       "online-business": "Online business ideas: e-commerce in Ukraine",
       "cs-cart-mobile": "Building a mobile version of a CS-Cart website",
       "mobile-version": "Mobile website version for Google"
-    }
+    },
+    "placeholderTitle": "First articles are on the way",
+    "placeholderText": "While the blog is being updated, we’re happy to answer your questions personally — from website cost to promotion strategy.",
+    "topics": [
+      "Web development",
+      "UX/UI design",
+      "SEO",
+      "Google Ads",
+      "SMM",
+      "E-commerce"
+    ],
+    "topicsLabel": "What we’ll write about"
   },
   "contacts": {
     "metaTitle": "Contact Click IT — Kharkiv, Phone, Email",
@@ -78,6 +87,10 @@
       {
         "title": "Sharing with third parties",
         "text": "We do not sell or share your data with third parties, except for services needed to deliver your request (email service or messenger) and cases required by law."
+      },
+      {
+        "title": "Cookies and analytics",
+        "text": "With your consent the site uses Google Tag Manager, Google Analytics and Google Ads tools to analyse traffic and measure ad performance. Before consent is given these tools run without storing cookies. You can change your choice at any time via the “Cookie settings” link at the bottom of the site."
       },
       {
         "title": "Storage and protection",

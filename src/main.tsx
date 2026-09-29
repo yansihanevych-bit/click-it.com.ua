@@ -7,6 +7,7 @@ import './styles/global.css';
 import App from './App';
 import { createI18n, loadLocale } from './i18n';
 import { DEFAULT_LANG, getLanguage, isLang } from './config/languages';
+import { initAnalytics } from './analytics';
 
 const i18n = createI18n();
 const seg = window.location.pathname.split('/')[1];
@@ -25,4 +26,7 @@ loadLocale(i18n, getLanguage(lang).locale).then(() => {
   );
   if (root.firstElementChild) hydrateRoot(root, app);
   else createRoot(root).render(app);
+  // Analytics never competes with first render / LCP
+  const idle = window.requestIdleCallback || ((cb: () => void) => window.setTimeout(cb, 1500));
+  idle(() => initAnalytics());
 });

@@ -85,14 +85,18 @@
   },
   "stats": {
     "years": "years building websites",
-    "clients": "brands among our clients",
-    "services": "full-cycle services",
-    "support": "technical support"
+    "cases": "cases in the portfolio"
   },
   "statsShort": {
     "years": "years",
-    "clients": "brands",
-    "services": "services",
-    "support": "support"
+    "cases": "cases"
+  },
+  "consent": {
+    "title": "Cookies & analytics",
+    "text": "We use cookies for analytics and ad performance measurement (Google Analytics, Google Ads) only with your consent.",
+    "more": "Learn more",
+    "accept": "Accept",
+    "decline": "Necessary only",
+    "settings": "Cookie settings"
   }
 }

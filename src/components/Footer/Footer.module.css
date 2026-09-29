@@ -23,6 +23,8 @@
 .bottom { display: flex; flex-wrap: wrap; gap: var(--space-5); justify-content: space-between; padding-block: var(--space-6); border-top: 1px solid var(--color-border-strong); font-size: var(--fs-small); color: var(--color-text-secondary); }
 .bottom a:hover { color: #000; }
 .top { margin-left: auto; }
+.cookies { font-size: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.cookies:hover { color: #000; }
 @media (max-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) {
   .grid { grid-template-columns: 1fr; gap: var(--space-6); }

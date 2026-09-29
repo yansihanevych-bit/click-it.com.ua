@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { SITE } from '@/config/site';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { Button } from '@/components/ui/Button';
+import { track } from '@/analytics';
 import s from './ContactForm.module.css';
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
@@ -53,6 +54,8 @@ export function ContactForm({ idPrefix = 'cf' }: { idPrefix?: string }) {
       if (res.status === 429) { setServerError(t('form.errors.rate')); setStatus('error'); return; }
       if (!res.ok) throw new Error(String(res.status));
       setStatus('success');
+      // Conversion for GA4 / Google Ads (configured in GTM on the `generate_lead` event)
+      track('generate_lead', { form_id: idPrefix, language: lang, page_path: window.location.pathname });
       formRef.current?.reset();
     } catch {
       setStatus('error');

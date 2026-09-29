@@ -85,14 +85,18 @@
   },
   "stats": {
     "years": "lat tworzenia stron",
-    "clients": "marek wśród klientów",
-    "services": "usług pełnego cyklu",
-    "support": "wsparcie techniczne"
+    "cases": "realizacji w portfolio"
   },
   "statsShort": {
     "years": "lat",
-    "clients": "marek",
-    "services": "usług",
-    "support": "wsparcie"
+    "cases": "realizacji"
+  },
+  "consent": {
+    "title": "Cookies i analityka",
+    "text": "Używamy plików cookies do analityki i mierzenia skuteczności reklam (Google Analytics, Google Ads) wyłącznie za Twoją zgodą.",
+    "more": "Więcej",
+    "accept": "Akceptuję",
+    "decline": "Tylko niezbędne",
+    "settings": "Ustawienia cookies"
   }
 }

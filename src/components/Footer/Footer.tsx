@@ -4,6 +4,7 @@ import { SITE } from '@/config/site';
 import { SERVICES } from '@/data/services';
 import { href, useLang, useT } from '@/hooks/useLang';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
+import { OPEN_CONSENT_EVENT } from '@/components/Consent/CookieConsent';
 import s from './Footer.module.css';
 
 export function Footer() {
@@ -69,6 +70,7 @@ export function Footer() {
         <div className={s.bottom}>
           <span>© {year} Click IT. {t('footer.rights')}</span>
           <Link to={href(lang, 'privacy')}>{t('footer.privacy')}</Link>
+          <button type="button" className={s.cookies} onClick={() => window.dispatchEvent(new Event(OPEN_CONSENT_EVENT))}>{t('consent.settings')}</button>
           <a href="#main" className={s.top}>{t('footer.toTop')} ↑</a>
         </div>
       </div>

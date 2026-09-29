@@ -115,19 +115,46 @@ src/
 
 ## Цифры в блоке статистики
 
-`src/data/stats.ts` — только проверяемые факты с текущего сайта (6+ лет, 15 брендов в кейсах/логотипах, 14 услуг, поддержка 24/7). Замените/добавьте реальные значения (например, общее число проектов), когда они будут подтверждены.
+`src/data/stats.ts` — только проверяемые факты: 6+ лет (с текущего сайта) и число кейсов в портфолио (считается автоматически). Добавляйте новые цифры (проекты, клиенты, результаты) только когда они подтверждены.
+
+## Аналитика и согласие на cookies
+
+- `src/analytics/index.ts` — Google Tag Manager + Consent Mode v2. Контейнер `VITE_GTM_ID` (по умолчанию **GTM-PCF9P2C** — тот, что стоит на текущем click-it.com.ua).
+- GTM загружается **только** на `click-it.com.ua` / `www.click-it.com.ua` (превью Vercel не шлют данные). Для теста на превью: `VITE_GTM_FORCE=true`.
+- По умолчанию все хранилища `denied`; баннер (`src/components/Consent`) обновляет согласие. Повторно открыть — «Налаштування cookies» в футере.
+- События в `dataLayer` для триггеров GTM:
+  | Событие | Когда | Параметры |
+  |---|---|---|
+  | `generate_lead` | успешная отправка формы | `form_id`, `language`, `page_path` |
+  | `click_phone` | клик по телефону | `link_url`, `page_path` |
+  | `click_email` | клик по email | `link_url`, `page_path` |
+  | `page_view_spa` | навигация внутри сайта | `page_path`, `page_location`, `language` |
+  | `consent_update` | выбор в баннере | `consent` |
+- В GTM: GA4 Configuration (с учётом Consent Mode), GA4 Event `generate_lead` (отметить как ключевое событие), Google Ads Conversion на `generate_lead` и `click_phone`, триггер page_view на `page_view_spa`.
+
+## Чек-лист боевого запуска (перенос на click-it.com.ua)
+
+- [ ] Vercel → Domains: `click-it.com.ua` (+ `www` → редирект на apex), DNS у регистратора.
+- [ ] Vercel → Env: `RESEND_API_KEY` + `CONTACT_TO_EMAIL` **или** `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` → отправить тестовую заявку на каждом языке.
+- [ ] GTM Preview на боевом домене: consent default → accept → GA4 page_view; `generate_lead` после заявки; `click_phone`.
+- [ ] Google Ads: конверсии «Заявка» (`generate_lead`) и «Звонок» (`click_phone`) импортированы / помечены основными.
+- [ ] Search Console: подтвердить домен, отправить `https://click-it.com.ua/sitemap.xml`, проверить покрытие и hreflang.
+- [ ] Проверить 301 со старых URL (`/zakazat-internet-magazin/` и т.д.) — список в `vercel.json`.
+- [ ] Реальные устройства: iPhone Safari, Android Chrome — меню, формы, телефоны кликабельны.
+- [ ] PageSpeed Insights (полевые данные CrUX появятся через ~28 дней после запуска).
 
 ## Что нужно заполнить (TODO)
 
 - [ ] Ссылки на соцсети — `src/config/site.ts → socials` (футер покажет только заполненные).
-- [ ] Перенос статей блога: сейчас страница блога показывает список статей со старого сайта без тел; старые URL временно (302) ведут на `/ua/blog/`.
+- [ ] Перенос статей блога: пока страница блога — заглушка с `noindex` (вне sitemap). После переноса статей уберите `noindex` в `BlogPage.tsx` и `'blog'` из `NOINDEX` в `scripts/prerender.mjs`; старые URL статей сейчас временно (302) ведут на `/ua/blog/`.
+- [ ] Кейсы в формате «было → сделали → результат → цифры → ссылка» — самое ценное следующее улучшение.
 - [ ] Подтвердить, какие работы выполнялись для MCORP, Whitewood, Crazybox, КРАТОС, Qoopiqoopi, Пікнік-меню (сейчас указано нейтрально «Сайт»).
 - [ ] Юридическое название компании для schema.org (`SITE.legalName`) и текст политики конфиденциальности — проверить юристом.
 - [ ] Логотипы клиентов в PNG со старого сайта были пустыми заглушками Tilda — при желании добавьте их в `src/data/clients.ts`.
 
 ## Производительность и доступность
 
-Локально (vite preview, без сжатия): Lighthouse mobile 92–95 Performance, 100 Accessibility / Best Practices / SEO; desktop — 100. CLS ≈ 0. Главный JS ~91 КБ gzip, Motion вынесен в отдельный чанк.
+Локально (vite preview, без сжатия): Lighthouse mobile 90–98 Performance, 100 Accessibility / Best Practices / SEO; desktop 99–100. CLS ≈ 0. Главный JS ~96 КБ gzip, Motion и GTM грузятся после первой отрисовки.
 
 - Все страницы отдаются готовым HTML (контент виден без JS); анимации появления активируются только при наличии JS.
 - `prefers-reduced-motion` отключает анимации, marquee и кастомный курсор.

@@ -144,7 +144,7 @@
       },
       {
         "title": "Growth",
-        "text": "Wsparcie 24/7, bezpieczeństwo, aktualizacja treści i promocja dla stabilnego wzrostu."
+        "text": "Wsparcie techniczne, bezpieczeństwo, aktualizacja treści i promocja dla stabilnego wzrostu."
       }
     ],
     "titleLines": [
@@ -158,27 +158,27 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Pytania o tworzenie stron",
+    "title": "Najczęstsze pytania",
     "items": [
       {
-        "q": "Ile kosztuje stworzenie strony?",
-        "a": "Cena jest indywidualna i zależy od złożoności designu i części technicznej, liczby podstron i modułów (formularze, czat, kalkulatory, galerie), konfiguracji CMS oraz potrzeby wsparcia. Dokładną wycenę przedstawiamy po konsultacji."
+        "q": "Ile kosztuje strona internetowa?",
+        "a": "Cena jest indywidualna: zależy od rodzaju strony, złożoności designu i części technicznej, liczby podstron i modułów (formularze, katalogi, kalkulatory, integracje) oraz potrzeby dalszego wsparcia. Dokładną wycenę przedstawiamy po krótkiej konsultacji i analizie zadania."
+      },
+      {
+        "q": "Czy zajmujecie się promocją po uruchomieniu?",
+        "a": "Tak. Jesteśmy agencją pełnego cyklu: po starcie możemy prowadzić pozycjonowanie SEO, kampanie Google Ads, SMM i email marketing, a także wsparcie techniczne strony. Na początek oferujemy bezpłatną analizę SEO i audyt reklam Google/Facebook."
       },
       {
         "q": "Ile trwa stworzenie strony?",
-        "a": "Średnio gotowy produkt dostarczamy w około miesiąc, ale termin może być dłuższy lub krótszy — zależy od złożoności projektu. Dokładne terminy ustalamy po konsultacji."
+        "a": "Średnio gotowy produkt dostarczamy w około miesiąc, ale termin może być dłuższy lub krótszy — zależy od złożoności projektu. Landing page powstaje szybciej, sklep czy platforma — dłużej. Dokładne terminy ustalamy po konsultacji."
       },
       {
-        "q": "Czy wspieracie stronę po uruchomieniu?",
-        "a": "Tak. Dbamy o działanie strony 24/7, ochronę przed wirusami i włamaniami, sprawność wszystkich funkcji, aktualizację informacji, katalogów sklepów oraz publikację zdjęć, audio i wideo."
+        "q": "Czy możecie pracować z istniejącą stroną?",
+        "a": "Tak. Możemy przeprowadzić audyt użyteczności i analizę SEO, odświeżyć design, rozbudować funkcje, skonfigurować reklamę i objąć stronę wsparciem technicznym. Najpierw analizujemy obecny stan i proponujemy to, co da największy efekt."
       },
       {
-        "q": "Dlaczego zlecić wsparcie zamiast zatrudniać osobę na etat?",
-        "a": "To oszczędność pieniędzy i czasu, obsługa całodobowa oraz znajomość wszystkich niuansów projektu — bo to my go stworzyliśmy. Bez wsparcia reklama może przepalać budżet na niedostępną stronę, a wirusy lub awarie zniszczyć wyniki SEO."
-      },
-      {
-        "q": "Czym Click IT różni się od innych studiów?",
-        "a": "Jesteśmy agencją pełnego cyklu: dbamy nie tylko o kod i funkcje, ale też o UI/UX, branding i marketing. Wynik odpowiada wymaganiom, rozwiązania są indywidualne, ceny przystępne, a po starcie zostajemy z Tobą."
+        "q": "Czym Click IT różni się od innych agencji?",
+        "a": "Obsługujemy cały cykl — od analizy niszy i designu po development, reklamę i promocję, więc nie musisz koordynować kilku wykonawców. Dbamy nie tylko o kod, ale też o UI/UX, branding i marketing, pracujemy indywidualnie i zostajemy z Tobą po starcie."
       }
     ]
   },

@@ -1,4 +1,4 @@
-import { lazy, use, useEffect, useLayoutEffect } from 'react';
+import { lazy, use, useEffect, useLayoutEffect, useRef } from 'react';
 import { Outlet, useLocation, useParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { DEFAULT_LANG, getLanguage, isLang } from '@/config/languages';
@@ -10,6 +10,8 @@ import { useClickSquare } from '@/hooks/useClickSquare';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { Cursor } from '@/components/Cursor/Cursor';
+import { CookieConsent } from '@/components/Consent/CookieConsent';
+import { trackPageView } from '@/analytics';
 
 const NotFoundPage = lazy(() => import('@/pages/NotFound/NotFoundPage'));
 const useIsoLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
@@ -28,6 +30,12 @@ export function LangLayout() {
   useParallax(pathname);
   useClickSquare();
 
+  const firstView = useRef(true);
+  useEffect(() => {
+    if (firstView.current) { firstView.current = false; return; } // initial view is tracked by GTM itself
+    trackPageView(pathname, lang);
+  }, [pathname, lang]);
+
   useIsoLayoutEffect(() => {
     if (hash) {
       document.getElementById(hash.slice(1))?.scrollIntoView();
@@ -44,6 +52,7 @@ export function LangLayout() {
       </main>
       <Footer />
       <Cursor />
+      <CookieConsent />
     </LangContext.Provider>
   );
 }
