@@ -8,9 +8,7 @@ import { ServicesShowcase } from '@/components/Services/ServicesShowcase';
 import { Approach } from '@/components/About/Approach';
 import { ProjectsShowcase } from '@/components/Projects/ProjectsShowcase';
 import { BusinessValue } from '@/components/Value/BusinessValue';
-import { lazy, Suspense } from 'react';
-// Motion (scroll-linked timeline) lives in its own chunk; SSR HTML stays visible until it hydrates.
-const Process = lazy(() => import('@/components/Process/Process').then((m) => ({ default: m.Process })));
+import { Process } from '@/components/Process/Process';
 import { Stats } from '@/components/Stats/Stats';
 import { Faq } from '@/components/Faq/Faq';
 import { CtaSection } from '@/components/CTA/CtaSection';
@@ -34,7 +32,7 @@ export default function HomePage() {
       <Approach />
       <ProjectsShowcase />
       <BusinessValue />
-      <Suspense fallback={null}><Process /></Suspense>
+      <Process />
       <Stats />
       <Faq items={faq} eyebrow={t('faq.eyebrow')} title={t('faq.title')} />
       <CtaSection />

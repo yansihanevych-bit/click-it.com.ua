@@ -31,6 +31,10 @@ const fill = ({ html, head, htmlLang }) =>
   withCsp(template.replace('<!--app-lang-->', htmlLang).replace('<!--app-head-->', head).replace('<!--app-html-->', html));
 
 const paths = getPaths();
+// Warm-up pass: resolves every React.lazy() chunk once, so the real pass renders synchronously
+// and React emits no inline Suspense-boundary scripts (cleaner HTML, strict CSP stays intact).
+for (const lang of languages) for (const p of paths) await render(`/${lang}/${p ? p + '/' : ''}`);
+await render('/ua/__not-found__/');
 let count = 0;
 for (const lang of languages) {
   for (const p of paths) {

@@ -2,9 +2,12 @@
 .head { position: sticky; top: calc(var(--header-h-compact) + 3rem); }
 .timeline { --pad: clamp(2.5rem, 2rem + 2vw, 4rem); position: relative; list-style: none; padding: 0 0 0 var(--pad); display: flex; flex-direction: column; gap: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
 .track { position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--color-border); }
-.fill { position: absolute; inset: 0; background: var(--color-primary); transform-origin: top; display: block; }
+.fill { position: absolute; inset: 0; background: var(--color-primary); transform-origin: top; display: block; transform: scaleY(0); }
+@media (prefers-reduced-motion: reduce) { .fill { transform: none; } }
 .step { position: relative; display: grid; grid-template-columns: 3.5rem 1fr; gap: var(--space-4); }
 .dot { position: absolute; left: calc(var(--pad) * -1); top: 6px; width: 16px; height: 16px; background: #fff; border: 2px solid var(--color-primary); }
+.dot { transition: background var(--dur-base), transform var(--dur-base) var(--ease-out); }
+.reached .dot { background: var(--color-primary); transform: rotate(45deg); }
 .n { font-weight: var(--fw-bold); color: var(--color-primary-ink); font-size: 1.125rem; padding-top: 2px; }
 .text { color: var(--color-text-secondary); margin-top: var(--space-2); max-width: 34rem; }
 @media (max-width: 900px) {

@@ -42,6 +42,13 @@ export async function render(url: string) {
         </I18nextProvider>
       </HeadContext.Provider>
     </StrictMode>,
+    {
+      onError(error) {
+        // Surface SSR errors at build time instead of silently falling back to client rendering.
+        console.error(`[prerender] ${url}:`, error);
+        collector.status = 500;
+      },
+    },
   );
   const html = await new Response(prelude).text();
   return { html, head: collector.head || '', htmlLang: collector.htmlLang || 'uk', status: collector.status || 200 };

@@ -5,9 +5,7 @@ import { href, useLang, useT } from '@/hooks/useLang';
 import { PageHero } from '@/components/PageHero/PageHero';
 import { Trust } from '@/components/Trust/Trust';
 import { Stats } from '@/components/Stats/Stats';
-import { lazy, Suspense } from 'react';
-// Motion (scroll-linked timeline) lives in its own chunk; SSR HTML stays visible until it hydrates.
-const Process = lazy(() => import('@/components/Process/Process').then((m) => ({ default: m.Process })));
+import { Process } from '@/components/Process/Process';
 import { CtaSection } from '@/components/CTA/CtaSection';
 import { BrandMark } from '@/components/ui/ArrowIcon';
 import s from './About.module.css';
@@ -59,7 +57,7 @@ export default function AboutPage() {
         </div>
       </section>
       <Stats />
-      <Suspense fallback={null}><Process /></Suspense>
+      <Process />
       <CtaSection />
     </>
   );
