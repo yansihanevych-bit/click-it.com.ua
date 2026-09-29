@@ -15,6 +15,16 @@ const Browser = ({ children, className }: { children: React.ReactNode; className
   </div>
 );
 
+const CmsScene = ({ shot, name, items, active }: { shot: string; name: string; items: string[]; active: number }) => (
+  <div className={s.scene}>
+    <Browser className={s.main}><Shot name={shot} /></Browser>
+    <div className={`${s.card} ${s.layers}`}>
+      <small>{name}</small>
+      {items.map((l, i) => <span key={l} className={i === active ? s.layerOn : undefined}>{l}</span>)}
+    </div>
+  </div>
+);
+
 export function ServicePreview({ slug }: { slug: string }) {
   switch (slug) {
     case 'web-development':
@@ -39,16 +49,14 @@ export function ServicePreview({ slug }: { slug: string }) {
       );
     case 'corporate-websites':
       return (<div className={s.scene}><Browser className={s.main}><Shot name="mcorp" /></Browser><div className={`${s.tag} ${s.tagBL}`}>UA · PL · EN</div></div>);
-    case 'tilda':
-      return (
-        <div className={s.scene}>
-          <Browser className={s.main}><Shot name="whitewood" /></Browser>
-          <div className={`${s.card} ${s.layers}`}>
-            <small>Zero Block</small>
-            {['Header', 'Hero', 'Gallery', 'Form'].map((l, i) => <span key={l} className={i === 1 ? s.layerOn : undefined}>{l}</span>)}
-          </div>
-        </div>
-      );
+    case 'wordpress':
+      return <CmsScene shot="whitewood" name="WordPress" items={['Pages', 'Posts', 'Media', 'Plugins']} active={0} />;
+    case 'opencart':
+      return <CmsScene shot="crazybox" name="OpenCart" items={['Catalog', 'Orders', 'Customers', 'Extensions']} active={1} />;
+    case 'shopify':
+      return <CmsScene shot="oseque-2" name="Shopify" items={['Products', 'Orders', 'Themes', 'Apps']} active={0} />;
+    case 'magento':
+      return <CmsScene shot="kratos" name="Magento" items={['Catalog', 'Stores', 'B2B', 'Integrations']} active={3} />;
     case 'seo':
       return (
         <div className={s.scene}>
@@ -73,6 +81,77 @@ export function ServicePreview({ slug }: { slug: string }) {
             <div className={s.result}><div><em>example.com</em><i style={{ width: '60%' }} /></div></div>
           </div>
           <div className={`${s.card} ${s.kpi}`}><div><small>CTR</small><b>8.4%</b></div><div><small>CPC</small><b>↓</b></div></div>
+        </div>
+      );
+    case 'bing-ads':
+      return (
+        <div className={s.scene}>
+          <div className={s.serp}>
+            <div className={s.search}><span className={s.g}>b</span><i /><span className={s.loupe}>⌕</span></div>
+            <div className={`${s.result} ${s.ad}`}><div><em><b className={s.adBadge}>Ad</b> click-it.com.ua</em><i style={{ width: '80%' }} /><i style={{ width: '55%' }} /></div></div>
+            <div className={s.result}><div><em>example.com</em><i style={{ width: '62%' }} /></div></div>
+            <div className={s.result}><div><em>example.org</em><i style={{ width: '48%' }} /></div></div>
+          </div>
+          <div className={`${s.tag} ${s.tagBL}`}>Microsoft Advertising</div>
+        </div>
+      );
+    case 'meta-ads':
+      return (
+        <div className={s.scene}>
+          <div className={`${s.phone} ${s.feed}`}>
+            <div className={s.profile}><span /><i /></div>
+            <small className={s.sponsored}>Sponsored</small>
+            <Shot name="family-2" className={s.adImg} />
+            <span className={s.adCta}>Learn more →</span>
+          </div>
+          <div className={`${s.card} ${s.targeting}`}><small>Audience</small>{['Facebook', 'Instagram', 'Lookalike'].map((l, i) => <span key={l} className={i === 2 ? s.layerOn : undefined}>{l}</span>)}</div>
+        </div>
+      );
+    case 'tiktok-ads':
+      return (
+        <div className={s.scene}>
+          <div className={`${s.phone} ${s.vertical}`}>
+            <Shot name="piknik" />
+            <span className={s.play} aria-hidden="true">▶</span>
+            <div className={s.sideIcons}><i /><i /><i /></div>
+            <span className={`${s.adCta} ${s.adCtaDark}`}>Shop now</span>
+          </div>
+          <div className={`${s.tag} ${s.tagTR}`}>#Spark Ads</div>
+        </div>
+      );
+    case 'x-ads':
+      return (
+        <div className={s.scene}>
+          <div className={s.post}>
+            <div className={s.profile}><span /><i /><b className={s.xMark}>𝕏</b></div>
+            <i className={s.line} style={{ width: '90%' }} /><i className={s.line} style={{ width: '70%' }} />
+            <div className={s.postImg}><Shot name="mcorp-2" /></div>
+            <div className={s.postMeta}><small>Promoted</small><span>↻</span><span>♡</span><span>↗</span></div>
+          </div>
+        </div>
+      );
+    case 'youtube-ads':
+      return (
+        <div className={s.scene}>
+          <div className={s.player}>
+            <Shot name="avangard-2" />
+            <span className={s.play} aria-hidden="true">▶</span>
+            <span className={s.adLabel}>Ad · 0:05</span>
+            <span className={s.skip}>Skip ▸|</span>
+            <div className={s.progress}><i /></div>
+          </div>
+        </div>
+      );
+    case 'content-marketing':
+      return (
+        <div className={s.scene}>
+          <div className={s.article}>
+            <small>Blog · 6 min</small>
+            <i className={s.h} /><i className={s.h} style={{ width: '60%' }} />
+            <Shot name="qoopiqoopi" />
+            {[92, 86, 90, 64].map((w, i) => <i key={i} className={s.line} style={{ width: `${w}%` }} />)}
+          </div>
+          <div className={`${s.card} ${s.layers}`}><small>Plan</small>{['Guide', 'Case', 'FAQ', 'Newsletter'].map((l, i) => <span key={l} className={i === 0 ? s.layerOn : undefined}>{l}</span>)}</div>
         </div>
       );
     case 'smm':

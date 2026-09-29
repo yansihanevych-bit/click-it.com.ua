@@ -3,9 +3,11 @@
  * Validates + sanitizes input, blocks spam (honeypot, min fill time, origin check, rate limit)
  * and delivers the request via Resend (email) and/or Telegram. Secrets live only in env vars.
  */
+import { BLOB_URL_RE, BUDGETS, BUDGET_LABELS, MAX_FILES, type Budget } from './_uploads';
+
 type Payload = {
   name?: unknown; phone?: unknown; email?: unknown; message?: unknown;
-  consent?: unknown; company?: unknown; elapsed?: unknown; lang?: unknown; page?: unknown;
+  consent?: unknown; company?: unknown; budget?: unknown; files?: unknown; elapsed?: unknown; lang?: unknown; page?: unknown;
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -61,17 +63,25 @@ export async function POST(request: Request): Promise<Response> {
     message: clean(body.message, 2000),
     lang: clean(body.lang, 4),
     page: clean(body.page, 200),
+    budget: clean(body.budget, 20),
   };
+  const files = (Array.isArray(body.files) ? body.files : []).slice(0, MAX_FILES)
+    .map((f) => ({ url: clean((f as { url?: unknown })?.url, 500), name: clean((f as { name?: unknown })?.name, 140) || 'file' }))
+    .filter((f) => BLOB_URL_RE.test(f.url));
   const errors: string[] = [];
   if (data.name.length < 2) errors.push('name');
   if (!PHONE_RE.test(data.phone)) errors.push('phone');
   if (!EMAIL_RE.test(data.email)) errors.push('email');
+  if (!(BUDGETS as readonly string[]).includes(data.budget)) errors.push('budget');
   if (body.consent !== true) errors.push('consent');
   if (errors.length) return json(422, { error: 'validation', fields: errors });
 
   const lines = [
     ['Name', data.name], ['Phone', data.phone], ['Email', data.email],
-    ['Message', data.message || '—'], ['Language', data.lang], ['Page', data.page],
+    ['Budget', BUDGET_LABELS[data.budget as Budget]],
+    ['Message', data.message || '—'],
+    ['Files', files.length ? files.map((f) => `${f.name}: ${f.url}`).join('\n') : '—'],
+    ['Language', data.lang], ['Page', data.page],
   ] as const;
 
   const tasks: Promise<Response>[] = [];
@@ -87,6 +97,8 @@ export async function POST(request: Request): Promise<Response> {
         reply_to: data.email,
         subject: `Click IT — new request: ${data.name}`,
         html,
+        // Resend fetches each file by URL and attaches it to the email.
+        ...(files.length ? { attachments: files.map((f) => ({ path: f.url, filename: f.name })) } : {}),
       }),
     }));
   }

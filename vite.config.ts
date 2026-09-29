@@ -2,26 +2,28 @@ import { defineConfig, loadEnv, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
 
-/** Dev only: serve /api/contact from api/contact.ts so the form works without `vercel dev`. */
+/** Dev only: serve /api/contact + /api/upload from api/*.ts so the form works without `vercel dev`. */
 function devApi(): Plugin {
   return {
     name: 'click-it-dev-api',
     apply: 'serve',
     configureServer(server) {
-      server.middlewares.use('/api/contact', async (req, res) => {
-        const chunks: Buffer[] = [];
-        for await (const c of req) chunks.push(c as Buffer);
-        const mod = await server.ssrLoadModule('/api/contact.ts');
-        const request = new Request(`http://localhost${req.url === '/' ? '' : req.url}/api/contact`, {
-          method: req.method,
-          headers: req.headers as Record<string, string>,
-          body: req.method === 'POST' ? Buffer.concat(chunks) : undefined,
+      for (const name of ['contact', 'upload']) {
+        server.middlewares.use(`/api/${name}`, async (req, res) => {
+          const chunks: Buffer[] = [];
+          for await (const c of req) chunks.push(c as Buffer);
+          const mod = await server.ssrLoadModule(`/api/${name}.ts`);
+          const request = new Request(`http://localhost/api/${name}`, {
+            method: req.method,
+            headers: req.headers as Record<string, string>,
+            body: req.method === 'POST' ? Buffer.concat(chunks) : undefined,
+          });
+          const response: Response = await (req.method === 'POST' ? mod.POST(request) : mod.GET());
+          res.statusCode = response.status;
+          response.headers.forEach((v, k) => res.setHeader(k, v));
+          res.end(await response.text());
         });
-        const response: Response = await mod.POST(request);
-        res.statusCode = response.status;
-        response.headers.forEach((v, k) => res.setHeader(k, v));
-        res.end(await response.text());
-      });
+      }
     },
     transformIndexHtml: {
       order: 'pre',

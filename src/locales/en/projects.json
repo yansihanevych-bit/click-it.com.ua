@@ -14,7 +14,8 @@
     "next": "Next project",
     "all": "All",
     "filter": "Filter by industry",
-    "metaSuffix": "A Click IT case study: website development, design and promotion for business."
+    "metaSuffix": "A Click IT case study: website development, design and promotion for business.",
+    "site": "Website"
   },
   "work": {
     "development": "Website development",
@@ -30,9 +31,21 @@
     "realestate": "Real estate",
     "food": "Food & delivery",
     "security": "Security systems",
-    "adtech": "Social media advertising"
+    "adtech": "Social media advertising",
+    "marketing": "Marketing & AI automation",
+    "peptides": "Peptide products"
   },
   "items": {
+    "yansi": {
+      "name": "YanSi",
+      "summary": "Website for a performance marketing & AI agency.",
+      "description": "A bilingual (UA/EN) website for yan-si.io, an agency combining performance marketing with AI automation: a services and industries mega menu, case studies, an interactive ROI calculator and a lead form with a budget picker."
+    },
+    "slimax-peptides": {
+      "name": "Slimax Peptides",
+      "summary": "Peptide product catalogue website.",
+      "description": "A multilingual (EN/CZ/SK) catalogue website for Slimax Peptides: product collection, specialist consultation booking, a “request — personal quote — confirmation — delivery” flow and lead forms instead of a public price list."
+    },
     "avangard": {
       "name": "AVANGARD",
       "summary": "Website for a renovation and interior design studio.",

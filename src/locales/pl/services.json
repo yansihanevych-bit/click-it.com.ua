@@ -6,224 +6,789 @@
     "lead": "Obsługujemy pełny cykl digital — od pomysłu i projektu po wdrożenie i promocję. Wybierz kierunek lub zamów kompleksową obsługę."
   },
   "labels": {
-    "features": "Co obejmuje", "audience": "Dla kogo", "faq": "Częste pytania", "related": "Inne usługi w tym obszarze",
-    "process": "Jak pracujemy", "processText": "Analiza → strategia → UX/UI → development → testy → start → rozwój. Na każdym etapie widzisz i akceptujesz wynik."
+    "features": "Co obejmuje",
+    "audience": "Dla kogo",
+    "faq": "Częste pytania",
+    "related": "Inne usługi w tym obszarze",
+    "process": "Jak pracujemy",
+    "processText": "Analiza → strategia → UX/UI → development → testy → start → rozwój. Na każdym etapie widzisz i akceptujesz wynik."
   },
   "items": {
     "web-development": {
-      "name": "Tworzenie stron", "short": "Strony pod klucz — od wizytówki po platformę",
+      "name": "Tworzenie stron",
+      "short": "Strony pod klucz — od wizytówki po platformę",
       "metaTitle": "Tworzenie stron internetowych pod klucz — Click IT",
       "metaDescription": "Strony internetowe pod klucz: wizytówki, strony firmowe i platformy online. Analiza niszy, UX/UI, responsywność, podstawy SEO i wsparcie.",
       "h1": "Tworzenie stron internetowych pod klucz",
       "lead": "Mamy za sobą wiele stron — od prostych landing page i stron na WordPress po złożone platformy online. Tworzymy strony, które pracują na Twój biznes.",
       "features": [
-        { "title": "Analiza niszy", "text": "Badamy rynek, konkurencję i odbiorców, by strona sprzedawała i budziła zaufanie." },
-        { "title": "Projekt UX/UI", "text": "Struktura i interfejs zrozumiałe dla każdego użytkownika." },
-        { "title": "Development i CMS", "text": "Responsywne kodowanie, wygodny system zarządzania, dodatkowe moduły." },
-        { "title": "Start i wsparcie", "text": "Testy, hosting, analityka i wsparcie techniczne po uruchomieniu." }
+        {
+          "title": "Analiza niszy",
+          "text": "Badamy rynek, konkurencję i odbiorców, by strona sprzedawała i budziła zaufanie."
+        },
+        {
+          "title": "Projekt UX/UI",
+          "text": "Struktura i interfejs zrozumiałe dla każdego użytkownika."
+        },
+        {
+          "title": "Development i CMS",
+          "text": "Responsywne kodowanie, wygodny system zarządzania, dodatkowe moduły."
+        },
+        {
+          "title": "Start i wsparcie",
+          "text": "Testy, hosting, analityka i wsparcie techniczne po uruchomieniu."
+        }
       ],
       "audience": "Dla firm, które potrzebują wizytówki, strony firmowej lub serwisu online — od zera lub w miejsce przestarzałej strony.",
       "faq": [
-        { "q": "Czy mogę zamówić prostą wizytówkę?", "a": "Tak. Tworzymy zarówno wizytówki i landing page, jak i projekty wielostronicowe — zakres ustalamy na etapie przygotowań." },
-        { "q": "Czy będę mógł samodzielnie edytować stronę?", "a": "Tak, korzystamy z systemów zarządzania treścią, które pozwalają szybko zmieniać informacje na stronach." }
+        {
+          "q": "Czy mogę zamówić prostą wizytówkę?",
+          "a": "Tak. Tworzymy zarówno wizytówki i landing page, jak i projekty wielostronicowe — zakres ustalamy na etapie przygotowań."
+        },
+        {
+          "q": "Czy będę mógł samodzielnie edytować stronę?",
+          "a": "Tak, korzystamy z systemów zarządzania treścią, które pozwalają szybko zmieniać informacje na stronach."
+        }
       ]
     },
     "ecommerce": {
-      "name": "Sklepy internetowe", "short": "E-commerce, który sprzedaje 24/7",
+      "name": "Sklepy internetowe",
+      "short": "E-commerce, który sprzedaje 24/7",
       "metaTitle": "Tworzenie sklepu internetowego pod klucz — Click IT",
       "metaDescription": "Sklepy internetowe: katalog, koszyk, płatności i dostawa, integracje, struktura SEO i wygodne zarządzanie produktami.",
       "h1": "Tworzenie sklepu internetowego",
       "lead": "Projektujemy i tworzymy sklepy, w których łatwo znaleźć produkt i wygodnie złożyć zamówienie — a Ty łatwo zarządzasz katalogiem i zamówieniami.",
       "features": [
-        { "title": "Katalog i filtry", "text": "Logiczna struktura kategorii i wyszukiwarka." },
-        { "title": "Koszyk i zamówienie", "text": "Krótka ścieżka zakupu, płatności i dostawa." },
-        { "title": "Zarządzanie produktami", "text": "Panel CMS do aktualizacji katalogu, cen i zamówień." },
-        { "title": "Struktura SEO", "text": "Techniczne podstawy do pozycjonowania kategorii i kart produktów." }
+        {
+          "title": "Katalog i filtry",
+          "text": "Logiczna struktura kategorii i wyszukiwarka."
+        },
+        {
+          "title": "Koszyk i zamówienie",
+          "text": "Krótka ścieżka zakupu, płatności i dostawa."
+        },
+        {
+          "title": "Zarządzanie produktami",
+          "text": "Panel CMS do aktualizacji katalogu, cen i zamówień."
+        },
+        {
+          "title": "Struktura SEO",
+          "text": "Techniczne podstawy do pozycjonowania kategorii i kart produktów."
+        }
       ],
       "audience": "Dla marek detalicznych, producentów i dystrybutorów uruchamiających sprzedaż online lub przenoszących sklep.",
       "faq": [
-        { "q": "Na jakim CMS tworzycie sklepy?", "a": "Dobieramy platformę do celów i budżetu projektu — ustalamy to na etapie specyfikacji." },
-        { "q": "Czy pomagacie aktualizować katalog?", "a": "Tak, aktualizacja katalogów sklepów wchodzi w zakres naszego wsparcia technicznego." }
+        {
+          "q": "Na jakim CMS tworzycie sklepy?",
+          "a": "Dobieramy platformę do celów i budżetu projektu — ustalamy to na etapie specyfikacji."
+        },
+        {
+          "q": "Czy pomagacie aktualizować katalog?",
+          "a": "Tak, aktualizacja katalogów sklepów wchodzi w zakres naszego wsparcia technicznego."
+        }
       ]
     },
     "landing-page": {
-      "name": "Landing Page", "short": "Strony jednostronicowe pod reklamę i sprzedaż",
+      "name": "Landing Page",
+      "short": "Strony jednostronicowe pod reklamę i sprzedaż",
       "metaTitle": "Tworzenie skutecznych Landing Page — Click IT",
       "metaDescription": "Landing page pod kampanie reklamowe i wprowadzenie produktu lub usługi: struktura sprzedażowa, design, responsywność i szybkie ładowanie.",
       "h1": "Tworzenie Landing Page",
       "lead": "Landing page to najszybszy sposób, by przetestować ofertę i zdobyć zapytania z reklam. Budujemy stronę wokół jednego celu.",
       "features": [
-        { "title": "Struktura sprzedażowa", "text": "Logika bloków od problemu klienta do wezwania do działania." },
-        { "title": "Design i treść", "text": "Wizualizacja i teksty, które tłumaczą wartość w kilka sekund." },
-        { "title": "Formularze", "text": "Wygodne formularze z integracją z pocztą lub komunikatorami." },
-        { "title": "Gotowość do reklamy", "text": "Szybkość, analityka i piksele dla Google Ads i social media." }
+        {
+          "title": "Struktura sprzedażowa",
+          "text": "Logika bloków od problemu klienta do wezwania do działania."
+        },
+        {
+          "title": "Design i treść",
+          "text": "Wizualizacja i teksty, które tłumaczą wartość w kilka sekund."
+        },
+        {
+          "title": "Formularze",
+          "text": "Wygodne formularze z integracją z pocztą lub komunikatorami."
+        },
+        {
+          "title": "Gotowość do reklamy",
+          "text": "Szybkość, analityka i piksele dla Google Ads i social media."
+        }
       ],
       "audience": "Dla premier produktów, promocji, usług i kampanii w Google i social media.",
       "faq": [
-        { "q": "Czym landing page różni się od strony?", "a": "Landing skupia się na jednej ofercie i jednym działaniu, dlatego szybciej go stworzyć i łatwiej testować w reklamie." },
-        { "q": "Czy możecie uruchomić reklamę na landing?", "a": "Tak, prowadzimy reklamę w wyszukiwarce i promocję w social media." }
+        {
+          "q": "Czym landing page różni się od strony?",
+          "a": "Landing skupia się na jednej ofercie i jednym działaniu, dlatego szybciej go stworzyć i łatwiej testować w reklamie."
+        },
+        {
+          "q": "Czy możecie uruchomić reklamę na landing?",
+          "a": "Tak, prowadzimy reklamę w wyszukiwarce i promocję w social media."
+        }
       ]
     },
     "corporate-websites": {
-      "name": "Strony firmowe", "short": "Strony firm z mocną prezentacją marki",
+      "name": "Strony firmowe",
+      "short": "Strony firm z mocną prezentacją marki",
       "metaTitle": "Tworzenie strony firmowej — Click IT",
       "metaDescription": "Strony firmowe: struktura usług, case studies, prezentacja marki, wersje językowe i optymalizacja SEO.",
       "h1": "Tworzenie strony firmowej",
       "lead": "Strona firmowa to przedstawiciel firmy online działający 24/7. Pokazujemy biznes, usługi i doświadczenie tak, by klient chciał skontaktować się właśnie z Tobą.",
       "features": [
-        { "title": "Struktura i treść", "text": "Usługi, realizacje, zespół i przewagi w czytelnej hierarchii." },
-        { "title": "Prezentacja marki", "text": "Design odzwierciedlający charakter i wartości firmy." },
-        { "title": "Wielojęzyczność", "text": "Wersje językowe dla różnych rynków." },
-        { "title": "Podstawy SEO", "text": "Semantyczny kod, meta tagi i szybkość." }
+        {
+          "title": "Struktura i treść",
+          "text": "Usługi, realizacje, zespół i przewagi w czytelnej hierarchii."
+        },
+        {
+          "title": "Prezentacja marki",
+          "text": "Design odzwierciedlający charakter i wartości firmy."
+        },
+        {
+          "title": "Wielojęzyczność",
+          "text": "Wersje językowe dla różnych rynków."
+        },
+        {
+          "title": "Podstawy SEO",
+          "text": "Semantyczny kod, meta tagi i szybkość."
+        }
       ],
       "audience": "Dla firm potrzebujących reprezentacyjnej strony dla klientów, partnerów i inwestorów.",
       "faq": [
-        { "q": "Czy pomagacie z tekstami i zdjęciami?", "a": "Tak, tworzymy treści pod klucz: teksty, zdjęcia, wideo i wypełnienie strony." },
-        { "q": "Czy można zrobić kilka wersji językowych?", "a": "Tak, wielojęzyczność planujemy już na etapie projektowania struktury." }
-      ]
-    },
-    "tilda": {
-      "name": "Strony na Tilda", "short": "Szybki start na kreatorze",
-      "metaTitle": "Tworzenie strony na Tilda — Click IT",
-      "metaDescription": "Strony i landing page na Tilda: indywidualny design w Zero Block, responsywność, formularze, integracje i podstawowe SEO.",
-      "h1": "Tworzenie strony na Tilda",
-      "lead": "Tilda pozwala szybko uruchomić piękną stronę i edytować ją bez programisty. Tworzymy indywidualny design, a nie szablon.",
-      "features": [
-        { "title": "Indywidualny design", "text": "Unikalne bloki w Zero Block zamiast gotowych szablonów." },
-        { "title": "Responsywność", "text": "Poprawne wyświetlanie na smartfonach, tabletach i desktopie." },
-        { "title": "Formularze i integracje", "text": "Zapytania do poczty, CRM lub komunikatorów." },
-        { "title": "Podstawowe SEO", "text": "Meta tagi, nagłówki i ustawienia indeksacji." }
-      ],
-      "audience": "Dla landing page, małych stron i projektów, gdzie liczy się szybki start i samodzielna edycja.",
-      "faq": [
-        { "q": "Czy będę mógł sam edytować stronę?", "a": "Tak, Tilda ma wygodny edytor wizualny — przekażemy dostępy i pokażemy, jak z niego korzystać." },
-        { "q": "Kiedy lepiej nie wybierać Tildy?", "a": "Duże sklepy i złożone platformy lepiej zrealizować indywidualnie — doradzimy podczas konsultacji." }
+        {
+          "q": "Czy pomagacie z tekstami i zdjęciami?",
+          "a": "Tak, tworzymy treści pod klucz: teksty, zdjęcia, wideo i wypełnienie strony."
+        },
+        {
+          "q": "Czy można zrobić kilka wersji językowych?",
+          "a": "Tak, wielojęzyczność planujemy już na etapie projektowania struktury."
+        }
       ]
     },
     "seo": {
-      "name": "Pozycjonowanie SEO", "short": "Ruch organiczny z Google",
+      "name": "Pozycjonowanie SEO",
+      "short": "Ruch organiczny z Google",
       "metaTitle": "Pozycjonowanie stron SEO w Google — Click IT",
       "metaDescription": "Pozycjonowanie: audyt techniczny, dobór słów kluczowych, optymalizacja stron, treści i strategia linków. Bezpłatna analiza SEO.",
       "h1": "Pozycjonowanie stron SEO",
       "lead": "Na podstawie dogłębnej analizy niszy promujemy stronę wśród Twojej grupy docelowej i zamieniamy odwiedzających w klientów.",
       "features": [
-        { "title": "Audyt techniczny", "text": "Szybkość, indeksacja, błędy i wersja mobilna." },
-        { "title": "Słowa kluczowe", "text": "Zbieranie zapytań i przypisanie ich do podstron." },
-        { "title": "Optymalizacja", "text": "Meta tagi, nagłówki, struktura i linkowanie wewnętrzne." },
-        { "title": "Treści i raporty", "text": "Teksty pod zapytania, monitoring pozycji i ruchu." }
+        {
+          "title": "Audyt techniczny",
+          "text": "Szybkość, indeksacja, błędy i wersja mobilna."
+        },
+        {
+          "title": "Słowa kluczowe",
+          "text": "Zbieranie zapytań i przypisanie ich do podstron."
+        },
+        {
+          "title": "Optymalizacja",
+          "text": "Meta tagi, nagłówki, struktura i linkowanie wewnętrzne."
+        },
+        {
+          "title": "Treści i raporty",
+          "text": "Teksty pod zapytania, monitoring pozycji i ruchu."
+        }
       ],
       "audience": "Dla firm, które chcą stałego napływu klientów z wyszukiwarki bez płacenia za każde kliknięcie.",
       "faq": [
-        { "q": "Czy oferujecie bezpłatną analizę SEO?", "a": "Tak — zostaw zapytanie, a przeprowadzimy bezpłatną analizę SEO Twojej strony." },
-        { "q": "Kiedy będą pierwsze efekty?", "a": "SEO to strategia długoterminowa; tempo zależy od niszy, konkurencji i stanu strony. Prognozę podajemy po audycie." }
+        {
+          "q": "Czy oferujecie bezpłatną analizę SEO?",
+          "a": "Tak — zostaw zapytanie, a przeprowadzimy bezpłatną analizę SEO Twojej strony."
+        },
+        {
+          "q": "Kiedy będą pierwsze efekty?",
+          "a": "SEO to strategia długoterminowa; tempo zależy od niszy, konkurencji i stanu strony. Prognozę podajemy po audycie."
+        }
       ]
     },
     "google-ads": {
-      "name": "Google Ads / PPC", "short": "Reklama w wyszukiwarce z kontrolowanym budżetem",
+      "name": "Google Ads / PPC",
+      "short": "Reklama w wyszukiwarce z kontrolowanym budżetem",
       "metaTitle": "Kampanie Google Ads (PPC) — Click IT",
       "metaDescription": "Konfiguracja i prowadzenie Google Ads: kampanie w wyszukiwarce, sieci reklamowej i produktowe, analityka i optymalizacja kosztu leada. Bezpłatny audyt reklam.",
       "h1": "Reklama Google Ads",
       "lead": "Reklama w wyszukiwarce przyciąga klientów od pierwszego dnia. Konfigurujemy kampanie z otwartym budżetem i przejrzystym raportowaniem.",
       "features": [
-        { "title": "Strategia i słowa kluczowe", "text": "Dobór zapytań i struktura kampanii pod Twoje cele." },
-        { "title": "Reklamy", "text": "Teksty i kreacje, które wyróżniają się na tle konkurencji." },
-        { "title": "Analityka", "text": "Śledzenie konwersji, by znać realny koszt zapytania." },
-        { "title": "Optymalizacja", "text": "Stała praca ze stawkami, zapytaniami i grupami odbiorców." }
+        {
+          "title": "Strategia i słowa kluczowe",
+          "text": "Dobór zapytań i struktura kampanii pod Twoje cele."
+        },
+        {
+          "title": "Reklamy",
+          "text": "Teksty i kreacje, które wyróżniają się na tle konkurencji."
+        },
+        {
+          "title": "Analityka",
+          "text": "Śledzenie konwersji, by znać realny koszt zapytania."
+        },
+        {
+          "title": "Optymalizacja",
+          "text": "Stała praca ze stawkami, zapytaniami i grupami odbiorców."
+        }
       ],
       "audience": "Dla firm, które potrzebują zapytań szybko, oraz dla premier produktów i promocji.",
       "faq": [
-        { "q": "Czy możecie sprawdzić moje obecne reklamy?", "a": "Tak, przeprowadzamy bezpłatny audyt reklam Google/Facebook — zostaw zapytanie." },
-        { "q": "Co oznacza otwarty budżet?", "a": "Budżet i wyniki są przejrzyste: widzisz, na co idą pieniądze i co przynoszą." }
+        {
+          "q": "Czy możecie sprawdzić moje obecne reklamy?",
+          "a": "Tak, przeprowadzamy bezpłatny audyt reklam Google/Facebook — zostaw zapytanie."
+        },
+        {
+          "q": "Co oznacza otwarty budżet?",
+          "a": "Budżet i wyniki są przejrzyste: widzisz, na co idą pieniądze i co przynoszą."
+        }
       ]
     },
     "smm": {
-      "name": "SMM", "short": "Promocja w social media i na Instagramie",
+      "name": "SMM",
+      "short": "Promocja w social media i na Instagramie",
       "metaTitle": "Marketing w mediach społecznościowych i Instagramie — Click IT",
       "metaDescription": "Promocja marki w social media: strategia, treści, reklama targetowana i rozwój Instagrama. Sprawiamy, że marka jest rozpoznawalna.",
       "h1": "Promocja w mediach społecznościowych",
       "lead": "Pomagamy marce zyskać charakter i rozpoznawalność: strategia, treści i reklama w social media, w tym na Instagramie.",
       "features": [
-        { "title": "Strategia", "text": "Pozycjonowanie, grupa docelowa i strategia komunikacji marki." },
-        { "title": "Treści", "text": "Zdjęcia, wideo i teksty, które opowiadają historię marki." },
-        { "title": "Reklama targetowana", "text": "Reklamy kierowane do właściwych segmentów odbiorców." },
-        { "title": "Instagram", "text": "Rozwój profilu i pozyskiwanie wartościowych obserwujących." }
+        {
+          "title": "Strategia",
+          "text": "Pozycjonowanie, grupa docelowa i strategia komunikacji marki."
+        },
+        {
+          "title": "Treści",
+          "text": "Zdjęcia, wideo i teksty, które opowiadają historię marki."
+        },
+        {
+          "title": "Reklama targetowana",
+          "text": "Reklamy kierowane do właściwych segmentów odbiorców."
+        },
+        {
+          "title": "Instagram",
+          "text": "Rozwój profilu i pozyskiwanie wartościowych obserwujących."
+        }
       ],
       "audience": "Dla marek, dla których liczą się rozpoznawalność, lojalna społeczność i sprzedaż w social media.",
       "faq": [
-        { "q": "Czy sami tworzycie treści?", "a": "Tak, tworzymy wideo, zdjęcia i teksty specjalnie pod Twoje potrzeby." },
-        { "q": "Czy zajmujecie się osobno Instagramem?", "a": "Tak, promocja na Instagramie to osobny obszar naszej pracy." }
+        {
+          "q": "Czy sami tworzycie treści?",
+          "a": "Tak, tworzymy wideo, zdjęcia i teksty specjalnie pod Twoje potrzeby."
+        },
+        {
+          "q": "Czy zajmujecie się osobno Instagramem?",
+          "a": "Tak, promocja na Instagramie to osobny obszar naszej pracy."
+        }
       ]
     },
     "email-marketing": {
-      "name": "Email marketing", "short": "Mailingi, które przywracają klientów",
+      "name": "Email marketing",
+      "short": "Mailingi, które przywracają klientów",
       "metaTitle": "Email marketing dla firm — Click IT",
       "metaDescription": "Email marketing: strategia mailingów, automatyczne sekwencje, projekt wiadomości i analityka dla większej sprzedaży powtórnej.",
       "h1": "Email marketing",
       "lead": "Mailingi pomagają odzyskiwać klientów i zwiększać ich wartość. Budujemy system wiadomości, który działa automatycznie.",
       "features": [
-        { "title": "Strategia", "text": "Segmentacja bazy i plan komunikacji." },
-        { "title": "Automatyzacja", "text": "Sekwencje powitalne, wyzwalane i ponownego zakupu." },
-        { "title": "Projekt wiadomości", "text": "Responsywne szablony w stylu marki." },
-        { "title": "Analityka", "text": "Otwarcia, kliknięcia, sprzedaż i ciągłe testy." }
+        {
+          "title": "Strategia",
+          "text": "Segmentacja bazy i plan komunikacji."
+        },
+        {
+          "title": "Automatyzacja",
+          "text": "Sekwencje powitalne, wyzwalane i ponownego zakupu."
+        },
+        {
+          "title": "Projekt wiadomości",
+          "text": "Responsywne szablony w stylu marki."
+        },
+        {
+          "title": "Analityka",
+          "text": "Otwarcia, kliknięcia, sprzedaż i ciągłe testy."
+        }
       ],
       "audience": "Dla sklepów i serwisów z bazą klientów, które chcą więcej powtórnych zakupów.",
       "faq": [
-        { "q": "Czy potrzebuję dużej bazy kontaktów?", "a": "Nie — można zacząć od istniejącej bazy i stopniowo ją rozbudowywać przez stronę." },
-        { "q": "Czy mailingi można zautomatyzować?", "a": "Tak, konfigurujemy automatyczne sekwencje uruchamiane działaniami użytkowników." }
+        {
+          "q": "Czy potrzebuję dużej bazy kontaktów?",
+          "a": "Nie — można zacząć od istniejącej bazy i stopniowo ją rozbudowywać przez stronę."
+        },
+        {
+          "q": "Czy mailingi można zautomatyzować?",
+          "a": "Tak, konfigurujemy automatyczne sekwencje uruchamiane działaniami użytkowników."
+        }
       ]
     },
     "design": {
-      "name": "Web Design / UI/UX", "short": "Projektowanie stron i interfejsów",
+      "name": "Web Design / UI/UX",
+      "short": "Projektowanie stron i interfejsów",
       "metaTitle": "Projektowanie stron i UI/UX — Click IT",
       "metaDescription": "Projekt strony: badania UX, prototypy, design UI i responsywne makiety. Design, który odzwierciedla markę i jest wygodny dla każdego.",
       "h1": "Projektowanie stron i UI/UX",
       "lead": "Tworzymy nie tylko design — tworzymy odzwierciedlenie Twojej marki. Jednocześnie dbamy o UX, by strona była intuicyjna dla każdego.",
       "features": [
-        { "title": "Badania UX", "text": "Analiza odbiorców, scenariuszy i konkurencji." },
-        { "title": "Prototypy", "text": "Struktura stron i logika interakcji przed warstwą wizualną." },
-        { "title": "Design UI", "text": "Kilka wariantów koncepcji z akceptacją na każdym etapie." },
-        { "title": "Responsywne makiety", "text": "Design na desktop, tablet i smartfon." }
+        {
+          "title": "Badania UX",
+          "text": "Analiza odbiorców, scenariuszy i konkurencji."
+        },
+        {
+          "title": "Prototypy",
+          "text": "Struktura stron i logika interakcji przed warstwą wizualną."
+        },
+        {
+          "title": "Design UI",
+          "text": "Kilka wariantów koncepcji z akceptacją na każdym etapie."
+        },
+        {
+          "title": "Responsywne makiety",
+          "text": "Design na desktop, tablet i smartfon."
+        }
       ],
       "audience": "Dla nowych projektów i redesignu stron, które nie konwertują lub wyglądają przestarzale.",
       "faq": [
-        { "q": "Ile wariantów designu proponujecie?", "a": "Przygotowujemy kilka wariantów koncepcji, akceptujemy wybraną i dopracowujemy każdą typową podstronę." },
-        { "q": "Czy mogę zamówić tylko design?", "a": "Tak, projekt strony to osobna usługa." }
+        {
+          "q": "Ile wariantów designu proponujecie?",
+          "a": "Przygotowujemy kilka wariantów koncepcji, akceptujemy wybraną i dopracowujemy każdą typową podstronę."
+        },
+        {
+          "q": "Czy mogę zamówić tylko design?",
+          "a": "Tak, projekt strony to osobna usługa."
+        }
       ]
     },
     "branding": {
-      "name": "Branding i identyfikacja", "short": "Identyfikacja, którą się zapamiętuje",
+      "name": "Branding i identyfikacja",
+      "short": "Identyfikacja, którą się zapamiętuje",
       "metaTitle": "Branding i identyfikacja wizualna — Click IT",
       "metaDescription": "Tworzenie marki od zera i identyfikacji wizualnej: logo, kolory, typografia, nośniki i księga znaku.",
       "h1": "Branding i identyfikacja wizualna",
       "lead": "Możemy stworzyć markę od zera: od pomysłu i identyfikacji po strategię komunikacji. Tak zostajesz zauważony i zapamiętany.",
       "features": [
-        { "title": "Pozycjonowanie", "text": "Charakter, wartości i kluczowe komunikaty marki." },
-        { "title": "Logo", "text": "Znak, który działa w każdym rozmiarze i na każdym nośniku." },
-        { "title": "Identyfikacja", "text": "Kolory, kroje pisma, grafika i styl zdjęć." },
-        { "title": "Księga znaku", "text": "Zasady użycia dla zespołu i podwykonawców." }
+        {
+          "title": "Pozycjonowanie",
+          "text": "Charakter, wartości i kluczowe komunikaty marki."
+        },
+        {
+          "title": "Logo",
+          "text": "Znak, który działa w każdym rozmiarze i na każdym nośniku."
+        },
+        {
+          "title": "Identyfikacja",
+          "text": "Kolory, kroje pisma, grafika i styl zdjęć."
+        },
+        {
+          "title": "Księga znaku",
+          "text": "Zasady użycia dla zespołu i podwykonawców."
+        }
       ],
       "audience": "Dla nowych firm i marek, które potrzebują spójnego i rozpoznawalnego języka wizualnego.",
       "faq": [
-        { "q": "Czy robicie rebranding?", "a": "Tak, odświeżamy identyfikację, zachowując rozpoznawalność, jeśli jest ważna dla biznesu." },
-        { "q": "Co otrzymam?", "a": "Logo, identyfikację wizualną, makiety nośników i księgę znaku." }
+        {
+          "q": "Czy robicie rebranding?",
+          "a": "Tak, odświeżamy identyfikację, zachowując rozpoznawalność, jeśli jest ważna dla biznesu."
+        },
+        {
+          "q": "Co otrzymam?",
+          "a": "Logo, identyfikację wizualną, makiety nośników i księgę znaku."
+        }
       ]
     },
     "usability-audit": {
-      "name": "Audyt użyteczności", "short": "Znajdujemy to, co blokuje sprzedaż",
+      "name": "Audyt użyteczności",
+      "short": "Znajdujemy to, co blokuje sprzedaż",
       "metaTitle": "Audyt użyteczności strony — Click IT",
       "metaDescription": "Audyt UX strony: analiza ścieżek użytkownika, nawigacji, formularzy i wersji mobilnej z konkretnymi rekomendacjami dla wzrostu konwersji.",
       "h1": "Audyt użyteczności strony",
       "lead": "Błędnie działające strony i niewygodne formularze odsyłają użytkowników do konkurencji. Audyt pokazuje, co dokładnie obniża konwersję i jak to naprawić.",
       "features": [
-        { "title": "Ścieżki użytkownika", "text": "Przechodzimy kluczowe ścieżki od wejścia do zapytania." },
-        { "title": "Nawigacja i treść", "text": "Sprawdzamy czytelność struktury i tekstów." },
-        { "title": "Formularze i CTA", "text": "Szukamy barier na drodze do celu." },
-        { "title": "Rekomendacje", "text": "Lista usprawnień według priorytetów z wyjaśnieniami." }
+        {
+          "title": "Ścieżki użytkownika",
+          "text": "Przechodzimy kluczowe ścieżki od wejścia do zapytania."
+        },
+        {
+          "title": "Nawigacja i treść",
+          "text": "Sprawdzamy czytelność struktury i tekstów."
+        },
+        {
+          "title": "Formularze i CTA",
+          "text": "Szukamy barier na drodze do celu."
+        },
+        {
+          "title": "Rekomendacje",
+          "text": "Lista usprawnień według priorytetów z wyjaśnieniami."
+        }
       ],
       "audience": "Dla stron z ruchem, ale małą liczbą zapytań lub sprzedaży.",
       "faq": [
-        { "q": "Co otrzymam po audycie?", "a": "Raport z wykrytymi problemami i rekomendacjami według priorytetów." },
-        { "q": "Czy możecie wdrożyć poprawki?", "a": "Tak, możemy wdrożyć rekomendacje w designie i developmencie." }
+        {
+          "q": "Co otrzymam po audycie?",
+          "a": "Raport z wykrytymi problemami i rekomendacjami według priorytetów."
+        },
+        {
+          "q": "Czy możecie wdrożyć poprawki?",
+          "a": "Tak, możemy wdrożyć rekomendacje w designie i developmencie."
+        }
+      ]
+    },
+    "wordpress": {
+      "name": "Strony na WordPress",
+      "short": "Elastyczna strona z wygodnym panelem",
+      "metaTitle": "Tworzenie stron na WordPress — Click IT",
+      "metaDescription": "Strony na WordPress: indywidualny motyw, wygodny panel administracyjny, szybkość, bezpieczeństwo i podstawy SEO. Strony firmowe, blogi, landing page.",
+      "h1": "Tworzenie stron na WordPress",
+      "lead": "WordPress to najpopularniejszy CMS na świecie: wygodne zarządzanie treścią, tysiące rozszerzeń i szybki start. Tworzymy na nim indywidualne strony, a nie szablony z marketplace.",
+      "features": [
+        {
+          "title": "Indywidualny motyw",
+          "text": "Design i kodowanie pod Twoją markę, bez zbędnego kodu szablonów."
+        },
+        {
+          "title": "Wygodny panel",
+          "text": "Dopasowane pola i bloki — edytujesz strony bez programisty."
+        },
+        {
+          "title": "Szybkość i bezpieczeństwo",
+          "text": "Cache, optymalizacja obrazów, aktualizacje i ochrona przed włamaniami."
+        },
+        {
+          "title": "Podstawy SEO",
+          "text": "Czysta struktura, meta tagi, sitemap i dane strukturalne od pierwszego dnia."
+        }
+      ],
+      "audience": "Dla stron firmowych, usługowych, blogów i mediów, gdzie treści często aktualizujesz samodzielnie.",
+      "faq": [
+        {
+          "q": "Czy możecie przenieść obecną stronę na WordPress?",
+          "a": "Tak. Przenosimy strukturę i treści oraz konfigurujemy przekierowania, by nie stracić pozycji w wyszukiwarce."
+        },
+        {
+          "q": "Czy WordPress nadaje się na sklep?",
+          "a": "Dla małych i średnich sklepów — tak, przez WooCommerce. Przy dużych katalogach polecamy OpenCart, Shopify lub Magento — doradzimy podczas konsultacji."
+        }
+      ]
+    },
+    "opencart": {
+      "name": "Sklepy na OpenCart",
+      "short": "Sklep bez miesięcznych opłat za platformę",
+      "metaTitle": "Tworzenie sklepu internetowego na OpenCart — Click IT",
+      "metaDescription": "Sklepy na OpenCart: indywidualny design, katalog i filtry, płatności i dostawa, integracje z ERP/CRM, optymalizacja SEO.",
+      "h1": "Sklep internetowy na OpenCart",
+      "lead": "OpenCart to otwarta platforma e-commerce na własnym hostingu. Najlepszy wybór, gdy potrzebujesz pełnego sklepu bez miesięcznej opłaty za SaaS.",
+      "features": [
+        {
+          "title": "Katalog i filtry",
+          "text": "Kategorie, atrybuty, warianty produktów i wygodna wyszukiwarka."
+        },
+        {
+          "title": "Płatności i dostawa",
+          "text": "Bramki płatności i przewoźnicy popularni w Polsce i Ukrainie."
+        },
+        {
+          "title": "Integracje",
+          "text": "Wymiana danych z systemami księgowymi, CRM i cennikami."
+        },
+        {
+          "title": "Szybkość i SEO",
+          "text": "Optymalizacja szablonu, przyjazne adresy i meta tagi kategorii i produktów."
+        }
+      ],
+      "audience": "Dla sklepów z katalogiem od kilkudziesięciu do tysięcy produktów, którym zależy na kontroli nad platformą.",
+      "faq": [
+        {
+          "q": "Czy możecie dopisać funkcje pod nas?",
+          "a": "Tak, OpenCart ma otwarty kod — rozbudowujemy moduły i logikę pod Twoje procesy."
+        },
+        {
+          "q": "Czy pomagacie z wypełnieniem katalogu?",
+          "a": "Tak, importujemy produkty z arkuszy lub systemu księgowego i konfigurujemy regularną aktualizację."
+        }
+      ]
+    },
+    "shopify": {
+      "name": "Sklepy na Shopify",
+      "short": "Szybki start e-commerce dla sprzedaży międzynarodowej",
+      "metaTitle": "Tworzenie sklepu na Shopify — Click IT",
+      "metaDescription": "Sklepy na Shopify: indywidualny motyw, konfiguracja płatności i wysyłki, wielowalutowość, aplikacje i integracje marketingowe.",
+      "h1": "Sklep internetowy na Shopify",
+      "lead": "Shopify to platforma chmurowa, w której hosting, bezpieczeństwo i aktualizacje są w cenie. Idealna dla marek, które chcą szybko wystartować i sprzedawać w wielu krajach.",
+      "features": [
+        {
+          "title": "Indywidualny motyw",
+          "text": "Witryna zaprojektowana pod markę, a nie gotowy szablon."
+        },
+        {
+          "title": "Płatności i wysyłka",
+          "text": "Konfiguracja metod płatności, podatków i stref dostawy."
+        },
+        {
+          "title": "Waluty i języki",
+          "text": "Sprzedaż w kilku krajach z lokalnymi cenami i treściami."
+        },
+        {
+          "title": "Aplikacje i analityka",
+          "text": "Dobór aplikacji, piksele reklamowe i analityka."
+        }
+      ],
+      "audience": "Dla marek D2C, producentów i sklepów nastawionych na sprzedaż międzynarodową.",
+      "faq": [
+        {
+          "q": "Czy jest opłata miesięczna?",
+          "a": "Tak, Shopify działa w abonamencie, ale hosting, bezpieczeństwo i aktualizacje platformy są wliczone."
+        },
+        {
+          "q": "Czy możecie przenieść sklep z innej platformy?",
+          "a": "Tak, przenosimy produkty, klientów i zamówienia oraz konfigurujemy przekierowania dla SEO."
+        }
+      ]
+    },
+    "magento": {
+      "name": "Sklepy na Magento",
+      "short": "E-commerce dla dużych katalogów i złożonej logiki",
+      "metaTitle": "Tworzenie sklepu na Magento (Adobe Commerce) — Click IT",
+      "metaDescription": "Sklepy na Magento: duże katalogi, funkcje B2B, wiele magazynów i witryn, integracje z ERP, wydajność i skalowanie.",
+      "h1": "Sklep internetowy na Magento",
+      "lead": "Magento (Adobe Commerce) to potężna platforma dla e-commerce na dużą skalę: dziesiątki tysięcy produktów, wiele witryn, złożone ceny i scenariusze B2B.",
+      "features": [
+        {
+          "title": "Duże katalogi",
+          "text": "Złożone atrybuty, produkty konfigurowalne i szybka wyszukiwarka."
+        },
+        {
+          "title": "Wiele witryn",
+          "text": "Kilka sklepów, języków i walut z jednego panelu."
+        },
+        {
+          "title": "Scenariusze B2B",
+          "text": "Indywidualne ceny, grupy klientów, szybkie zamówienia."
+        },
+        {
+          "title": "Integracje i wydajność",
+          "text": "Wymiana z ERP/CRM, cache i konfiguracja serwera."
+        }
+      ],
+      "audience": "Dla dużych sprzedawców, dystrybutorów i firm B2B, które potrzebują skali i elastycznej logiki biznesowej.",
+      "faq": [
+        {
+          "q": "Czy Magento nie jest dla nas zbyt złożone?",
+          "a": "Przy mniejszym katalogu często wystarcza OpenCart lub Shopify. Porównamy opcje na konsultacji i doradzimy najlepszą."
+        },
+        {
+          "q": "Czy wspieracie sklep po starcie?",
+          "a": "Tak, zapewniamy wsparcie techniczne: aktualizacje, bezpieczeństwo, rozwój i monitoring."
+        }
+      ]
+    },
+    "bing-ads": {
+      "name": "Bing Ads",
+      "short": "Reklama w wyszukiwarce Microsoft",
+      "metaTitle": "Reklama Bing Ads (Microsoft Advertising) — Click IT",
+      "metaDescription": "Reklama w Bing i sieci Microsoft: import kampanii z Google Ads, odbiorcy B2B, śledzenie konwersji i optymalizacja kosztu leada.",
+      "h1": "Reklama Bing Ads",
+      "lead": "Microsoft Advertising wyświetla reklamy w Bing, Copilot i sieci partnerów. Często oznacza to niższą konkurencję i koszt kliknięcia niż w Google oraz zamożną grupę B2B.",
+      "features": [
+        {
+          "title": "Szybki start",
+          "text": "Import i adaptacja skutecznych kampanii z Google Ads."
+        },
+        {
+          "title": "Targetowanie B2B",
+          "text": "Firma, branża i stanowisko dzięki danym LinkedIn."
+        },
+        {
+          "title": "Śledzenie konwersji",
+          "text": "Tag UET i cele, by znać realny koszt zapytania."
+        },
+        {
+          "title": "Optymalizacja",
+          "text": "Stała praca ze stawkami, zapytaniami i wykluczeniami."
+        }
+      ],
+      "audience": "Dla firm B2B i biznesów, które już reklamują się w Google i szukają dodatkowego ruchu taniej.",
+      "faq": [
+        {
+          "q": "Czy warto, jeśli Google Ads już działa?",
+          "a": "Często tak: Bing daje dodatkowych odbiorców przy mniejszej konkurencji, a kampanie można szybko przenieść."
+        },
+        {
+          "q": "Dla jakich rynków to ma sens?",
+          "a": "Najbardziej dla rynków anglojęzycznych i segmentu B2B; ocenimy potencjał Twojej niszy przed startem."
+        }
+      ]
+    },
+    "meta-ads": {
+      "name": "Meta Ads",
+      "short": "Reklama na Facebooku i Instagramie",
+      "metaTitle": "Reklama Meta Ads (Facebook, Instagram) — Click IT",
+      "metaDescription": "Reklama na Facebooku i Instagramie: strategia, grupy odbiorców, kreacje, Pixel i Conversions API, remarketing i skalowanie.",
+      "h1": "Reklama na Facebooku i Instagramie",
+      "lead": "Meta Ads pozwala dotrzeć do klientów według zainteresowań, zachowań i podobieństwa do Twoich kupujących. Budujemy lejek od zasięgu do zapytań i ponownej sprzedaży.",
+      "features": [
+        {
+          "title": "Grupy odbiorców",
+          "text": "Zainteresowania, lookalike, remarketing odwiedzających i bazy klientów."
+        },
+        {
+          "title": "Kreacje",
+          "text": "Formaty statyczne i wideo, testy komunikatów i wizualizacji."
+        },
+        {
+          "title": "Pixel i Conversions API",
+          "text": "Poprawne śledzenie zapytań i sprzedaży do optymalizacji."
+        },
+        {
+          "title": "Skalowanie",
+          "text": "Analiza wyników i stopniowe zwiększanie budżetu na to, co działa."
+        }
+      ],
+      "audience": "Dla e-commerce, usług, edukacji i lokalnych firm, którym potrzebny jest stały napływ zapytań z social media.",
+      "faq": [
+        {
+          "q": "Czy oferujecie bezpłatny audyt obecnych reklam?",
+          "a": "Tak, przeprowadzamy bezpłatny audyt reklam Google/Facebook — zostaw zapytanie."
+        },
+        {
+          "q": "Kto przygotowuje kreacje?",
+          "a": "Możemy przygotować je sami lub pracować z Twoimi materiałami — ustalimy to na starcie."
+        }
+      ]
+    },
+    "tiktok-ads": {
+      "name": "TikTok Ads",
+      "short": "Reklama dla młodej i aktywnej publiczności",
+      "metaTitle": "Reklama TikTok Ads — Click IT",
+      "metaDescription": "Reklama na TikToku: strategia, natywne kreacje wideo, grupy odbiorców, TikTok Pixel i optymalizacja pod zapytania i sprzedaż.",
+      "h1": "Reklama na TikToku",
+      "lead": "TikTok to ogromne zasięgi i krótkie natywne wideo. Pomagamy markom mówić językiem platformy i zamieniać wyświetlenia w sprzedaż.",
+      "features": [
+        {
+          "title": "Natywne kreacje",
+          "text": "Scenariusze krótkich wideo, które nie wyglądają jak reklama."
+        },
+        {
+          "title": "Grupy odbiorców",
+          "text": "Zainteresowania, zachowania i lookalike."
+        },
+        {
+          "title": "TikTok Pixel",
+          "text": "Konfiguracja zdarzeń na stronie pod konwersje."
+        },
+        {
+          "title": "Testy",
+          "text": "Szybkie testy hipotez i skalowanie najlepszych połączeń."
+        }
+      ],
+      "audience": "Dla marek z odbiorcami 18–35, e-commerce, rozrywki, edukacji i produktów, które dobrze wyglądają na wideo.",
+      "faq": [
+        {
+          "q": "Czy potrzebne jest profesjonalne wideo?",
+          "a": "Nie, na TikToku często lepiej działa prosty natywny content — pomożemy ze scenariuszami."
+        },
+        {
+          "q": "Czy TikTok nadaje się do B2B?",
+          "a": "Rzadziej, ale sprawdza się w employer brandingu i przy produktach łatwych do pokazania w wideo."
+        }
+      ]
+    },
+    "x-ads": {
+      "name": "X Ads",
+      "short": "Reklama w X (Twitter)",
+      "metaTitle": "Reklama X (Twitter) Ads — Click IT",
+      "metaDescription": "Reklama w X (dawniej Twitter): promowane posty, targetowanie po słowach kluczowych i zainteresowaniach, śledzenie konwersji.",
+      "h1": "Reklama w X (Twitter)",
+      "lead": "X to miejsce newsów i branżowych dyskusji. Reklama pozwala być w kontekście aktualnych tematów i docierać do odbiorców z tech, finansów i mediów.",
+      "features": [
+        {
+          "title": "Promowane posty",
+          "text": "Wzmocnienie kluczowych publikacji i zapowiedzi marki."
+        },
+        {
+          "title": "Targetowanie",
+          "text": "Słowa kluczowe, zainteresowania, podobne konta i wydarzenia."
+        },
+        {
+          "title": "Kreacje",
+          "text": "Teksty i grafiki w formacie platformy."
+        },
+        {
+          "title": "Analityka",
+          "text": "Śledzenie przejść i konwersji na stronie."
+        }
+      ],
+      "audience": "Dla firm technologicznych, SaaS, projektów finansowych i medialnych, premier produktów i wydarzeń.",
+      "faq": [
+        {
+          "q": "Komu opłaca się reklama w X?",
+          "a": "Markom, których odbiorcy aktywnie komentują newsy i tematy branżowe — tech, finanse, media, wydarzenia."
+        },
+        {
+          "q": "Czy można łączyć z innymi kanałami?",
+          "a": "Tak, X zwykle uzupełnia reklamę w wyszukiwarce i Meta Ads w ramach wspólnej strategii."
+        }
+      ]
+    },
+    "youtube-ads": {
+      "name": "YouTube Ads",
+      "short": "Reklama wideo na YouTube",
+      "metaTitle": "Reklama wideo YouTube Ads — Click IT",
+      "metaDescription": "Reklama wideo na YouTube przez Google Ads: formaty In-Stream, Shorts i Discovery, targetowanie, remarketing i ocena wpływu na sprzedaż.",
+      "h1": "Reklama wideo na YouTube",
+      "lead": "YouTube to druga największa wyszukiwarka na świecie. Reklama wideo buduje rozpoznawalność i przywraca osoby, które już interesowały się Twoim produktem.",
+      "features": [
+        {
+          "title": "Formaty",
+          "text": "In-Stream, Bumper, Shorts i reklamy w rekomendacjach."
+        },
+        {
+          "title": "Targetowanie",
+          "text": "Zainteresowania, intencje, słowa kluczowe, kanały i remarketing."
+        },
+        {
+          "title": "Kreacja",
+          "text": "Wskazówki do pierwszych 5 sekund, które przyciągają uwagę."
+        },
+        {
+          "title": "Analityka",
+          "text": "Wyświetlenia, utrzymanie uwagi i wpływ na wyszukiwania i konwersje."
+        }
+      ],
+      "audience": "Dla marek wprowadzających produkty, budujących rozpoznawalność lub mających produkt wymagający demonstracji.",
+      "faq": [
+        {
+          "q": "Czy potrzebne jest drogie wideo?",
+          "a": "Niekoniecznie: ważniejszy jest jasny przekaz i mocny początek. Pomożemy ze scenariuszem i produkcją."
+        },
+        {
+          "q": "Jak mierzyć wyniki?",
+          "a": "Konfigurujemy remarketing i śledzenie konwersji, by widzieć wpływ wideo na zapytania i wyszukiwania marki."
+        }
+      ]
+    },
+    "content-marketing": {
+      "name": "Content marketing",
+      "short": "Treści, które przyciągają klientów",
+      "metaTitle": "Content marketing dla firm — Click IT",
+      "metaDescription": "Content marketing: strategia, eksperckie artykuły SEO, case studies, wideo i zdjęcia, dystrybucja w social media i mailingach.",
+      "h1": "Content marketing",
+      "lead": "Tworzymy treści, które opowiadają historię Twojej marki, odpowiadają na pytania klientów i przyciągają ruch z wyszukiwarki i social media.",
+      "features": [
+        {
+          "title": "Strategia treści",
+          "text": "Tematy, formaty i kanały dopasowane do celów i etapów lejka."
+        },
+        {
+          "title": "Artykuły i teksty SEO",
+          "text": "Eksperckie materiały pod zapytania Twoich odbiorców."
+        },
+        {
+          "title": "Case studies i wideo",
+          "text": "Historie klientów, zdjęcia i wideo budujące zaufanie."
+        },
+        {
+          "title": "Dystrybucja",
+          "text": "Publikacja na blogu, w social media i mailingach z analizą wyników."
+        }
+      ],
+      "audience": "Dla firm ze złożonym produktem lub długim cyklem sprzedaży, które muszą tłumaczyć wartość i budować ekspertyzę.",
+      "faq": [
+        {
+          "q": "Kto pisze treści?",
+          "a": "Przygotowujemy je sami, ustalając z Tobą szczegóły eksperckie — od tematu po finalny tekst."
+        },
+        {
+          "q": "Kiedy będą efekty?",
+          "a": "Content marketing działa kumulatywnie: pierwsze efekty z wyszukiwarki zwykle widać po kilku miesiącach regularnej pracy."
+        }
       ]
     }
   }

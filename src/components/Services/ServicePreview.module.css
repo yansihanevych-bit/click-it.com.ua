@@ -90,3 +90,34 @@
 .pin { position: absolute; translate: -50% -50%; width: 22px; height: 22px; display: grid; place-items: center; background: #000; color: var(--color-primary); font-size: 0.6875rem; font-weight: 800; box-shadow: var(--shadow-m); }
 @keyframes pulse-heat { 50% { transform: scale(1.12); } }
 @media (prefers-reduced-motion: reduce) { .heat { animation: none; } }
+
+/* Paid social / video / content scenes */
+.sponsored { font-size: 0.625rem; color: var(--color-text-secondary); padding: 0 4px; font-weight: 600; }
+.adImg { aspect-ratio: 1; object-fit: cover; object-position: left top; }
+.adCta { display: block; margin: 0 4px; padding: 6px 8px; background: var(--color-primary); color: #000; font-size: 0.6875rem; font-weight: 700; }
+.adCtaDark { position: absolute; left: 10px; right: 34px; bottom: 14px; margin: 0; background: #fe2c55; color: #fff; text-align: center; }
+.targeting { right: 4%; top: 14%; width: 36%; display: grid; gap: 4px; }
+.targeting span { padding: 5px 8px; background: var(--color-surface); font-size: 0.75rem; font-weight: 600; }
+.targeting .layerOn { background: var(--color-primary); }
+.vertical { position: relative; background: #000; }
+.vertical img { opacity: 0.85; }
+.play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 44px; height: 44px; display: grid; place-items: center; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 1rem; }
+.sideIcons { position: absolute; right: 8px; bottom: 50px; display: grid; gap: 8px; }
+.sideIcons i { width: 18px; height: 18px; border-radius: 50%; background: rgba(255, 255, 255, 0.85); }
+.post { width: 70%; background: #fff; border: 1px solid var(--color-border); box-shadow: var(--shadow-l); padding: 14px; display: grid; gap: 8px; }
+.post .profile i { max-width: 40%; }
+.xMark { margin-left: auto; font-size: 1rem; }
+.line { display: block; height: 6px; border-radius: 3px; background: var(--color-surface-2); }
+.postImg { border: 1px solid var(--color-border); overflow: hidden; }
+.postMeta { display: flex; gap: 14px; align-items: center; font-size: 0.8125rem; color: var(--color-text-secondary); }
+.postMeta small { margin-right: auto; font-size: 0.6875rem; font-weight: 600; }
+.player { position: relative; width: 84%; background: #000; box-shadow: var(--shadow-l); overflow: hidden; }
+.player img { opacity: 0.8; }
+.adLabel { position: absolute; left: 10px; bottom: 16px; padding: 3px 7px; background: #ffcc00; color: #000; font-size: 0.6875rem; font-weight: 700; }
+.skip { position: absolute; right: 0; bottom: 14px; padding: 7px 12px; background: rgba(0, 0, 0, 0.75); color: #fff; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.4); border-right: 0; }
+.progress { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255, 255, 255, 0.3); }
+.progress i { display: block; width: 18%; height: 100%; background: #ffcc00; }
+.article { width: 66%; background: #fff; border: 1px solid var(--color-border); box-shadow: var(--shadow-l); padding: 16px; display: grid; gap: 7px; margin-right: 18%; }
+.article small { font-size: 0.625rem; color: var(--color-text-secondary); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.article .h { display: block; height: 11px; width: 90%; background: #000; }
+.article img { margin: 4px 0; aspect-ratio: 16 / 7; object-fit: cover; object-position: top; }

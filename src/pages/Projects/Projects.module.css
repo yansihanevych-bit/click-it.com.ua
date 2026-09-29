@@ -35,3 +35,7 @@
 @media (max-width: 900px) {
   .head, .body, .next { grid-template-columns: 1fr; }
 }
+.liveLink { display: inline-flex; align-items: center; gap: 6px; font-weight: var(--fw-bold); text-decoration: underline; text-underline-offset: 3px; }
+.liveLink:hover { color: var(--color-primary-ink); }
+.liveLink svg { transition: transform var(--dur-base) var(--ease-out); }
+.liveLink:hover svg { transform: translate(2px, -2px); }

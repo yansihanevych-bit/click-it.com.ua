@@ -44,7 +44,16 @@ npm run typecheck
 | `CONTACT_TO_EMAIL` | server | Куда слать заявки (можно несколько через запятую) |
 | `CONTACT_FROM_EMAIL` | server | Отправитель (домен должен быть подтверждён в Resend) |
 | `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | server | Дублирование заявок в Telegram |
+| `BLOB_READ_WRITE_TOKEN` | server | Загрузка файлов из формы (Vercel Blob). Создаётся автоматически, когда к проекту подключён Blob-store |
 | `ALLOWED_ORIGINS` | server | Разрешённые Origin для POST (по умолчанию домены click-it.com.ua; превью `*.vercel.app` разрешены) |
+
+### Форма заявки: бюджет и файлы
+
+- «Який ваш бюджет?» — обязательный выбор из 4 вариантов (`BUDGETS` в `api/_uploads.ts`, общий для формы и API).
+- Файлы — необязательно, до 5 шт., до 5 МБ каждый, форматы ZIP/RAR/7Z, PDF, DOC/DOCX, PAGES/KEY/NUMBERS, XLS/XLSX/CSV, PPT/PPTX, изображения и др. (список `FILE_TYPES`).
+- Файлы грузятся из браузера напрямую в Vercel Blob (`/api/upload` выдаёт одноразовый токен только для разрешённых типов и размера), в заявку уходят ссылки. В письме Resend файлы прикладываются вложениями, в Telegram — ссылками.
+- Включение: Vercel → Storage → Create → **Blob** → Connect to project (переменная `BLOB_READ_WRITE_TOKEN` появится сама) → Redeploy. Без Blob заявка без файлов работает как обычно, а при попытке приложить файл пользователь увидит просьбу прислать файлы на email.
+- Ссылки на файлы публичные, но с неугадываемым случайным суффиксом. Старые файлы можно чистить в Vercel → Storage → Blob.
 
 Нужен хотя бы один канал: Resend **или** Telegram. Секреты хранятся только в Vercel → Settings → Environment Variables, в Git не попадают (`.env*` в `.gitignore`).
 
@@ -107,7 +116,7 @@ src/
 ## Как редактировать проекты
 
 1. Положите обложку в `public/images/projects/`: `<name>-640.{avif,webp}` и `<name>-1200.{avif,webp}` (удобно через `sharp`, см. `scripts/tools/extract-assets.mjs`).
-2. Добавьте запись в `src/data/projects.ts` (slug, image, gallery, industry, work, featured, ratio).
+2. Добавьте запись в `src/data/projects.ts` (slug, image, gallery, industry, work, featured, ratio, composition, `url` — ссылка на живой сайт, показывается на странице кейса).
 3. Тексты — `src/locales/<locale>/projects.json → items.<slug>`.
 4. `npm run assets:og` — сгенерирует OG-картинку проекта (добавьте имя в `scripts/og-projects.mjs`).
 
@@ -139,6 +148,7 @@ src/
 - [ ] GTM Preview на боевом домене: consent default → accept → GA4 page_view; `generate_lead` после заявки; `click_phone`.
 - [ ] Google Ads: конверсии «Заявка» (`generate_lead`) и «Звонок» (`click_phone`) импортированы / помечены основными.
 - [ ] Search Console: подтвердить домен, отправить `https://click-it.com.ua/sitemap.xml`, проверить покрытие и hreflang.
+- [ ] (Опционально) Vercel → Storage → Blob → Connect — чтобы заработало прикрепление файлов в форме; тестовая заявка с PDF.
 - [ ] Проверить 301 со старых URL (`/zakazat-internet-magazin/` и т.д.) — список в `vercel.json`.
 - [ ] Реальные устройства: iPhone Safari, Android Chrome — меню, формы, телефоны кликабельны.
 - [ ] PageSpeed Insights (полевые данные CrUX появятся через ~28 дней после запуска).

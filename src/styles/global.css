@@ -86,7 +86,7 @@ p { text-wrap: pretty; }
 
 /* --- Split text (word mask reveal) --- */
 .st-line { display: block; }
-.st-word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.st-word { display: inline-block; overflow: hidden; vertical-align: top; padding: 0.06em 0.1em 0.1em 0.06em; margin: -0.06em -0.1em -0.1em -0.06em; }
 .st-inner { display: inline-block; }
 .st-accent { color: var(--color-primary-ink); }
 .js [data-reveal='split'] { opacity: 1; transform: none; animation: none; }
@@ -103,7 +103,7 @@ p { text-wrap: pretty; }
 
 /* --- Oversized editorial headings --- */
 .t-mega { font-size: clamp(3rem, 1rem + 8.4vw, 10.5rem); line-height: 0.9; letter-spacing: -0.055em; font-weight: var(--fw-black); text-transform: uppercase; }
-.t-mega .st-word { padding-bottom: 0.04em; margin-bottom: -0.04em; }
+.t-mega .st-word { padding: 0.08em 0.12em 0.06em 0.08em; margin: -0.08em -0.12em -0.06em -0.08em; }
 
 /* --- Drawn divider --- */
 .divider { position: relative; height: 1px; background: var(--color-border-strong); transform-origin: left; }

@@ -58,6 +58,7 @@ export default function ProjectPage() {
             <dl className={s.metaList}>
               <dt>{t('labels.client')}</dt><dd>{name}</dd>
               <dt>{t('labels.industry')}</dt><dd>{t(`industries.${p.industry}`)}</dd>
+              {p.url && (<><dt>{t('labels.site')}</dt><dd><a href={p.url} target="_blank" rel="noopener" className={s.liveLink}>{new URL(p.url).hostname.replace(/^www\./, '')} <ArrowIcon size={12} /></a></dd></>)}
             </dl>
           </div>
           <div className={s.cover} style={{ marginTop: 'clamp(2rem, 1rem + 3vw, 4rem)', viewTransitionName: `project-${p.slug}` }}>

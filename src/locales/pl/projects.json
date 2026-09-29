@@ -14,7 +14,8 @@
     "next": "Następny projekt",
     "all": "Wszystkie",
     "filter": "Filtruj według branży",
-    "metaSuffix": "Realizacja studia Click IT: tworzenie strony, design i promocja dla biznesu."
+    "metaSuffix": "Realizacja studia Click IT: tworzenie strony, design i promocja dla biznesu.",
+    "site": "Strona"
   },
   "work": {
     "development": "Stworzenie strony",
@@ -30,9 +31,21 @@
     "realestate": "Nieruchomości",
     "food": "Żywność i dostawy",
     "security": "Systemy bezpieczeństwa",
-    "adtech": "Reklama w social media"
+    "adtech": "Reklama w social media",
+    "marketing": "Marketing i automatyzacja AI",
+    "peptides": "Produkty peptydowe"
   },
   "items": {
+    "yansi": {
+      "name": "YanSi",
+      "summary": "Strona agencji performance marketingu i AI.",
+      "description": "Dwujęzyczna (UA/EN) strona yan-si.io — agencji łączącej performance marketing z automatyzacją AI: mega menu usług i branż, sekcja case studies, interaktywny kalkulator ROI oraz formularz zapytania z wyborem budżetu."
+    },
+    "slimax-peptides": {
+      "name": "Slimax Peptides",
+      "summary": "Katalog produktów peptydowych.",
+      "description": "Wielojęzyczny (EN/CZ/SK) katalog dla Slimax Peptides: kolekcja produktów, umawianie konsultacji ze specjalistami, ścieżka „zapytanie — indywidualna oferta — potwierdzenie — dostawa” oraz formularze zamiast publicznego cennika."
+    },
     "avangard": {
       "name": "AVANGARD",
       "summary": "Strona studia remontów i projektowania wnętrz.",

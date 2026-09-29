@@ -52,7 +52,7 @@
     "phone": "Telefon",
     "email": "Email",
     "message": "Opis projektu",
-    "messagePlaceholder": "Co trzeba zrobić, terminy, budżet — wszystko, co uważasz za ważne",
+    "messagePlaceholder": "Co trzeba zrobić, terminy — wszystko, co uważasz za ważne",
     "consent": "Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z",
     "consentLink": "polityką prywatności",
     "submit": "Wyślij zapytanie",
@@ -69,8 +69,20 @@
       "email": "Podaj poprawny adres email",
       "consent": "Wymagana jest zgoda na przetwarzanie danych",
       "message": "Opis jest za długi (maks. 2000 znaków)",
-      "rate": "Zbyt wiele prób. Spróbuj ponownie za kilka minut."
-    }
+      "rate": "Zbyt wiele prób. Spróbuj ponownie za kilka minut.",
+      "budget": "Wybierz orientacyjny budżet",
+      "fileType": "{{name}}: ten format nie jest obsługiwany.",
+      "fileSize": "{{name}}: plik jest większy niż 5 MB.",
+      "fileCount": "Możesz dodać maksymalnie {{count}} plików.",
+      "upload": "Nie udało się przesłać plików. Spróbuj ponownie lub wyślij je do nas e-mailem."
+    },
+    "budget": "Jaki jest Twój budżet?",
+    "files": "Pliki (opcjonalnie)",
+    "filesDrop": "Przeciągnij pliki lub",
+    "filesBrowse": "Wybierz",
+    "filesHint": "ZIP, PDF, PAGES, DOC i inne — do 5 MB każdy.",
+    "filesRemove": "Usuń plik {{name}}",
+    "uploading": "Przesyłamy pliki…"
   },
   "footer": {
     "tagline": "Studio webowe pełnego cyklu: tworzenie stron, design i marketing internetowy.",

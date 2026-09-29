@@ -18,7 +18,6 @@ export function MegaMenu({ open, onNavigate }: { open: boolean; onNavigate: () =
                 <li key={svc.slug}>
                   <Link to={href(lang, 'services', svc.slug)} onClick={onNavigate} className={s.megaLink}>
                     <span>{t(`services:items.${svc.slug}.name`)}</span>
-                    <small>{t(`services:items.${svc.slug}.short`)}</small>
                   </Link>
                 </li>
               ))}

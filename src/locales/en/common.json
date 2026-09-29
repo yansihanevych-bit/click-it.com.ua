@@ -52,7 +52,7 @@
     "phone": "Phone",
     "email": "Email",
     "message": "Project description",
-    "messagePlaceholder": "What needs to be done, timeline, budget — anything you consider important",
+    "messagePlaceholder": "What needs to be done, timeline — anything you consider important",
     "consent": "I agree to the processing of my personal data in accordance with the",
     "consentLink": "privacy policy",
     "submit": "Send request",
@@ -69,8 +69,20 @@
       "email": "Please enter a valid email",
       "consent": "Consent to data processing is required",
       "message": "Description is too long (max 2000 characters)",
-      "rate": "Too many attempts. Please try again in a few minutes."
-    }
+      "rate": "Too many attempts. Please try again in a few minutes.",
+      "budget": "Choose an approximate budget",
+      "fileType": "{{name}}: this format isn’t supported.",
+      "fileSize": "{{name}}: the file is larger than 5 MB.",
+      "fileCount": "You can attach up to {{count}} files.",
+      "upload": "We couldn’t upload the files. Please try again or email them to us."
+    },
+    "budget": "What’s your budget?",
+    "files": "Files (optional)",
+    "filesDrop": "Drag files here or",
+    "filesBrowse": "browse",
+    "filesHint": "ZIP, PDF, PAGES, DOC and more — up to 5 MB each.",
+    "filesRemove": "Remove file {{name}}",
+    "uploading": "Uploading files…"
   },
   "footer": {
     "tagline": "Full-cycle web studio: website development, design and digital marketing.",
